@@ -2,9 +2,10 @@ import pandas as pd
 from torch.utils.data import Dataset, DataLoader
 import torch
 import numpy as np
+import check_input
 
 #load the CSV file
-df = pd.read_csv("UFC Dataset 1.csv")
+df = pd.read_csv("UFC Dataset.csv")
 
 #identify and drop duplicate columns
 columns_to_drop = ["Height", "Reach", "Wins", "Losses", "Age"]
@@ -41,6 +42,7 @@ class UFCDataset(Dataset):
             fighter_outcomes = []
             general_stats = pd.to_numeric(general_stats, errors="coerce")
             for idx, row in fight_history.iterrows():
+                 print(f"reading {fighter_name} data")
                  round_duration = pd.Series(row['Round'])
                  #statistics for the fighter
                  fighter_stats = pd.to_numeric(row[['Weight','Fight_ID','Sig_Strikes', 'Takedowns', 'Knockdowns', 'Sub_Attempts']], errors='coerce')
@@ -61,6 +63,9 @@ class UFCDataset(Dataset):
             self.labels.append(np.array(fighter_outcomes, dtype=np.int32))
             self.fighter_name_index[fighter_name] = index
             index += 1
+        print("finished reading all fighters")
+        print()
+        print()
 
     def __len__(self):
         return len(self.inputs)
@@ -78,16 +83,25 @@ class UFCDataset(Dataset):
 dataset = UFCDataset(df)
 
 def display_data_by_fighter():
-    try:
-        fighter_input = str(input("Input Fighter Name: "))
-        name, inputdata, labels = dataset.fighter_by_name(fighter_input)
-        print(f"Data for {fighter_input}:")
-        print(f"Name: {name}")
-        print(f"Input data:", inputdata)
-        print(f"Label:", labels)
-    except KeyError as e:
-         print(e)
-        
+    while True:
+        print("1. Read Tensor of Fighter\n2. Quit")
+        menu_option = check_input.get_int_range("", 1, 2)
+        match menu_option:
+             case 1:   
+                try:
+                    fighter_input = str(input("Input Fighter Name: "))
+                    name, inputdata, labels = dataset.fighter_by_name(fighter_input)
+                    print(f"Data for {fighter_input}:")
+                    print(f"Name: {name}")
+                    print(f"Input data:", inputdata)
+                    print(f"Label:", labels)
+                except KeyError as e:
+                    print(e)
+             case 2:
+                  print("Goodbye.")
+                  break
+
+display_data_by_fighter()
 
                
 

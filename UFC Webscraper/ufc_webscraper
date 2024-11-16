@@ -95,7 +95,8 @@ def fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, 
                 print(f"Could not find fight details content for: {url}")
                 fight_details = []
                 break
-            fight_result = (1 if fighter_name in soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").next_sibling.get_text(strip=True) else 0)
+            fight_winner = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div")
+            fight_result = 1 if fighter_name in fight_winner.find("a", class_="b-link b-fight-details__person-link").get_text(strip=True) else 0
             for j in fight_details:
                 if "Round:" in j.get_text(strip=True):
                     round = int(j.next_sibling.get_text(strip=True))
@@ -209,6 +210,13 @@ def main():
                             print(f"{fighter_name} is already in database")
                     else:
                         print(f"Failed to fetch the webpage. Status code: {response.status_code}")
+                df = pd.read_csv("UFC Dataset.csv")
+                unique_count = df["Fighter Name"].nunique()
+                last_fighter = df.iloc[-1]["Fighter Name"]
+                print(f"# OF FIGHTERS CURRENTLY ADDED:\n{unique_count}")
+                print(f"LAST FIGHTER ADDED:\n{last_fighter}")
+                
+
             case 3:
                 break
     print("See ya.")
