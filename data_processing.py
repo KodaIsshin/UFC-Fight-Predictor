@@ -5,7 +5,7 @@ import numpy as np
 import check_input
 
 #load the CSV file
-df = pd.read_csv("UFC Dataset.csv")
+df = pd.read_csv("UFC Fighter Dataset.csv")
 
 #identify and drop duplicate columns
 columns_to_drop = ["Height", "Reach", "Wins", "Losses", "Age"]
@@ -31,52 +31,47 @@ def normalize(data):
 
 class UFCDataset(Dataset):
     def __init__(self, data_frame) -> None:
-        self.data = data_frame.groupby("Fighter Name").apply(process_fighter_group)
+        #groups all the statistic by the fighter name in the csv
+        self.data = data_frame.groupby("Fighter Name").apply(process_fighter_group, include_groups=False)
+        #input is the statistics of last 6 fights or less
         self.inputs = []
+        #labels is the result of the last 6 fights or less
         self.labels = []
+        #dictionary to link fighter statistic to name
         self.fighter_name_index = {}
-        self.fighter_names = []
-        index = 0
         for fighter_name, (general_stats, fight_history) in self.data.items():
             fighter_data = []
-            fighter_outcomes = []
             general_stats = pd.to_numeric(general_stats, errors="coerce")
             for idx, row in fight_history.iterrows():
-                 print(f"reading {fighter_name} data")
+                 #print(f"reading {fighter_name} data")
                  round_duration = pd.Series(row['Round'])
                  #statistics for the fighter
                  fighter_stats = pd.to_numeric(row[['Weight','Fight_ID','Sig_Strikes', 'Takedowns', 'Knockdowns', 'Sub_Attempts']], errors='coerce')
                  fight_control_time = pd.Series(time_to_seconds(row['Control_Time']), index=['Control_Time'])
                  fighter_stats = pd.concat([fighter_stats, fight_control_time])
                  #statistics for the opponent
-                 opponent_stats = pd.to_numeric(row[['Opp_Sig_Strikes', 'Opp_Takedowns', 'Opp_Knockdowns', 'Opp_Sub_Attempts']], errors='coerce')
-                 opp_control_time = pd.Series(time_to_seconds(row['Opp_Control_Time']), index=['Opp_Control_Time'])
+                 opponent_stats = pd.to_numeric(row[['Opp_Sig_Strikes', 'Opp_Takedowns', 'Opp_Knockdowns', 'Opp_Sub_Attempts']], errors='coerce') 
+                 opp_control_time = pd.Series(time_to_seconds(row['Opp_Control_Time']), index=['Opp_Control_Time']) #Opponent stats 
                  opponent_stats = pd.concat([opponent_stats, opp_control_time])
                  combined_inputs = pd.concat([general_stats,fighter_stats, opponent_stats])
                  combined_inputs = pd.concat([combined_inputs, round_duration])
                  fighter_data.append(combined_inputs.values)
-                 fighter_outcomes.append(row['Result'])
 
-            fighter_data = normalize(np.array(fighter_data))
-            self.fighter_names.append(str(fighter_name))
             self.inputs.append(np.array(fighter_data))
-            self.labels.append(np.array(fighter_outcomes, dtype=np.int32))
-            self.fighter_name_index[fighter_name] = index
-            index += 1
-        print("finished reading all fighters")
-        print()
-        print()
+            fighter_data = np.array(fighter_data)
+            self.fighter_name_index[fighter_name] = torch.tensor(fighter_data, dtype=torch.float32)
+        #print("finished reading all fighters")
+        #print()
 
     def __len__(self):
         return len(self.inputs)
     
     def __getitem__(self, index):
-        return self.fighter_names[index], torch.tensor(self.inputs[index], dtype=torch.float32), torch.tensor(self.labels[index], dtype=torch.float32)
+        return index, self.fighter_name_index[index]
         
     def fighter_by_name(self, fighter_name):
          if fighter_name in self.fighter_name_index:
-              index = self.fighter_name_index[fighter_name]
-              return self.__getitem__(index)
+              return self.__getitem__(fighter_name)
          else:
               raise KeyError(f"Fighter {fighter_name} not found in dataset")
 
@@ -90,16 +85,16 @@ def display_data_by_fighter():
              case 1:   
                 try:
                     fighter_input = str(input("Input Fighter Name: "))
-                    name, inputdata, labels = dataset.fighter_by_name(fighter_input)
+                    name, inputdata = dataset.fighter_by_name(fighter_input)
                     print(f"Data for {fighter_input}:")
                     print(f"Name: {name}")
                     print(f"Input data:", inputdata)
-                    print(f"Label:", labels)
                 except KeyError as e:
                     print(e)
              case 2:
                   print("Goodbye.")
                   break
+             
 
 display_data_by_fighter()
 
