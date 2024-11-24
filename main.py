@@ -46,18 +46,18 @@ class FighterPredictorLSTM(nn.Module):
 def test_train_dataloader(fighter_data):
     train_data = []
     test_data = []
-    for fighter_name, fighter_history, labels in fighter_data:
+    for fighter_name, fighter_history in fighter_data:
         total_fights = len(fighter_history)
         if total_fights == 1:
-            train_fights = (fighter_name, fighter_history, labels)
+            train_fights = (fighter_name, fighter_history)
             test_fights = ()
         elif total_fights == 2:
-            train_fights = (fighter_name, fighter_history[:1], labels[:1])
-            test_fights = (fighter_name, fighter_history[1:], labels[1:])
+            train_fights = (fighter_name, fighter_history[:1])
+            test_fights = (fighter_name, fighter_history[1:])
         else:
-            index_split = (int(total_fights * .8) - 1)
-            train_fights = (fighter_name, fighter_history[:index_split], labels[:index_split])
-            test_fights = (fighter_name, fighter_history[index_split:], labels[index_split:])
+            index_split = (int(total_fights * .66) - 1)
+            train_fights = (fighter_name, fighter_history[:index_split])
+            test_fights = (fighter_name, fighter_history[index_split:])
 
         train_data.append(train_fights)
         test_data.append(test_fights)

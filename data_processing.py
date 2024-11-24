@@ -43,7 +43,7 @@ class UFCDataset(Dataset):
             fighter_data = []
             general_stats = pd.to_numeric(general_stats, errors="coerce")
             for idx, row in fight_history.iterrows():
-                 #print(f"reading {fighter_name} data")
+                 print(f"reading {fighter_name} data")
                  round_duration = pd.Series(row['Round'])
                  #statistics for the fighter
                  fighter_stats = pd.to_numeric(row[['Weight','Fight_ID','Sig_Strikes', 'Takedowns', 'Knockdowns', 'Sub_Attempts']], errors='coerce')
