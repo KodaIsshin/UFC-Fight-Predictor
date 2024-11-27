@@ -22,7 +22,7 @@ Sean Strickland
 Robert Whittaker
 Khamzat Chimaev
 Kamaru Usman
-Belal Muhammed
+Belal Muhammad
 Colby Covington
 Vicente Luque
 Aljamain Sterling
@@ -47,11 +47,9 @@ Yair Rodriguez
 Dan Ige
 Lerone Murphy
 Edson Barboza
-Kai Kara France
+Kai Kara-France
 Manel Kape
 Jim Miller
-Carlos Prates
-Neil Magny
 Carlos Prates
 Neil Magny
 Jack Della Maddalena
@@ -87,7 +85,6 @@ Nassourdine Imavov
 Brendan Allen
 Chris Curtis
 Marc-Andre Barriault
-Joe Pyfer
 Jack Hermansson
 Roman Dolidze
 Marvin Vettori
@@ -96,7 +93,6 @@ Michel Pereira
 Rafael Dos Anjos
 Geoff Neal
 Jan Blachowicz
-Glover Teixeira
 Shara Magomedov
 Islam Makhachev
 Curtis Blaydes
@@ -106,11 +102,13 @@ Alexandre Pantoja
 Bryce Mitchell
 Sean Brady
 Sean O'Malley
-Umar Nurmagomedov
 Bogdan Guskov
 Jairzinho Rozenstruik
 Aleksandar Rakic
 Johnny Walker
 Nikita Krylov
 Rafael Fiziev
-Joel Alvarez
+Anthony Smith
+Alexander Volkov
+Ciryl Gane
+Brandon Moreno

@@ -3,98 +3,121 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import pandas as pd
-from data_processing import UFCDataset
+from data_processing import UFCDataset, find_input_sequences
 from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 
-df = pd.read_csv("UFC Dataset 1.csv")
+df = pd.read_csv("UFC Fighter Dataset.csv")
 dataset = UFCDataset(df)
+of = pd.read_csv("UFC Outcomes.csv")
+outcomes_dict = of.groupby('Fighter A').apply(lambda x: x.values.tolist(), include_groups=False).to_dict()
+train_test_fighters = open("Train_Test Fighters.txt")
+train_list = train_test_fighters.readlines()
 
 
-
-class FighterPredictorLSTM(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, num_layers=1):
-        super(FighterPredictorLSTM, self).__init__()
-
+class FighterProfileLSTM(nn.Module):
+    """
+            LSTM Neural Network for Fighter Profile
+                        MAIN FUNCTION
+        ___________________________________________________
+        The main function of this LSTM Neural network is to 
+        generate fighter profiles based on the sequences given
+        they don't identify the fighter based on name, so 
+        there is no name value bias or rank bias, purely
+        statistics and a profile given from the history given
+        _____________________________________________________
+        TRAIN:
+        The training of this model will just be feeding roughly 100 fighters and predicting match ups
+        of their 6 fights.
+        
+        TEST:
+        There is no test feature for this, it will adjust it self based on more data.  
+    """
+    def __init__(self, input_size, hidden_size, num_layers=1, dropout=0.2):
+        super(FighterProfileLSTM, self).__init__()
         self.hidden_size = hidden_size
         self.num_layers = num_layers
 
-        #LSTM Layer
-        self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
+        #LSTM LAYER OF NEURAL NETWORK
+        self.lstm = nn.LSTM(
+            input_size=input_size,
+            hidden_size=hidden_size,
+            num_layers=num_layers,
+            batch_first=True,
+            dropout=dropout if num_layers > 1 else 0
+        )
 
-        #fully connected layer
-        self.fc = nn.Linear(hidden_size, output_size)
+    def forward(self, x, lengths):
+
+        #Packing sequences for new fighters (1-5 fights instead of the six)
+        #This is also for training, using history to train lstm to create fighter profiles for fighters that are prominent
+        packed_input = nn.utils.rnn.pack_padded_sequence(x, lengths, batch_first=True, enforce_sorted=True)
+        #LSTM OUTPUT
+        #OUTPUT OF TENSOR, (We only need the hidden state to find the LSTM interp of fighter)
+        _, (hidden, _) = self.lstm(packed_input) # hidden: (num_laters, batch_size, hidden_size)
+
+        #last hidden state contains profile after iterating through sequence
+        fighter_profile = hidden[-1]
+
+        return fighter_profile
     
-    def forward(self, fight_history, seq_lengths):
-        #packing the sequence 
-        packed_input = pack_padded_sequence(fight_history, seq_lengths.cpu(), batch_first=True, enforce_sorted=True)
-        packed_output, (hn, cn) = self.lstm(packed_input)
 
-        #LSTM forward pass (hidden and cell states can be initialized as None for the first batch)
-        lstm_out, _ = pad_packed_sequence(packed_output, batch_first=True)
 
-        #take the outputs from the last time step of each sequence 
-        idxs  = (seq_lengths - 1).view(-1, 1).expand(len(seq_lengths), lstm_out.size(2))
-        time_step_outputs = lstm_out.gather(1, idxs.unsqueeze(1).squeeze(1))
+class FightPredictor(nn.Module):
+    """
+        FIGHT PREDICTOR NEURAL NETWORK
+                MAIN FUNCTION
+        ______________________________
 
-        out = self.fc(time_step_outputs)
+        Neural network that grabs fighter
+        profiles and then tries to predict
+        the outcome of the fight given the 
+        profile
+        ______________________________
+        TRAIN:
+        The training of this model is from
+        the Train_Test txt file, iterates
+        through and then grabs the fight
+        history to get tests
+
+        TEST:
+        Tests itself on recent fights of
+        fighters in train_test txt file.
+    """
+    def __init__(self):
+        pass
+
+
+def test_train_dataloader(fighter_name, fighter_data):
+    data_transfig = fighter_data[1:]
+    total_fights = len(data_transfig) 
+    if total_fights == 1:
+        train_fights = (data_transfig)
+        test_fights = ()
+    elif total_fights == 2:
+        train_fights = (data_transfig[:1])
+        test_fights = (data_transfig[1:])
+    else:
+        index_split = (int(total_fights * .8))
+        train_fights = (data_transfig[:index_split])
+        test_fights = (data_transfig[index_split:])
+
+    train_fights.append(fighter_name)
+    test_fights.append(fighter_name)
+
+
+    return train_fights, test_fights
+
+
+INPUT_SIZE = 17
+HIDDEN_SIZE = 17
+
+for i in train_list[:3]:
+    fighter_name = i.strip()
+    train_data, test_data = test_train_dataloader(fighter_name, outcomes_dict[fighter_name])
+    print(f"{i} Train Data: ")
+    print(train_data)
+    print(f"{i} Test Data:")
+    print(test_data)
+    
         
-        return out
-    
-
-
-def test_train_dataloader(fighter_data):
-    train_data = []
-    test_data = []
-    for fighter_name, fighter_history in fighter_data:
-        total_fights = len(fighter_history)
-        if total_fights == 1:
-            train_fights = (fighter_name, fighter_history)
-            test_fights = ()
-        elif total_fights == 2:
-            train_fights = (fighter_name, fighter_history[:1])
-            test_fights = (fighter_name, fighter_history[1:])
-        else:
-            index_split = (int(total_fights * .66) - 1)
-            train_fights = (fighter_name, fighter_history[:index_split])
-            test_fights = (fighter_name, fighter_history[index_split:])
-
-        train_data.append(train_fights)
-        test_data.append(test_fights)
-
-    return [train_data, test_data]
-
-
-INPUT_SIZE = 18
-HIDDEN_SIZE = 50
-OUTPUT_SIZE = 1
-NUM_LAYERS = 2
-
-#uses the dataloader method above to organize the test data and train data into an array
-#train data loader and test dataloader are made to hold their respective tensor lists
-fighter_dataloader = test_train_dataloader(dataset)
-train_dataloader = fighter_dataloader[0]
-test_dataloader = fighter_dataloader[1]
-
-#model
-model = FighterPredictorLSTM(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE, NUM_LAYERS)
-
-#loss function
-loss_fn = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr = 1e-3)
-
-
-
-
-
-def train(model, train_loader, criterion, optimizer, num_epochs, device):
-    model.train()
-    for epoch in range(num_epochs):
-        total_loss = 0.0
-        for fighter_name, fighter_history, labels in train_loader:
-            #split the values from the packed batch into the three values, name, fight_history, labels
-            fighter_history, labels = fighter_history.to(device), labels.to(device)
-            #compute the seq lengths
-            seq_lengths = len(fighter_history)
-
-
