@@ -1,1809 +1,1809 @@
-Fighter A,Fighter B,Result,Fight_ID
-Ian Machado Garry,Gabe Green,1,1
-Ian Machado Garry,Song Kenan,1,2
-Ian Machado Garry,Daniel Rodriguez,1,3
-Ian Machado Garry,Neil Magny,1,4
-Ian Machado Garry,Geoff Neal,1,5
-Ian Machado Garry,Michael Page,1,6
-Charles Oliveira,Dustin Poirier,1,1
-Charles Oliveira,Justin Gaethje,1,2
-Charles Oliveira,Islam Makhachev,0,3
-Charles Oliveira,Beneil Dariush,1,4
-Charles Oliveira,Arman Tsarukyan,0,5
-Charles Oliveira,Michael Chandler,1,6
-Arman Tsarukyan,Joel Alvarez,1,1
-Arman Tsarukyan,Mateusz Gamrot,0,2
-Arman Tsarukyan,Damir Ismagulov,1,3
-Arman Tsarukyan,Joaquim Silva,1,4
-Arman Tsarukyan,Beneil Dariush,1,5
-Arman Tsarukyan,Charles Oliveira,1,6
-Mateusz Gamrot,Arman Tsarukyan,1,1
-Mateusz Gamrot,Beneil Dariush,0,2
-Mateusz Gamrot,Jalin Turner,1,3
-Mateusz Gamrot,Rafael Fiziev,1,4
-Mateusz Gamrot,Rafael Dos Anjos,1,5
-Mateusz Gamrot,Dan Hooker,0,6
-Dan Hooker,Nasrat Haqparast,1,1
-Dan Hooker,Islam Makhachev,0,2
-Dan Hooker,Arnold Allen,0,3
-Dan Hooker,Claudio Puelles,1,4
-Dan Hooker,Jalin Turner,1,5
-Dan Hooker,Mateusz Gamrot,1,6
-Arnold Allen,Sodiq Yusuff,1,1
-Arnold Allen,Dan Hooker,1,2
-Arnold Allen,Calvin Kattar,1,3
-Arnold Allen,Max Holloway,0,4
-Arnold Allen,Movsar Evloev,0,5
-Arnold Allen,Giga Chikadze,1,6
-Diego Lopes,Movsar Evloev,0,1
-Diego Lopes,Gavin Tucker,1,2
-Diego Lopes,Pat Sabatini,1,3
-Diego Lopes,Sodiq Yusuff,1,4
-Diego Lopes,Dan Ige,1,5
-Diego Lopes,Brian Ortega,1,6
-Kevin Holland,Santiago Ponzinibbio,1,1
-Kevin Holland,Michael Chiesa,1,2
-Kevin Holland,Jack Della Maddalena,0,3
-Kevin Holland,Michael Page,0,4
-Kevin Holland,Michal Oleksiejczuk,1,5
-Kevin Holland,Roman Dolidze,0,6
-Joaquin Buckley,Chris Curtis,0,1
-Joaquin Buckley,Andre Fialho,1,2
-Joaquin Buckley,Alex Morono,1,3
-Joaquin Buckley,Vicente Luque,1,4
-Joaquin Buckley,Nursulton Ruziboev,1,5
-Joaquin Buckley,Stephen Thompson,1,6
-Stephen Thompson,Geoff Neal,1,1
-Stephen Thompson,Gilbert Burns,0,2
-Stephen Thompson,Belal Muhammad,0,3
-Stephen Thompson,Kevin Holland,1,4
-Stephen Thompson,Shavkat Rakhmonov,0,5
-Stephen Thompson,Joaquin Buckley,0,6
-Jiri Prochazka,Volkan Oezdemir,1,1
-Jiri Prochazka,Dominick Reyes,1,2
-Jiri Prochazka,Glover Teixeira,1,3
-Jiri Prochazka,Alex Pereira,0,4
-Jiri Prochazka,Aleksandar Rakic,1,5
-Jiri Prochazka,Alex Pereira,0,6
-Alex Pereira,Israel Adesanya,0,1
-Alex Pereira,Jan Blachowicz,1,2
-Alex Pereira,Jiri Prochazka,1,3
-Alex Pereira,Jamahal Hill,1,4
-Alex Pereira,Jiri Prochazka,1,5
-Alex Pereira,Khalil Rountree Jr.,1,6
-Khalil Rountree Jr.,Modestas Bukauskas,1,1
-Khalil Rountree Jr.,Karl Roberson,1,2
-Khalil Rountree Jr.,Dustin Jacoby,1,3
-Khalil Rountree Jr.,Chris Daukaus,1,4
-Khalil Rountree Jr.,Anthony Smith,1,5
-Khalil Rountree Jr.,Alex Pereira,0,6
-Justin Gaethje,Khabib Nurmagomedov,0,1
-Justin Gaethje,Michael Chandler,1,2
-Justin Gaethje,Charles Oliveira,0,3
-Justin Gaethje,Rafael Fiziev,1,4
-Justin Gaethje,Dustin Poirier,1,5
-Justin Gaethje,Max Holloway,0,6
-Max Holloway,Yair Rodriguez,1,1
-Max Holloway,Alexander Volkanovski,0,2
-Max Holloway,Arnold Allen,1,3
-Max Holloway,Chan Sung Jung,1,4
-Max Holloway,Justin Gaethje,1,5
-Max Holloway,Ilia Topuria,0,6
-Ilia Topuria,Ryan Hall,1,1
-Ilia Topuria,Jai Herbert,1,2
-Ilia Topuria,Bryce Mitchell,1,3
-Ilia Topuria,Josh Emmett,1,4
-Ilia Topuria,Alexander Volkanovski,1,5
-Ilia Topuria,Max Holloway,1,6
-Alexander Volkanovski,Chan Sung Jung,1,1
-Alexander Volkanovski,Max Holloway,1,2
-Alexander Volkanovski,Islam Makhachev,0,3
-Alexander Volkanovski,Yair Rodriguez,1,4
-Alexander Volkanovski,Islam Makhachev,0,5
-Alexander Volkanovski,Ilia Topuria,0,6
-Jose Aldo,Marlon Vera,1,1
-Jose Aldo,Pedro Munhoz,1,2
-Jose Aldo,Rob Font,1,3
-Jose Aldo,Merab Dvalishvili,0,4
-Jose Aldo,Jonathan Martinez,1,5
-Jose Aldo,Mario Bautista,0,6
-Mario Bautista,Brian Kelleher,1,1
-Mario Bautista,Benito Lopez,1,2
-Mario Bautista,Guido Cannetti,1,3
-Mario Bautista,Da'Mon Blackshear,1,4
-Mario Bautista,Ricky Simon,1,5
-Mario Bautista,Jose Aldo,1,6
-Petr Yan,Aljamain Sterling,0,1
-Petr Yan,Cory Sandhagen,1,2
-Petr Yan,Aljamain Sterling,0,3
-Petr Yan,Sean O'Malley,0,4
-Petr Yan,Merab Dvalishvili,0,5
-Petr Yan,Song Yadong,1,6
-Israel Adesanya,Robert Whittaker,1,1
-Israel Adesanya,Jared Cannonier,1,2
-Israel Adesanya,Alex Pereira,0,3
-Israel Adesanya,Alex Pereira,1,4
-Israel Adesanya,Sean Strickland,0,5
-Israel Adesanya,Dricus Du Plessis,0,6
-Sean Strickland,Jared Cannonier,0,1
-Sean Strickland,Nassourdine Imavov,1,2
-Sean Strickland,Abus Magomedov,1,3
-Sean Strickland,Israel Adesanya,1,4
-Sean Strickland,Dricus Du Plessis,0,5
-Sean Strickland,Paulo Costa,1,6
-Robert Whittaker,Israel Adesanya,0,1
-Robert Whittaker,Marvin Vettori,1,2
-Robert Whittaker,Dricus Du Plessis,0,3
-Robert Whittaker,Paulo Costa,1,4
-Robert Whittaker,Ikram Aliskerov,1,5
-Robert Whittaker,Khamzat Chimaev,0,6
-Khamzat Chimaev,Gerald Meerschaert,1,1
-Khamzat Chimaev,Li Jingliang,1,2
-Khamzat Chimaev,Gilbert Burns,1,3
-Khamzat Chimaev,Kevin Holland,1,4
-Khamzat Chimaev,Kamaru Usman,1,5
-Khamzat Chimaev,Robert Whittaker,1,6
-Kamaru Usman,Gilbert Burns,1,1
-Kamaru Usman,Jorge Masvidal,1,2
-Kamaru Usman,Colby Covington,1,3
-Kamaru Usman,Leon Edwards,0,4
-Kamaru Usman,Leon Edwards,0,5
-Kamaru Usman,Khamzat Chimaev,0,6
-Belal Muhammad,Demian Maia,1,1
-Belal Muhammad,Stephen Thompson,1,2
-Belal Muhammad,Vicente Luque,1,3
-Belal Muhammad,Sean Brady,1,4
-Belal Muhammad,Gilbert Burns,1,5
-Belal Muhammad,Leon Edwards,1,6
-Colby Covington,Robbie Lawler,1,1
-Colby Covington,Kamaru Usman,0,2
-Colby Covington,Tyron Woodley,1,3
-Colby Covington,Kamaru Usman,0,4
-Colby Covington,Jorge Masvidal,1,5
-Colby Covington,Leon Edwards,0,6
-Vicente Luque,Tyron Woodley,1,1
-Vicente Luque,Michael Chiesa,1,2
-Vicente Luque,Belal Muhammad,0,3
-Vicente Luque,Geoff Neal,0,4
-Vicente Luque,Rafael Dos Anjos,1,5
-Vicente Luque,Joaquin Buckley,0,6
-Aljamain Sterling,Petr Yan,1,1
-Aljamain Sterling,Petr Yan,1,2
-Aljamain Sterling,TJ Dillashaw,1,3
-Aljamain Sterling,Henry Cejudo,1,4
-Aljamain Sterling,Sean O'Malley,0,5
-Aljamain Sterling,Calvin Kattar,1,6
-Calvin Kattar,Dan Ige,1,1
-Calvin Kattar,Max Holloway,0,2
-Calvin Kattar,Giga Chikadze,1,3
-Calvin Kattar,Josh Emmett,0,4
-Calvin Kattar,Arnold Allen,0,5
-Calvin Kattar,Aljamain Sterling,0,6
-Movsar Evloev,Mike Grundy,1,1
-Movsar Evloev,Nik Lentz,1,2
-Movsar Evloev,Hakeem Dawodu,1,3
-Movsar Evloev,Dan Ige,1,4
-Movsar Evloev,Diego Lopes,1,5
-Movsar Evloev,Arnold Allen,1,6
-Deiveson Figueiredo,Brandon Moreno,0,1
-Deiveson Figueiredo,Brandon Moreno,1,2
-Deiveson Figueiredo,Brandon Moreno,0,3
-Deiveson Figueiredo,Rob Font,1,4
-Deiveson Figueiredo,Cody Garbrandt,1,5
-Deiveson Figueiredo,Marlon Vera,1,6
-Magomed Ankalaev,Nikita Krylov,1,1
-Magomed Ankalaev,Volkan Oezdemir,1,2
-Magomed Ankalaev,Thiago Santos,1,3
-Magomed Ankalaev,Anthony Smith,1,4
-Magomed Ankalaev,Johnny Walker,1,5
-Magomed Ankalaev,Aleksandar Rakic,1,6
-Jon Jones,Alexander Gustafsson,1,1
-Jon Jones,Anthony Smith,1,2
-Jon Jones,Thiago Santos,1,3
-Jon Jones,Dominick Reyes,1,4
-Jon Jones,Ciryl Gane,1,5
-Jon Jones,Stipe Miocic,1,6
-Daniel Zellhuber,Lucas Almeida,1,1
-Daniel Zellhuber,Trey Ogden,0,2
-Daniel Zellhuber,Lando Vannata,1,3
-Daniel Zellhuber,Christos Giagos,1,4
-Daniel Zellhuber,Francisco Prado,1,5
-Daniel Zellhuber,Esteban Ribovics,0,6
-Esteban Ribovics,Thomas Paull,1,1
-Esteban Ribovics,Loik Radzhabov,0,2
-Esteban Ribovics,Kamuela Kirk,1,3
-Esteban Ribovics,Terrance McKinney,1,4
-Esteban Ribovics,Daniel Zellhuber,1,5
-Jamie Mullarkey,Michael Johnson,1,1
-Jamie Mullarkey,Francisco Prado,1,2
-Jamie Mullarkey,Muhammad Naimov,0,3
-Jamie Mullarkey,John Makdessi,1,4
-Jamie Mullarkey,Nasrat Haqparast,0,5
-Jamie Mullarkey,Mauricio Ruffy,0,6
-Jalin Turner,Jamie Mullarkey,1,1
-Jalin Turner,Brad Riddell,1,2
-Jalin Turner,Mateusz Gamrot,0,3
-Jalin Turner,Dan Hooker,0,4
-Jalin Turner,King Green,1,5
-Jalin Turner,Renato Moicano,0,6
-Dustin Poirier,Conor McGregor,1,1
-Dustin Poirier,Charles Oliveira,0,2
-Dustin Poirier,Michael Chandler,1,3
-Dustin Poirier,Justin Gaethje,0,4
-Dustin Poirier,Benoit Saint Denis,1,5
-Dustin Poirier,Islam Makhachev,0,6
-Benoit Saint Denis,Gabriel Miranda,1,1
-Benoit Saint Denis,Ismael Bonfim,1,2
-Benoit Saint Denis,Thiago Moises,1,3
-Benoit Saint Denis,Matt Frevola,1,4
-Benoit Saint Denis,Dustin Poirier,0,5
-Benoit Saint Denis,Renato Moicano,0,6
-Renato Moicano,Alexander Hernandez,1,1
-Renato Moicano,Rafael Dos Anjos,0,2
-Renato Moicano,Brad Riddell,1,3
-Renato Moicano,Drew Dober,1,4
-Renato Moicano,Jalin Turner,1,5
-Renato Moicano,Benoit Saint Denis,1,6
-Drew Dober,Rafael Alves,1,1
-Drew Dober,King Green,1,2
-Drew Dober,Matt Frevola,0,3
-Drew Dober,Ricky Glenn,1,4
-Drew Dober,Renato Moicano,0,5
-Drew Dober,Jean Silva,0,6
-Jean Silva,Kevin Vallejos,1,1
-Jean Silva,Westin Wilson,1,2
-Jean Silva,Charles Jourdain,1,3
-Jean Silva,Drew Dober,1,4
-Charles Jourdain,Nathaniel Wood,0,1
-Charles Jourdain,Kron Gracie,1,2
-Charles Jourdain,Ricardo Ramos,1,3
-Charles Jourdain,Sean Woodson,0,4
-Charles Jourdain,Jean Silva,0,5
-Charles Jourdain,Victor Henry,1,6
-Sean Woodson,Julian Erosa,0,1
-Sean Woodson,Youssef Zalal,1,2
-Sean Woodson,Collin Anglin,1,3
-Sean Woodson,Dennis Buzukja,1,4
-Sean Woodson,Charles Jourdain,1,5
-Sean Woodson,Alex Caceres,1,6
-Alex Caceres,SeungWoo Choi,1,1
-Alex Caceres,Sodiq Yusuff,0,2
-Alex Caceres,Julian Erosa,1,3
-Alex Caceres,Daniel Pineda,1,4
-Alex Caceres,Giga Chikadze,0,5
-Alex Caceres,Sean Woodson,0,6
-Giga Chikadze,Jamey Simmons,1,1
-Giga Chikadze,Cub Swanson,1,2
-Giga Chikadze,Edson Barboza,1,3
-Giga Chikadze,Calvin Kattar,0,4
-Giga Chikadze,Alex Caceres,1,5
-Giga Chikadze,Arnold Allen,0,6
-Josh Emmett,Shane Burgos,1,1
-Josh Emmett,Dan Ige,1,2
-Josh Emmett,Calvin Kattar,1,3
-Josh Emmett,Yair Rodriguez,0,4
-Josh Emmett,Ilia Topuria,0,5
-Josh Emmett,Bryce Mitchell,1,6
-Yair Rodriguez,Jeremy Stephens,1,1
-Yair Rodriguez,Max Holloway,0,2
-Yair Rodriguez,Brian Ortega,1,3
-Yair Rodriguez,Josh Emmett,1,4
-Yair Rodriguez,Alexander Volkanovski,0,5
-Yair Rodriguez,Brian Ortega,0,6
-Dan Ige,Damon Jackson,1,1
-Dan Ige,Nate Landwehr,1,2
-Dan Ige,Bryce Mitchell,0,3
-Dan Ige,Andre Fili,1,4
-Dan Ige,Diego Lopes,0,5
-Dan Ige,Lerone Murphy,0,6
-Lerone Murphy,Douglas Silva de Andrade,1,1
-Lerone Murphy,Makwan Amirkhani,1,2
-Lerone Murphy,Gabriel Santos,1,3
-Lerone Murphy,Josh Culibao,1,4
-Lerone Murphy,Edson Barboza,1,5
-Lerone Murphy,Dan Ige,1,6
-Edson Barboza,Shane Burgos,1,1
-Edson Barboza,Giga Chikadze,0,2
-Edson Barboza,Bryce Mitchell,0,3
-Edson Barboza,Billy Quarantillo,1,4
-Edson Barboza,Sodiq Yusuff,1,5
-Edson Barboza,Lerone Murphy,0,6
-Demetrious Johnson,John Dodson,1,1
-Demetrious Johnson,Henry Cejudo,1,2
-Demetrious Johnson,Tim Elliott,1,3
-Demetrious Johnson,Wilson Reis,1,4
-Demetrious Johnson,Ray Borg,1,5
-Demetrious Johnson,Henry Cejudo,0,6
-Cody Garbrandt,Raphael Assuncao,1,1
-Cody Garbrandt,Rob Font,0,2
-Cody Garbrandt,Kai Kara-France,0,3
-Cody Garbrandt,Trevin Jones,1,4
-Cody Garbrandt,Brian Kelleher,1,5
-Cody Garbrandt,Deiveson Figueiredo,0,6
-Kai Kara-France,Rogerio Bontorin,1,1
-Kai Kara-France,Cody Garbrandt,1,2
-Kai Kara-France,Askar Askarov,1,3
-Kai Kara-France,Brandon Moreno,0,4
-Kai Kara-France,Amir Albazi,0,5
-Kai Kara-France,Steve Erceg,1,6
-Manel Kape,Matheus Nicolau,0,1
-Manel Kape,Ode Osbourne,1,2
-Manel Kape,Zhalgas Zhumagulov,1,3
-Manel Kape,David Dvorak,1,4
-Manel Kape,Felipe dos Santos,1,5
-Manel Kape,Muhammad Mokaev,0,6
-Jim Miller,Donald Cerrone,1,1
-Jim Miller,Alexander Hernandez,0,2
-Jim Miller,Jesse Butler,1,3
-Jim Miller,Gabriel Benitez,1,4
-Jim Miller,King Green,0,5
-Jim Miller,Damon Jackson,1,6
-Damon Jackson,Pat Sabatini,1,1
-Damon Jackson,Dan Ige,0,2
-Damon Jackson,Billy Quarantillo,0,3
-Damon Jackson,Alexander Hernandez,1,4
-Damon Jackson,Chepe Mariscal,0,5
-Damon Jackson,Jim Miller,0,6
-Carlos Prates,Mitch Ramirez,1,1
-Carlos Prates,Trevin Giles,1,2
-Carlos Prates,Charles Radtke,1,3
-Carlos Prates,Li Jingliang,1,4
-Carlos Prates,Neil Magny,1,5
-Neil Magny,Gilbert Burns,0,1
-Neil Magny,Phil Rowe,1,2
-Neil Magny,Ian Machado Garry,0,3
-Neil Magny,Mike Malott,1,4
-Neil Magny,Michael Morales,0,5
-Neil Magny,Carlos Prates,0,6
-Li Jingliang,Neil Magny,0,1
-Li Jingliang,Santiago Ponzinibbio,1,2
-Li Jingliang,Khamzat Chimaev,0,3
-Li Jingliang,Muslim Salikhov,1,4
-Li Jingliang,Daniel Rodriguez,0,5
-Li Jingliang,Carlos Prates,0,6
-Matthew Semelsberger,Alex Morono,0,1
-Matthew Semelsberger,Jake Matthews,1,2
-Matthew Semelsberger,Jeremiah Wells,0,3
-Matthew Semelsberger,Uros Medic,0,4
-Matthew Semelsberger,Preston Parsons,0,5
-Matthew Semelsberger,Charles Radtke,0,6
-Amir Albazi,Malcolm Gordon,1,1
-Amir Albazi,Zhalgas Zhumagulov,1,2
-Amir Albazi,Francisco Figueiredo,1,3
-Amir Albazi,Alessandro Costa,1,4
-Amir Albazi,Kai Kara-France,1,5
-Amir Albazi,Brandon Moreno,0,6
-Steve Erceg,David Dvorak,1,1
-Steve Erceg,Alessandro Costa,1,2
-Steve Erceg,Matt Schnell,1,3
-Steve Erceg,Alexandre Pantoja,0,4
-Steve Erceg,Kai Kara-France,0,5
-Brandon Royval,Rogerio Bontorin,1,1
-Brandon Royval,Matt Schnell,1,2
-Brandon Royval,Matheus Nicolau,1,3
-Brandon Royval,Alexandre Pantoja,0,4
-Brandon Royval,Brandon Moreno,1,5
-Brandon Royval,Tatsuro Taira,1,6
-Michael Morales,Nikolay Veretennikov,1,1
-Michael Morales,Trevin Giles,1,2
-Michael Morales,Adam Fugitt,1,3
-Michael Morales,Max Griffin,1,4
-Michael Morales,Jake Matthews,1,5
-Michael Morales,Neil Magny,1,6
-Tatsuro Taira,CJ Vergara,1,1
-Tatsuro Taira,Jesus Aguilar,1,2
-Tatsuro Taira,Edgar Chairez,1,3
-Tatsuro Taira,Carlos Hernandez,1,4
-Tatsuro Taira,Alex Perez,1,5
-Tatsuro Taira,Brandon Royval,0,6
-Alex Perez,Jussier Formiga,1,1
-Alex Perez,Deiveson Figueiredo,0,2
-Alex Perez,Alexandre Pantoja,0,3
-Alex Perez,Muhammad Mokaev,0,4
-Alex Perez,Matheus Nicolau,1,5
-Alex Perez,Tatsuro Taira,0,6
-Marlon Vera,Rob Font,1,1
-Marlon Vera,Dominick Cruz,1,2
-Marlon Vera,Cory Sandhagen,0,3
-Marlon Vera,Pedro Munhoz,1,4
-Marlon Vera,Sean O'Malley,0,5
-Marlon Vera,Deiveson Figueiredo,0,6
-Rob Font,Jose Aldo,0,1
-Rob Font,Marlon Vera,0,2
-Rob Font,Adrian Yanez,1,3
-Rob Font,Cory Sandhagen,0,4
-Rob Font,Deiveson Figueiredo,0,5
-Rob Font,Kyler Phillips,1,6
-Kyler Phillips,Song Yadong,1,1
-Kyler Phillips,Raulian Paiva,0,2
-Kyler Phillips,Marcelo Rojo,1,3
-Kyler Phillips,Raoni Barcelos,1,4
-Kyler Phillips,Pedro Munhoz,1,5
-Kyler Phillips,Rob Font,0,6
-Song Yadong,Julio Arce,1,1
-Song Yadong,Marlon Moraes,1,2
-Song Yadong,Cory Sandhagen,0,3
-Song Yadong,Ricky Simon,1,4
-Song Yadong,Chris Gutierrez,1,5
-Song Yadong,Petr Yan,0,6
-Chris Gutierrez,Batgerel Danaa,1,1
-Chris Gutierrez,Frankie Edgar,1,2
-Chris Gutierrez,Pedro Munhoz,0,3
-Chris Gutierrez,Alatengheili,1,4
-Chris Gutierrez,Song Yadong,0,5
-Chris Gutierrez,Quang Le,1,6
-Paul Craig,Volkan Oezdemir,0,1
-Paul Craig,Johnny Walker,0,2
-Paul Craig,Andre Muniz,1,3
-Paul Craig,Brendan Allen,0,4
-Paul Craig,Caio Borralho,0,5
-Paul Craig,Bo Nickal,0,6
-Caio Borralho,Armen Petrosyan,1,1
-Caio Borralho,Makhmud Muradov,1,2
-Caio Borralho,Michal Oleksiejczuk,1,3
-Caio Borralho,Abus Magomedov,1,4
-Caio Borralho,Paul Craig,1,5
-Caio Borralho,Jared Cannonier,1,6
-Jared Cannonier,Derek Brunson,1,1
-Jared Cannonier,Israel Adesanya,0,2
-Jared Cannonier,Sean Strickland,1,3
-Jared Cannonier,Marvin Vettori,1,4
-Jared Cannonier,Nassourdine Imavov,0,5
-Jared Cannonier,Caio Borralho,0,6
-Nassourdine Imavov,Edmen Shahbazyan,1,1
-Nassourdine Imavov,Joaquin Buckley,1,2
-Nassourdine Imavov,Sean Strickland,0,3
-Nassourdine Imavov,Roman Dolidze,1,4
-Nassourdine Imavov,Jared Cannonier,1,5
-Nassourdine Imavov,Brendan Allen,1,6
-Brendan Allen,Krzysztof Jotko,1,1
-Brendan Allen,Andre Muniz,1,2
-Brendan Allen,Bruno Silva,1,3
-Brendan Allen,Paul Craig,1,4
-Brendan Allen,Chris Curtis,1,5
-Brendan Allen,Nassourdine Imavov,0,6
-Chris Curtis,Rodolfo Vieira,1,1
-Chris Curtis,Jack Hermansson,0,2
-Chris Curtis,Joaquin Buckley,1,3
-Chris Curtis,Kelvin Gastelum,0,4
-Chris Curtis,Marc-Andre Barriault,1,5
-Chris Curtis,Brendan Allen,0,6
-Marc-Andre Barriault,Anthony Hernandez,0,1
-Marc-Andre Barriault,Julian Marquez,1,2
-Marc-Andre Barriault,Eryk Anders,1,3
-Marc-Andre Barriault,Chris Curtis,0,4
-Marc-Andre Barriault,Joe Pyfer,0,5
-Marc-Andre Barriault,Dustin Stoltzfus,0,6
-Joe Pyfer,Ozzy Diaz,1,1
-Joe Pyfer,Alen Amedovski,1,2
-Joe Pyfer,Gerald Meerschaert,1,3
-Joe Pyfer,Abdul Razak Alhassan,1,4
-Joe Pyfer,Jack Hermansson,0,5
-Joe Pyfer,Marc-Andre Barriault,1,6
-Jack Hermansson,Marvin Vettori,0,1
-Jack Hermansson,Edmen Shahbazyan,1,2
-Jack Hermansson,Sean Strickland,0,3
-Jack Hermansson,Chris Curtis,1,4
-Jack Hermansson,Roman Dolidze,0,5
-Jack Hermansson,Joe Pyfer,1,6
-Roman Dolidze,Phil Hawes,1,1
-Roman Dolidze,Jack Hermansson,1,2
-Roman Dolidze,Marvin Vettori,0,3
-Roman Dolidze,Nassourdine Imavov,0,4
-Roman Dolidze,Anthony Smith,1,5
-Roman Dolidze,Kevin Holland,1,6
-Marvin Vettori,Kevin Holland,1,1
-Marvin Vettori,Israel Adesanya,0,2
-Marvin Vettori,Paulo Costa,1,3
-Marvin Vettori,Robert Whittaker,0,4
-Marvin Vettori,Roman Dolidze,1,5
-Marvin Vettori,Jared Cannonier,0,6
-Alonzo Menifield,Askar Mozharov,1,1
-Alonzo Menifield,Misha Cirkunov,1,2
-Alonzo Menifield,Jimmy Crute,1,3
-Alonzo Menifield,Dustin Jacoby,1,4
-Alonzo Menifield,Carlos Ulberg,0,5
-Alonzo Menifield,Azamat Murzakanov,0,6
-Carlos Ulberg,Fabio Cherant,1,1
-Carlos Ulberg,Tafon Nchukwi,1,2
-Carlos Ulberg,Nicolae Negumereanu,1,3
-Carlos Ulberg,Ihor Potieria,1,4
-Carlos Ulberg,Da Woon Jung,1,5
-Carlos Ulberg,Alonzo Menifield,1,6
-Ihor Potieria,Mauricio Rua,1,1
-Ihor Potieria,Carlos Ulberg,0,2
-Ihor Potieria,Rodolfo Bellato,0,3
-Ihor Potieria,Robert Bryczek,1,4
-Ihor Potieria,Michel Pereira,0,5
-Ihor Potieria,Cesar Almeida,0,6
-Roman Kopylov,Alessio Di Chirico,1,1
-Roman Kopylov,Punahele Soriano,1,2
-Roman Kopylov,Claudio Ribeiro,1,3
-Roman Kopylov,Josh Fremd,1,4
-Roman Kopylov,Anthony Hernandez,0,5
-Roman Kopylov,Cesar Almeida,1,6
-Anthony Hernandez,Rodolfo Vieira,1,1
-Anthony Hernandez,Josh Fremd,1,2
-Anthony Hernandez,Marc-Andre Barriault,1,3
-Anthony Hernandez,Edmen Shahbazyan,1,4
-Anthony Hernandez,Roman Kopylov,1,5
-Anthony Hernandez,Michel Pereira,1,6
-Michel Pereira,Andre Fialho,1,1
-Michel Pereira,Santiago Ponzinibbio,1,2
-Michel Pereira,Andre Petroski,1,3
-Michel Pereira,Michal Oleksiejczuk,1,4
-Michel Pereira,Ihor Potieria,1,5
-Michel Pereira,Anthony Hernandez,0,6
-Geoff Neal,Neil Magny,0,1
-Geoff Neal,Santiago Ponzinibbio,1,2
-Geoff Neal,Vicente Luque,1,3
-Geoff Neal,Shavkat Rakhmonov,0,4
-Geoff Neal,Ian Machado Garry,0,5
-Geoff Neal,Rafael Dos Anjos,1,6
-Shavkat Rakhmonov,Alex Oliveira,1,1
-Shavkat Rakhmonov,Michel Prazeres,1,2
-Shavkat Rakhmonov,Carlston Harris,1,3
-Shavkat Rakhmonov,Neil Magny,1,4
-Shavkat Rakhmonov,Geoff Neal,1,5
-Shavkat Rakhmonov,Stephen Thompson,1,6
-Jan Blachowicz,Corey Anderson,1,1
-Jan Blachowicz,Dominick Reyes,1,2
-Jan Blachowicz,Israel Adesanya,1,3
-Jan Blachowicz,Glover Teixeira,0,4
-Jan Blachowicz,Aleksandar Rakic,1,5
-Jan Blachowicz,Alex Pereira,0,6
-Glover Teixeira,Nikita Krylov,1,1
-Glover Teixeira,Anthony Smith,1,2
-Glover Teixeira,Thiago Santos,1,3
-Glover Teixeira,Jan Blachowicz,1,4
-Glover Teixeira,Jiri Prochazka,0,5
-Glover Teixeira,Jamahal Hill,0,6
-Jamahal Hill,Paul Craig,0,1
-Jamahal Hill,Jimmy Crute,1,2
-Jamahal Hill,Johnny Walker,1,3
-Jamahal Hill,Thiago Santos,1,4
-Jamahal Hill,Glover Teixeira,1,5
-Jamahal Hill,Alex Pereira,0,6
-Islam Makhachev,Dan Hooker,1,1
-Islam Makhachev,King Green,1,2
-Islam Makhachev,Charles Oliveira,1,3
-Islam Makhachev,Alexander Volkanovski,1,4
-Islam Makhachev,Alexander Volkanovski,1,5
-Islam Makhachev,Dustin Poirier,1,6
-Shara Magomedov,Bruno Silva,1,1
-Shara Magomedov,Antonio Trocoli,1,2
-Shara Magomedov,Michal Oleksiejczuk,1,3
-Shara Magomedov,Armen Petrosyan,1,4
-Armen Petrosyan,Gregory Rodrigues,1,1
-Armen Petrosyan,Caio Borralho,0,2
-Armen Petrosyan,AJ Dobson,1,3
-Armen Petrosyan,Christian Leroy Duncan,1,4
-Armen Petrosyan,Rodolfo Vieira,0,5
-Armen Petrosyan,Shara Magomedov,0,6
-Michal Oleksiejczuk,Cody Brundage,1,1
-Michal Oleksiejczuk,Caio Borralho,0,2
-Michal Oleksiejczuk,Chidi Njokuani,1,3
-Michal Oleksiejczuk,Michel Pereira,0,4
-Michal Oleksiejczuk,Kevin Holland,0,5
-Michal Oleksiejczuk,Shara Magomedov,0,6
-Derrick Lewis,Tai Tuivasa,0,1
-Derrick Lewis,Sergei Pavlovich,0,2
-Derrick Lewis,Serghei Spivac,0,3
-Derrick Lewis,Marcos Rogerio de Lima,1,4
-Derrick Lewis,Jailton Almeida,0,5
-Derrick Lewis,Rodrigo Nascimento,1,6
-Curtis Blaydes,Jairzinho Rozenstruik,1,1
-Curtis Blaydes,Chris Daukaus,1,2
-Curtis Blaydes,Tom Aspinall,1,3
-Curtis Blaydes,Sergei Pavlovich,0,4
-Curtis Blaydes,Jailton Almeida,1,5
-Curtis Blaydes,Tom Aspinall,0,6
-Tom Aspinall,Serghei Spivac,1,1
-Tom Aspinall,Alexander Volkov,1,2
-Tom Aspinall,Curtis Blaydes,0,3
-Tom Aspinall,Marcin Tybura,1,4
-Tom Aspinall,Sergei Pavlovich,1,5
-Tom Aspinall,Curtis Blaydes,1,6
-Sergei Pavlovich,Shamil Abdurakhimov,1,1
-Sergei Pavlovich,Derrick Lewis,1,2
-Sergei Pavlovich,Tai Tuivasa,1,3
-Sergei Pavlovich,Curtis Blaydes,1,4
-Sergei Pavlovich,Tom Aspinall,0,5
-Sergei Pavlovich,Alexander Volkov,0,6
-Merab Dvalishvili,Cody Stamann,1,1
-Merab Dvalishvili,Marlon Moraes,1,2
-Merab Dvalishvili,Jose Aldo,1,3
-Merab Dvalishvili,Petr Yan,1,4
-Merab Dvalishvili,Henry Cejudo,1,5
-Merab Dvalishvili,Sean O'Malley,1,6
-Alexandre Pantoja,Manel Kape,1,1
-Alexandre Pantoja,Brandon Royval,1,2
-Alexandre Pantoja,Alex Perez,1,3
-Alexandre Pantoja,Brandon Moreno,1,4
-Alexandre Pantoja,Brandon Royval,1,5
-Alexandre Pantoja,Steve Erceg,1,6
-Dricus Du Plessis,Brad Tavares,1,1
-Dricus Du Plessis,Darren Till,1,2
-Dricus Du Plessis,Derek Brunson,1,3
-Dricus Du Plessis,Robert Whittaker,1,4
-Dricus Du Plessis,Sean Strickland,1,5
-Dricus Du Plessis,Israel Adesanya,1,6
-Leon Edwards,Rafael Dos Anjos,1,1
-Leon Edwards,Nate Diaz,1,2
-Leon Edwards,Kamaru Usman,1,3
-Leon Edwards,Kamaru Usman,1,4
-Leon Edwards,Colby Covington,1,5
-Leon Edwards,Belal Muhammad,0,6
-Bryce Mitchell,Charles Rosa,1,1
-Bryce Mitchell,Andre Fili,1,2
-Bryce Mitchell,Edson Barboza,1,3
-Bryce Mitchell,Ilia Topuria,0,4
-Bryce Mitchell,Dan Ige,1,5
-Bryce Mitchell,Josh Emmett,0,6
-Sean Brady,Christian Aguilera,1,1
-Sean Brady,Jake Matthews,1,2
-Sean Brady,Michael Chiesa,1,3
-Sean Brady,Belal Muhammad,0,4
-Sean Brady,Kelvin Gastelum,1,5
-Sean Brady,Gilbert Burns,1,6
-Sean O'Malley,Kris Moutinho,1,1
-Sean O'Malley,Raulian Paiva,1,2
-Sean O'Malley,Petr Yan,1,3
-Sean O'Malley,Aljamain Sterling,1,4
-Sean O'Malley,Marlon Vera,1,5
-Sean O'Malley,Merab Dvalishvili,0,6
-Umar Nurmagomedov,Sergey Morozov,1,1
-Umar Nurmagomedov,Brian Kelleher,1,2
-Umar Nurmagomedov,Nate Maness,1,3
-Umar Nurmagomedov,Raoni Barcelos,1,4
-Umar Nurmagomedov,Bekzat Almakhan,1,5
-Umar Nurmagomedov,Cory Sandhagen,1,6
-Bogdan Guskov,Volkan Oezdemir,0,1
-Bogdan Guskov,Zac Pauga,1,2
-Bogdan Guskov,Ryan Spann,1,3
-Jairzinho Rozenstruik,Curtis Blaydes,0,1
-Jairzinho Rozenstruik,Alexander Volkov,0,2
-Jairzinho Rozenstruik,Chris Daukaus,1,3
-Jairzinho Rozenstruik,Jailton Almeida,0,4
-Jairzinho Rozenstruik,Shamil Gaziev,1,5
-Jairzinho Rozenstruik,Tai Tuivasa,1,6
-Aleksandar Rakic,Volkan Oezdemir,0,1
-Aleksandar Rakic,Anthony Smith,1,2
-Aleksandar Rakic,Thiago Santos,1,3
-Aleksandar Rakic,Jan Blachowicz,0,4
-Aleksandar Rakic,Jiri Prochazka,0,5
-Aleksandar Rakic,Magomed Ankalaev,0,6
-Johnny Walker,Jamahal Hill,0,1
-Johnny Walker,Ion Cutelaba,1,2
-Johnny Walker,Paul Craig,1,3
-Johnny Walker,Anthony Smith,1,4
-Johnny Walker,Magomed Ankalaev,0,5
-Johnny Walker,Volkan Oezdemir,0,6
-Nikita Krylov,Johnny Walker,1,1
-Nikita Krylov,Magomed Ankalaev,0,2
-Nikita Krylov,Paul Craig,0,3
-Nikita Krylov,Alexander Gustafsson,1,4
-Nikita Krylov,Volkan Oezdemir,1,5
-Nikita Krylov,Ryan Spann,1,6
-Azamat Murzakanov,Matheus Scheffel,1,1
-Azamat Murzakanov,Tafon Nchukwi,1,2
-Azamat Murzakanov,Devin Clark,1,3
-Azamat Murzakanov,Dustin Jacoby,1,4
-Azamat Murzakanov,Alonzo Menifield,1,5
-Anthony Smith,Magomed Ankalaev,0,1
-Anthony Smith,Johnny Walker,0,2
-Anthony Smith,Ryan Spann,1,3
-Anthony Smith,Khalil Rountree Jr.,0,4
-Anthony Smith,Vitor Petrino,1,5
-Anthony Smith,Roman Dolidze,0,6
-Paulo Costa,Yoel Romero,1,1
-Paulo Costa,Israel Adesanya,0,2
-Paulo Costa,Marvin Vettori,0,3
-Paulo Costa,Luke Rockhold,1,4
-Paulo Costa,Robert Whittaker,0,5
-Paulo Costa,Sean Strickland,0,6
-Jack Della Maddalena,Ramazan Emeev,1,1
-Jack Della Maddalena,Danny Roberts,1,2
-Jack Della Maddalena,Randy Brown,1,3
-Jack Della Maddalena,Bassil Hafez,1,4
-Jack Della Maddalena,Kevin Holland,1,5
-Jack Della Maddalena,Gilbert Burns,1,6
-Gilbert Burns,Khamzat Chimaev,0,1
-Gilbert Burns,Neil Magny,1,2
-Gilbert Burns,Jorge Masvidal,1,3
-Gilbert Burns,Belal Muhammad,0,4
-Gilbert Burns,Jack Della Maddalena,0,5
-Gilbert Burns,Sean Brady,0,6
-Rafael Fiziev,Renato Moicano,1,1
-Rafael Fiziev,King Green,1,2
-Rafael Fiziev,Brad Riddell,1,3
-Rafael Fiziev,Rafael Dos Anjos,1,4
-Rafael Fiziev,Justin Gaethje,0,5
-Rafael Fiziev,Mateusz Gamrot,0,6
-Beneil Dariush,Scott Holtzman,1,1
-Beneil Dariush,Diego Ferreira,1,2
-Beneil Dariush,Tony Ferguson,1,3
-Beneil Dariush,Mateusz Gamrot,1,4
-Beneil Dariush,Charles Oliveira,0,5
-Beneil Dariush,Arman Tsarukyan,0,6
-Paddy Pimblett,Luigi Vendramini,1,1
-Paddy Pimblett,Kazula Vargas,1,2
-Paddy Pimblett,Jordan Leavitt,1,3
-Paddy Pimblett,Jared Gordon,1,4
-Paddy Pimblett,Tony Ferguson,1,5
-Paddy Pimblett,King Green,1,6
-Ryan Spann,Ion Cutelaba,1,1
-Ryan Spann,Dominick Reyes,1,2
-Ryan Spann,Nikita Krylov,0,3
-Ryan Spann,Anthony Smith,0,4
-Ryan Spann,Bogdan Guskov,0,5
-Ryan Spann,Ovince Saint Preux,1,6
-Mauricio Ruffy,Raimond Magomedaliev,1,1
-Mauricio Ruffy,Jamie Mullarkey,1,2
-Mauricio Ruffy,James Llontop,1,3
-King Green,Drew Dober,0,1
-King Green,Tony Ferguson,1,2
-King Green,Grant Dawson,1,3
-King Green,Jalin Turner,0,4
-King Green,Jim Miller,1,5
-King Green,Paddy Pimblett,0,6
-Grant Dawson,Jared Gordon,1,1
-Grant Dawson,Mark Madsen,1,2
-Grant Dawson,Damir Ismagulov,1,3
-Grant Dawson,King Green,0,4
-Grant Dawson,Joe Solecki,1,5
-Grant Dawson,Rafa Garcia,1,6
-Bruno Silva,Gerald Meerschaert,0,1
-Bruno Silva,Brad Tavares,1,2
-Bruno Silva,Brendan Allen,0,3
-Bruno Silva,Shara Magomedov,0,4
-Bruno Silva,Chris Weidman,0,5
-Bruno Silva,Ismail Naurdiev,0,6
-Claudio Puelles,Marcos Mariano,1,1
-Claudio Puelles,Jordan Leavitt,1,2
-Claudio Puelles,Chris Gruetzemacher,1,3
-Claudio Puelles,Clay Guida,1,4
-Claudio Puelles,Dan Hooker,0,5
-Claudio Puelles,Fares Ziam,0,6
-Rafael Dos Anjos,Renato Moicano,1,1
-Rafael Dos Anjos,Rafael Fiziev,0,2
-Rafael Dos Anjos,Bryan Barberena,1,3
-Rafael Dos Anjos,Vicente Luque,0,4
-Rafael Dos Anjos,Mateusz Gamrot,0,5
-Rafael Dos Anjos,Geoff Neal,0,6
-Francisco Prado,Jamie Mullarkey,0,1
-Francisco Prado,Ottman Azaitar,1,2
-Francisco Prado,Daniel Zellhuber,0,3
-Gabe Green,Daniel Rodriguez,0,1
-Gabe Green,Phil Rowe,1,2
-Gabe Green,Yohan Lainesse,1,3
-Gabe Green,Ian Machado Garry,0,4
-Gabe Green,Bryan Battle,0,5
-Song Kenan,Callan Potter,1,1
-Song Kenan,Max Griffin,0,2
-Song Kenan,Ian Machado Garry,0,3
-Song Kenan,Rolando Bedoya,1,4
-Song Kenan,Kevin Jousset,0,5
-Song Kenan,Ricky Glenn,1,6
-Daniel Rodriguez,Kevin Lee,1,1
-Daniel Rodriguez,Li Jingliang,1,2
-Daniel Rodriguez,Neil Magny,0,3
-Daniel Rodriguez,Ian Machado Garry,0,4
-Daniel Rodriguez,Kelvin Gastelum,0,5
-Daniel Rodriguez,Alex Morono,1,6
-Michael Page,Kevin Holland,1,1
-Michael Page,Ian Machado Garry,0,2
-Michael Chandler,Dan Hooker,1,1
-Michael Chandler,Charles Oliveira,0,2
-Michael Chandler,Justin Gaethje,0,3
-Michael Chandler,Tony Ferguson,1,4
-Michael Chandler,Dustin Poirier,0,5
-Michael Chandler,Charles Oliveira,0,6
-Joel Alvarez,Joe Duffy,1,1
-Joel Alvarez,Alexander Yakovlev,1,2
-Joel Alvarez,Thiago Moises,1,3
-Joel Alvarez,Arman Tsarukyan,0,4
-Joel Alvarez,Marc Diakiese,1,5
-Joel Alvarez,Elves Brener,1,6
-Damir Ismagulov,Joel Alvarez,1,1
-Damir Ismagulov,Thiago Moises,1,2
-Damir Ismagulov,Rafael Alves,1,3
-Damir Ismagulov,Guram Kutateladze,1,4
-Damir Ismagulov,Arman Tsarukyan,0,5
-Damir Ismagulov,Grant Dawson,0,6
-Joaquim Silva,Nasrat Haqparast,0,1
-Joaquim Silva,Ricky Glenn,0,2
-Joaquim Silva,Jesse Ronson,1,3
-Joaquim Silva,Arman Tsarukyan,0,4
-Joaquim Silva,Clay Guida,1,5
-Joaquim Silva,Drakkar Klose,0,6
-Nasrat Haqparast,Dan Hooker,0,1
-Nasrat Haqparast,King Green,0,2
-Nasrat Haqparast,John Makdessi,1,3
-Nasrat Haqparast,Landon Quinones,1,4
-Nasrat Haqparast,Jamie Mullarkey,1,5
-Nasrat Haqparast,Jared Gordon,1,6
-Sodiq Yusuff,Andre Fili,1,1
-Sodiq Yusuff,Arnold Allen,0,2
-Sodiq Yusuff,Alex Caceres,1,3
-Sodiq Yusuff,Don Shainis,1,4
-Sodiq Yusuff,Edson Barboza,0,5
-Sodiq Yusuff,Diego Lopes,0,6
-Pat Sabatini,Tucker Lutz,1,1
-Pat Sabatini,TJ Laramie,1,2
-Pat Sabatini,Damon Jackson,0,3
-Pat Sabatini,Lucas Almeida,1,4
-Pat Sabatini,Diego Lopes,0,5
-Pat Sabatini,Jonathan Pearce,1,6
-Brian Ortega,Max Holloway,0,1
-Brian Ortega,Chan Sung Jung,1,2
-Brian Ortega,Alexander Volkanovski,0,3
-Brian Ortega,Yair Rodriguez,0,4
-Brian Ortega,Yair Rodriguez,1,5
-Brian Ortega,Diego Lopes,0,6
-Santiago Ponzinibbio,Miguel Baeza,1,1
-Santiago Ponzinibbio,Geoff Neal,0,2
-Santiago Ponzinibbio,Michel Pereira,0,3
-Santiago Ponzinibbio,Alex Morono,1,4
-Santiago Ponzinibbio,Kevin Holland,0,5
-Santiago Ponzinibbio,Muslim Salikhov,0,6
-Michael Chiesa,Rafael Dos Anjos,1,1
-Michael Chiesa,Neil Magny,1,2
-Michael Chiesa,Vicente Luque,0,3
-Michael Chiesa,Sean Brady,0,4
-Michael Chiesa,Kevin Holland,0,5
-Michael Chiesa,Tony Ferguson,1,6
-Andre Fialho,Miguel Baeza,1,1
-Andre Fialho,Cameron VanCamp,1,2
-Andre Fialho,Jake Matthews,0,3
-Andre Fialho,Muslim Salikhov,0,4
-Andre Fialho,Joaquin Buckley,0,5
-Andre Fialho,Tim Means,0,6
-Alex Morono,Santiago Ponzinibbio,0,1
-Alex Morono,Tim Means,1,2
-Alex Morono,Joaquin Buckley,0,3
-Alex Morono,Court McGee,1,4
-Alex Morono,Niko Price,0,5
-Alex Morono,Daniel Rodriguez,0,6
-Nursulton Ruziboev,Brunno Ferreira,1,1
-Nursulton Ruziboev,Sedriques Dumas,1,2
-Nursulton Ruziboev,Joaquin Buckley,0,3
-Dustin Jacoby,Da Woon Jung,1,1
-Dustin Jacoby,Khalil Rountree Jr.,0,2
-Dustin Jacoby,Azamat Murzakanov,0,3
-Dustin Jacoby,Kennedy Nzechukwu,1,4
-Dustin Jacoby,Alonzo Menifield,0,5
-Dustin Jacoby,Dominick Reyes,0,6
-Karl Roberson,Wellington Turman,1,1
-Karl Roberson,Roman Kopylov,1,2
-Karl Roberson,Marvin Vettori,0,3
-Karl Roberson,Brendan Allen,0,4
-Karl Roberson,Khalil Rountree Jr.,0,5
-Karl Roberson,Kennedy Nzechukwu,0,6
-Modestas Bukauskas,Michal Oleksiejczuk,0,1
-Modestas Bukauskas,Khalil Rountree Jr.,0,2
-Modestas Bukauskas,Tyson Pedro,1,3
-Modestas Bukauskas,Zac Pauga,1,4
-Modestas Bukauskas,Vitor Petrino,0,5
-Modestas Bukauskas,Marcin Prachnio,1,6
-Khabib Nurmagomedov,Michael Johnson,1,1
-Khabib Nurmagomedov,Edson Barboza,1,2
-Khabib Nurmagomedov,Al Iaquinta,1,3
-Khabib Nurmagomedov,Conor McGregor,1,4
-Khabib Nurmagomedov,Dustin Poirier,1,5
-Khabib Nurmagomedov,Justin Gaethje,1,6
-Chan Sung Jung,Renato Moicano,1,1
-Chan Sung Jung,Frankie Edgar,1,2
-Chan Sung Jung,Brian Ortega,0,3
-Chan Sung Jung,Dan Ige,1,4
-Chan Sung Jung,Alexander Volkanovski,0,5
-Chan Sung Jung,Max Holloway,0,6
-Ryan Hall,Artem Lobov,1,1
-Ryan Hall,Gray Maynard,1,2
-Ryan Hall,BJ Penn,1,3
-Ryan Hall,Darren Elkins,1,4
-Ryan Hall,Ilia Topuria,0,5
-Ryan Hall,Darrick Minner,1,6
-Jai Herbert,Renato Moicano,0,1
-Jai Herbert,Khama Worthy,1,2
-Jai Herbert,Ilia Topuria,0,3
-Jai Herbert,Kyle Nelson,1,4
-Jai Herbert,Fares Ziam,0,5
-Jai Herbert,Rolando Bedoya,1,6
-Pedro Munhoz,Jose Aldo,0,1
-Pedro Munhoz,Dominick Cruz,0,2
-Pedro Munhoz,Chris Gutierrez,1,3
-Pedro Munhoz,Marlon Vera,0,4
-Pedro Munhoz,Kyler Phillips,0,5
-Pedro Munhoz,Aiemann Zahabi,0,6
-Jonathan Martinez,Vince Morales,1,1
-Jonathan Martinez,Cub Swanson,1,2
-Jonathan Martinez,Said Nurmagomedov,1,3
-Jonathan Martinez,Adrian Yanez,1,4
-Jonathan Martinez,Jose Aldo,0,5
-Jonathan Martinez,Marcus McGhee,0,6
-Ikram Aliskerov,Mario Sousa,1,1
-Ikram Aliskerov,Phil Hawes,1,2
-Ikram Aliskerov,Warlley Alves,1,3
-Ikram Aliskerov,Robert Whittaker,0,4
-Nik Lentz,David Teymur,0,1
-Nik Lentz,Gray Maynard,1,2
-Nik Lentz,Scott Holtzman,1,3
-Nik Lentz,Charles Oliveira,0,4
-Nik Lentz,Arnold Allen,0,5
-Nik Lentz,Movsar Evloev,0,6
-Hakeem Dawodu,Julio Arce,1,1
-Hakeem Dawodu,Zubaira Tukhugov,1,2
-Hakeem Dawodu,Movsar Evloev,0,3
-Hakeem Dawodu,Michael Trizano,1,4
-Hakeem Dawodu,Julian Erosa,0,5
-Hakeem Dawodu,Cub Swanson,0,6
-Brandon Moreno,Deiveson Figueiredo,0,1
-Brandon Moreno,Kai Kara-France,1,2
-Brandon Moreno,Deiveson Figueiredo,1,3
-Brandon Moreno,Alexandre Pantoja,0,4
-Brandon Moreno,Brandon Royval,0,5
-Brandon Moreno,Amir Albazi,1,6
-Lucas Almeida,Daniel Zellhuber,0,1
-Lucas Almeida,Michael Trizano,1,2
-Lucas Almeida,Pat Sabatini,0,3
-Lucas Almeida,Andre Fili,0,4
-Lucas Almeida,Timmy Cuamba,1,5
-Trey Ogden,Jordan Leavitt,0,1
-Trey Ogden,Daniel Zellhuber,1,2
-Trey Ogden,Ignacio Bahamondes,0,3
-Trey Ogden,Kurt Holobaugh,1,4
-Trey Ogden,Loik Radzhabov,1,5
-Lando Vannata,Marc Diakiese,0,1
-Lando Vannata,Yancy Medeiros,1,2
-Lando Vannata,King Green,0,3
-Lando Vannata,Mike Grundy,1,4
-Lando Vannata,Charles Jourdain,0,5
-Lando Vannata,Daniel Zellhuber,0,6
-Christos Giagos,Sean Soriano,1,1
-Christos Giagos,Arman Tsarukyan,0,2
-Christos Giagos,Thiago Moises,0,3
-Christos Giagos,Ricky Glenn,1,4
-Christos Giagos,Daniel Zellhuber,0,5
-Christos Giagos,Ignacio Bahamondes,0,6
-Loik Radzhabov,Esteban Ribovics,1,1
-Loik Radzhabov,Mateusz Rebecki,0,2
-Loik Radzhabov,Abdul-Kareem Al-Selwady,1,3
-Loik Radzhabov,Trey Ogden,0,4
-Kamuela Kirk,Billy Quarantillo,0,1
-Kamuela Kirk,Makwan Amirkhani,1,2
-Kamuela Kirk,Damon Jackson,0,3
-Kamuela Kirk,Esteban Ribovics,0,4
-Terrance McKinney,Erick Gonzalez,1,1
-Terrance McKinney,Ismael Bonfim,0,2
-Terrance McKinney,Nazim Sadykhov,0,3
-Terrance McKinney,Mike Breeden,1,4
-Terrance McKinney,Brendon Marotte,1,5
-Terrance McKinney,Esteban Ribovics,0,6
-Michael Johnson,Clay Guida,0,1
-Michael Johnson,Alan Patrick,1,2
-Michael Johnson,Jamie Mullarkey,0,3
-Michael Johnson,Marc Diakiese,1,4
-Michael Johnson,Diego Ferreira,0,5
-Michael Johnson,Darrius Flowers,1,6
-Muhammad Naimov,Collin Anglin,0,1
-Muhammad Naimov,Jamie Mullarkey,1,2
-Muhammad Naimov,Nathaniel Wood,1,3
-Muhammad Naimov,Erik Silva,1,4
-Muhammad Naimov,Felipe Lima,0,5
-John Makdessi,Ross Pearson,1,1
-John Makdessi,Jesus Pinedo,1,2
-John Makdessi,Francisco Trinaldo,0,3
-John Makdessi,Ignacio Bahamondes,1,4
-John Makdessi,Nasrat Haqparast,0,5
-John Makdessi,Jamie Mullarkey,0,6
-Brad Riddell,Magomed Mustafaev,1,1
-Brad Riddell,Alex Da Silva,1,2
-Brad Riddell,Drew Dober,1,3
-Brad Riddell,Rafael Fiziev,0,4
-Brad Riddell,Jalin Turner,0,5
-Brad Riddell,Renato Moicano,0,6
-Conor McGregor,Nate Diaz,1,1
-Conor McGregor,Eddie Alvarez,1,2
-Conor McGregor,Khabib Nurmagomedov,0,3
-Conor McGregor,Donald Cerrone,1,4
-Conor McGregor,Dustin Poirier,0,5
-Conor McGregor,Dustin Poirier,0,6
-Gabriel Miranda,Benoit Saint Denis,0,1
-Gabriel Miranda,Shane Young,1,2
-Gabriel Miranda,Morgan Charriere,0,3
-Ismael Bonfim,Nariman Abbasov,1,1
-Ismael Bonfim,Terrance McKinney,1,2
-Ismael Bonfim,Benoit Saint Denis,0,3
-Ismael Bonfim,Vinc Pichel,1,4
-Thiago Moises,Joel Alvarez,0,1
-Thiago Moises,Christos Giagos,1,2
-Thiago Moises,Melquizael Costa,1,3
-Thiago Moises,Benoit Saint Denis,0,4
-Thiago Moises,Mitch Ramirez,1,5
-Thiago Moises,Ludovit Klein,0,6
-Matt Frevola,Terrance McKinney,0,1
-Matt Frevola,Genaro Valdez,1,2
-Matt Frevola,Ottman Azaitar,1,3
-Matt Frevola,Drew Dober,1,4
-Matt Frevola,Benoit Saint Denis,0,5
-Matt Frevola,Fares Ziam,0,6
-Alexander Hernandez,Renato Moicano,0,1
-Alexander Hernandez,Billy Quarantillo,0,2
-Alexander Hernandez,Jim Miller,1,3
-Alexander Hernandez,Bill Algeo,0,4
-Alexander Hernandez,Damon Jackson,0,5
-Alexander Hernandez,Austin Hubbard,1,6
-Rafael Alves,Alejandro Flores,1,1
-Rafael Alves,Damir Ismagulov,0,2
-Rafael Alves,Marc Diakiese,1,3
-Rafael Alves,Drew Dober,0,4
-Rafael Alves,Nurullo Aliev,0,5
-Nathaniel Wood,Casey Kenney,0,1
-Nathaniel Wood,Charles Rosa,1,2
-Nathaniel Wood,Charles Jourdain,1,3
-Nathaniel Wood,Andre Fili,1,4
-Nathaniel Wood,Muhammad Naimov,0,5
-Nathaniel Wood,Daniel Pineda,1,6
-Kron Gracie,Alex Caceres,1,1
-Kron Gracie,Cub Swanson,0,2
-Kron Gracie,Charles Jourdain,0,3
-Ricardo Ramos,Bill Algeo,1,1
-Ricardo Ramos,Zubaira Tukhugov,0,2
-Ricardo Ramos,Danny Chavez,1,3
-Ricardo Ramos,Charles Jourdain,0,4
-Ricardo Ramos,Julian Erosa,0,5
-Ricardo Ramos,Josh Culibao,1,6
-Victor Henry,Raoni Barcelos,1,1
-Victor Henry,Raphael Assuncao,0,2
-Victor Henry,Tony Gravely,1,3
-Victor Henry,Rani Yahya,1,4
-Victor Henry,Charles Jourdain,0,5
-Youssef Zalal,Ilia Topuria,0,1
-Youssef Zalal,SeungWoo Choi,0,2
-Youssef Zalal,Sean Woodson,0,3
-Youssef Zalal,Billy Quarantillo,1,4
-Youssef Zalal,Jarno Errens,1,5
-Youssef Zalal,Jack Shore,1,6
-Collin Anglin,Muhammad Naimov,1,1
-Collin Anglin,Melsik Baghdasaryan,0,2
-Collin Anglin,Sean Woodson,0,3
-Dennis Buzukja,Melsik Baghdasaryan,0,1
-Dennis Buzukja,Kaleio Romero,1,2
-Dennis Buzukja,Sean Woodson,0,3
-Dennis Buzukja,Jamall Emmers,0,4
-Dennis Buzukja,Connor Matthews,1,5
-Dennis Buzukja,Francis Marshall,0,6
-Volkan Oezdemir,Magomed Ankalaev,0,1
-Volkan Oezdemir,Paul Craig,1,2
-Volkan Oezdemir,Nikita Krylov,0,3
-Volkan Oezdemir,Bogdan Guskov,1,4
-Volkan Oezdemir,Johnny Walker,1,5
-Volkan Oezdemir,Carlos Ulberg,0,6
-Charles Radtke,Blood Diamond,1,1
-Charles Radtke,Gilbert Urbina,1,2
-Charles Radtke,Carlos Prates,0,3
-Charles Radtke,Matthew Semelsberger,1,4
-Gavin Tucker,Ricky Glenn,0,1
-Gavin Tucker,SeungWoo Choi,1,2
-Gavin Tucker,Justin Jaynes,1,3
-Gavin Tucker,Billy Quarantillo,1,4
-Gavin Tucker,Dan Ige,0,5
-Gavin Tucker,Diego Lopes,0,6
-Dominick Reyes,Chris Weidman,1,1
-Dominick Reyes,Jon Jones,0,2
-Dominick Reyes,Jan Blachowicz,0,3
-Dominick Reyes,Jiri Prochazka,0,4
-Dominick Reyes,Ryan Spann,0,5
-Dominick Reyes,Dustin Jacoby,1,6
-Chris Daukaus,Aleksei Oleinik,1,1
-Chris Daukaus,Shamil Abdurakhimov,1,2
-Chris Daukaus,Derrick Lewis,0,3
-Chris Daukaus,Curtis Blaydes,0,4
-Chris Daukaus,Jairzinho Rozenstruik,0,5
-Chris Daukaus,Khalil Rountree Jr.,0,6
-Cory Sandhagen,TJ Dillashaw,0,1
-Cory Sandhagen,Petr Yan,0,2
-Cory Sandhagen,Song Yadong,1,3
-Cory Sandhagen,Marlon Vera,1,4
-Cory Sandhagen,Rob Font,1,5
-Cory Sandhagen,Umar Nurmagomedov,0,6
-Abus Magomedov,Dustin Stoltzfus,1,1
-Abus Magomedov,Sean Strickland,0,2
-Abus Magomedov,Caio Borralho,0,3
-Abus Magomedov,Warlley Alves,1,4
-Abus Magomedov,Brunno Ferreira,1,5
-Gerald Meerschaert,Bruno Silva,1,1
-Gerald Meerschaert,Joe Pyfer,0,2
-Gerald Meerschaert,Andre Petroski,0,3
-Gerald Meerschaert,Bryan Barberena,1,4
-Gerald Meerschaert,Edmen Shahbazyan,1,5
-Gerald Meerschaert,Reinier de Ridder,0,6
-Jorge Masvidal,Ben Askren,1,1
-Jorge Masvidal,Nate Diaz,1,2
-Jorge Masvidal,Kamaru Usman,0,3
-Jorge Masvidal,Kamaru Usman,0,4
-Jorge Masvidal,Colby Covington,0,5
-Jorge Masvidal,Gilbert Burns,0,6
-Demian Maia,Kamaru Usman,0,1
-Demian Maia,Lyman Good,1,2
-Demian Maia,Anthony Rocco Martin,1,3
-Demian Maia,Ben Askren,1,4
-Demian Maia,Gilbert Burns,0,5
-Demian Maia,Belal Muhammad,0,6
-Tyron Woodley,Demian Maia,1,1
-Tyron Woodley,Darren Till,1,2
-Tyron Woodley,Kamaru Usman,0,3
-Tyron Woodley,Gilbert Burns,0,4
-Tyron Woodley,Colby Covington,0,5
-Tyron Woodley,Vicente Luque,0,6
-Robbie Lawler,Ben Askren,0,1
-Robbie Lawler,Colby Covington,0,2
-Robbie Lawler,Neil Magny,0,3
-Robbie Lawler,Nick Diaz,1,4
-Robbie Lawler,Bryan Barberena,0,5
-Robbie Lawler,Niko Price,1,6
-Henry Cejudo,Demetrious Johnson,1,1
-Henry Cejudo,TJ Dillashaw,1,2
-Henry Cejudo,Marlon Moraes,1,3
-Henry Cejudo,Dominick Cruz,1,4
-Henry Cejudo,Aljamain Sterling,0,5
-Henry Cejudo,Merab Dvalishvili,0,6
-TJ Dillashaw,John Lineker,1,1
-TJ Dillashaw,Cody Garbrandt,1,2
-TJ Dillashaw,Cody Garbrandt,1,3
-TJ Dillashaw,Henry Cejudo,0,4
-TJ Dillashaw,Cory Sandhagen,1,5
-TJ Dillashaw,Aljamain Sterling,0,6
-Mike Grundy,Nad Narimani,1,1
-Mike Grundy,Movsar Evloev,0,2
-Mike Grundy,Lando Vannata,0,3
-Mike Grundy,Makwan Amirkhani,0,4
-Thiago Santos,Jon Jones,0,1
-Thiago Santos,Glover Teixeira,0,2
-Thiago Santos,Aleksandar Rakic,0,3
-Thiago Santos,Johnny Walker,1,4
-Thiago Santos,Magomed Ankalaev,0,5
-Thiago Santos,Jamahal Hill,0,6
-Ciryl Gane,Alexander Volkov,1,1
-Ciryl Gane,Derrick Lewis,1,2
-Ciryl Gane,Francis Ngannou,0,3
-Ciryl Gane,Tai Tuivasa,1,4
-Ciryl Gane,Jon Jones,0,5
-Ciryl Gane,Serghei Spivac,1,6
-Stipe Miocic,Francis Ngannou,1,1
-Stipe Miocic,Daniel Cormier,0,2
-Stipe Miocic,Daniel Cormier,1,3
-Stipe Miocic,Daniel Cormier,1,4
-Stipe Miocic,Francis Ngannou,0,5
-Stipe Miocic,Jon Jones,0,6
-Thomas Paull,Esteban Ribovics,0,1
-Alexander Gustafsson,Jan Blachowicz,1,1
-Alexander Gustafsson,Glover Teixeira,1,2
-Alexander Gustafsson,Jon Jones,0,3
-Alexander Gustafsson,Anthony Smith,0,4
-Alexander Gustafsson,Fabricio Werdum,0,5
-Alexander Gustafsson,Nikita Krylov,0,6
-Ricky Glenn,Dennis Bermudez,1,1
-Ricky Glenn,Kevin Aguilar,0,2
-Ricky Glenn,Joaquim Silva,1,3
-Ricky Glenn,Christos Giagos,0,4
-Ricky Glenn,Drew Dober,0,5
-Ricky Glenn,Song Kenan,0,6
-Westin Wilson,Joanderson Brito,0,1
-Westin Wilson,Jean Silva,0,2
-Westin Wilson,Jeka Saragih,1,3
-Kevin Vallejos,Jean Silva,0,1
-Kevin Vallejos,Cam Teague,1,2
-Julian Erosa,Steven Peterson,1,1
-Julian Erosa,Hakeem Dawodu,1,2
-Julian Erosa,Alex Caceres,0,3
-Julian Erosa,Fernando Padilla,0,4
-Julian Erosa,Ricardo Ramos,1,5
-Julian Erosa,Christian Rodriguez,1,6
-Daniel Pineda,Herbert Burns,1,1
-Daniel Pineda,Cub Swanson,0,2
-Daniel Pineda,Tucker Lutz,1,3
-Daniel Pineda,Alex Caceres,0,4
-Daniel Pineda,Nathaniel Wood,0,5
-Daniel Pineda,Darren Elkins,0,6
-SeungWoo Choi,Julian Erosa,1,1
-SeungWoo Choi,Alex Caceres,0,2
-SeungWoo Choi,Josh Culibao,0,3
-SeungWoo Choi,Michael Trizano,0,4
-SeungWoo Choi,Jarno Errens,1,5
-SeungWoo Choi,Steve Garcia,0,6
-Jamey Simmons,Giga Chikadze,0,1
-Jamey Simmons,Johnny Munoz,0,2
-Cub Swanson,Daniel Pineda,1,1
-Cub Swanson,Giga Chikadze,0,2
-Cub Swanson,Darren Elkins,1,3
-Cub Swanson,Jonathan Martinez,0,4
-Cub Swanson,Hakeem Dawodu,1,5
-Cub Swanson,Andre Fili,0,6
-Shane Burgos,Cub Swanson,1,1
-Shane Burgos,Makwan Amirkhani,1,2
-Shane Burgos,Josh Emmett,0,3
-Shane Burgos,Edson Barboza,0,4
-Shane Burgos,Billy Quarantillo,1,5
-Shane Burgos,Charles Jourdain,1,6
-Jeremy Stephens,Josh Emmett,1,1
-Jeremy Stephens,Jose Aldo,0,2
-Jeremy Stephens,Zabit Magomedsharipov,0,3
-Jeremy Stephens,Yair Rodriguez,0,4
-Jeremy Stephens,Calvin Kattar,0,5
-Jeremy Stephens,Mateusz Gamrot,0,6
-Nate Landwehr,Julian Erosa,0,1
-Nate Landwehr,Ludovit Klein,1,2
-Nate Landwehr,David Onama,1,3
-Nate Landwehr,Austin Lingo,1,4
-Nate Landwehr,Dan Ige,0,5
-Nate Landwehr,Jamall Emmers,1,6
-Andre Fili,Joanderson Brito,0,1
-Andre Fili,Bill Algeo,1,2
-Andre Fili,Nathaniel Wood,0,3
-Andre Fili,Lucas Almeida,1,4
-Andre Fili,Dan Ige,0,5
-Andre Fili,Cub Swanson,1,6
-Billy Quarantillo,Gabriel Benitez,1,1
-Billy Quarantillo,Shane Burgos,0,2
-Billy Quarantillo,Alexander Hernandez,1,3
-Billy Quarantillo,Edson Barboza,0,4
-Billy Quarantillo,Damon Jackson,1,5
-Billy Quarantillo,Youssef Zalal,0,6
-Josh Culibao,Shayilan Nuerdanbieke,1,1
-Josh Culibao,SeungWoo Choi,1,2
-Josh Culibao,Melsik Baghdasaryan,1,3
-Josh Culibao,Lerone Murphy,0,4
-Josh Culibao,Danny Silva,0,5
-Josh Culibao,Ricardo Ramos,0,6
-Gabriel Santos,Lerone Murphy,0,1
-Gabriel Santos,David Onama,0,2
-Gabriel Santos,Yizha,1,3
-Makwan Amirkhani,Edson Barboza,0,1
-Makwan Amirkhani,Kamuela Kirk,0,2
-Makwan Amirkhani,Lerone Murphy,0,3
-Makwan Amirkhani,Mike Grundy,1,4
-Makwan Amirkhani,Jonathan Pearce,0,5
-Makwan Amirkhani,Jack Shore,0,6
-Douglas Silva de Andrade,Lerone Murphy,0,1
-Douglas Silva de Andrade,Gaetano Pirrello,1,2
-Douglas Silva de Andrade,Sergey Morozov,1,3
-Douglas Silva de Andrade,Said Nurmagomedov,0,4
-Douglas Silva de Andrade,Cody Stamann,1,5
-Douglas Silva de Andrade,Miles Johns,0,6
-Yoel Romero,Chris Weidman,1,1
-Yoel Romero,Robert Whittaker,0,2
-Yoel Romero,Luke Rockhold,1,3
-Yoel Romero,Robert Whittaker,0,4
-Yoel Romero,Paulo Costa,0,5
-Yoel Romero,Israel Adesanya,0,6
-Askar Askarov,Tim Elliott,1,1
-Askar Askarov,Alexandre Pantoja,1,2
-Askar Askarov,Joseph Benavidez,1,3
-Askar Askarov,Kai Kara-France,0,4
-Rogerio Bontorin,Gustavo Gabriel,1,1
-Rogerio Bontorin,Bibulatov Magomed,1,2
-Rogerio Bontorin,Raulian Paiva,1,3
-Rogerio Bontorin,Ray Borg,0,4
-Rogerio Bontorin,Kai Kara-France,0,5
-Rogerio Bontorin,Brandon Royval,0,6
-Matheus Nicolau,Tim Elliott,1,1
-Matheus Nicolau,David Dvorak,1,2
-Matheus Nicolau,Matt Schnell,1,3
-Matheus Nicolau,Brandon Royval,0,4
-Matheus Nicolau,Alex Perez,0,5
-Matheus Nicolau,Asu Almabayev,0,6
-Ode Osbourne,Zarrukh Adashev,1,1
-Ode Osbourne,Tyson Nam,0,2
-Ode Osbourne,Charles Johnson,1,3
-Ode Osbourne,Asu Almabayev,0,4
-Ode Osbourne,Jafel Filho,0,5
-Ode Osbourne,Ronaldo Rodriguez,0,6
-Zhalgas Zhumagulov,Amir Albazi,0,1
-Zhalgas Zhumagulov,Jerome Rivera,1,2
-Zhalgas Zhumagulov,Manel Kape,0,3
-Zhalgas Zhumagulov,Jeff Molina,0,4
-Zhalgas Zhumagulov,Charles Johnson,0,5
-Zhalgas Zhumagulov,Joshua Van,0,6
-David Dvorak,Bruno Silva,1,1
-David Dvorak,Jordan Espinosa,1,2
-David Dvorak,Juancamilo Ronderos,1,3
-David Dvorak,Matheus Nicolau,0,4
-David Dvorak,Manel Kape,0,5
-David Dvorak,Steve Erceg,0,6
-Felipe dos Santos,Manel Kape,0,1
-Felipe dos Santos,Victor Altamirano,1,2
-Felipe dos Santos,Andre Lima,0,3
-Muhammad Mokaev,Charles Johnson,1,1
-Muhammad Mokaev,Malcolm Gordon,1,2
-Muhammad Mokaev,Jafel Filho,1,3
-Muhammad Mokaev,Tim Elliott,1,4
-Muhammad Mokaev,Alex Perez,1,5
-Muhammad Mokaev,Manel Kape,1,6
-Donald Cerrone,Tony Ferguson,0,1
-Donald Cerrone,Justin Gaethje,0,2
-Donald Cerrone,Conor McGregor,0,3
-Donald Cerrone,Anthony Pettis,0,4
-Donald Cerrone,Alex Morono,0,5
-Donald Cerrone,Jim Miller,0,6
-Jesse Butler,Jim Miller,0,1
-Jesse Butler,Brad Katona,0,2
-Gabriel Benitez,Justin Jaynes,1,1
-Gabriel Benitez,Billy Quarantillo,0,2
-Gabriel Benitez,David Onama,0,3
-Gabriel Benitez,Charlie Ontiveros,1,4
-Gabriel Benitez,Jim Miller,0,5
-Gabriel Benitez,Maheshate,0,6
-Mitch Ramirez,Carlos Prates,0,1
-Mitch Ramirez,Thiago Moises,0,2
-Trevin Giles,Michael Morales,0,1
-Trevin Giles,Louis Cosce,1,2
-Trevin Giles,Preston Parsons,1,3
-Trevin Giles,Gabriel Bonfim,0,4
-Trevin Giles,Carlos Prates,0,5
-Trevin Giles,Mike Malott,0,6
-Phil Rowe,Gabe Green,0,1
-Phil Rowe,Orion Cosce,1,2
-Phil Rowe,Jason Witt,1,3
-Phil Rowe,Niko Price,1,4
-Phil Rowe,Neil Magny,0,5
-Phil Rowe,Jake Matthews,0,6
-Mike Malott,Shimon Smotritsky,1,1
-Mike Malott,Mickey Gall,1,2
-Mike Malott,Yohan Lainesse,1,3
-Mike Malott,Adam Fugitt,1,4
-Mike Malott,Neil Magny,0,5
-Mike Malott,Trevin Giles,1,6
-Ramazan Emeev,Stefan Sekulic,1,1
-Ramazan Emeev,Anthony Rocco Martin,0,2
-Ramazan Emeev,Niklas Stolze,1,3
-Ramazan Emeev,David Zawada,1,4
-Ramazan Emeev,Danny Roberts,0,5
-Ramazan Emeev,Jack Della Maddalena,0,6
-Danny Roberts,Michel Pereira,0,1
-Danny Roberts,Zelim Imadaev,1,2
-Danny Roberts,Ramazan Emeev,1,3
-Danny Roberts,Francisco Trinaldo,0,4
-Danny Roberts,Jack Della Maddalena,0,5
-Danny Roberts,Jonny Parsons,0,6
-Randy Brown,Khaos Williams,1,1
-Randy Brown,Francisco Trinaldo,1,2
-Randy Brown,Jack Della Maddalena,0,3
-Randy Brown,Wellington Turman,1,4
-Randy Brown,Muslim Salikhov,1,5
-Randy Brown,Elizeu Zaleski dos Santos,1,6
-Bassil Hafez,Jack Della Maddalena,0,1
-Bassil Hafez,Mickey Gall,1,2
-Bassil Hafez,Oban Elliott,0,3
-Brad Tavares,Omari Akhmedov,1,1
-Brad Tavares,Dricus Du Plessis,0,2
-Brad Tavares,Bruno Silva,0,3
-Brad Tavares,Chris Weidman,1,4
-Brad Tavares,Gregory Rodrigues,0,5
-Brad Tavares,JunYong Park,0,6
-Darren Till,Tyron Woodley,0,1
-Darren Till,Jorge Masvidal,0,2
-Darren Till,Kelvin Gastelum,1,3
-Darren Till,Robert Whittaker,0,4
-Darren Till,Derek Brunson,0,5
-Darren Till,Dricus Du Plessis,0,6
-Derek Brunson,Ian Heinisch,1,1
-Derek Brunson,Edmen Shahbazyan,1,2
-Derek Brunson,Kevin Holland,1,3
-Derek Brunson,Darren Till,1,4
-Derek Brunson,Jared Cannonier,0,5
-Derek Brunson,Dricus Du Plessis,0,6
-Luigi Vendramini,Elizeu Zaleski dos Santos,0,1
-Luigi Vendramini,Jessin Ayari,1,2
-Luigi Vendramini,Fares Ziam,0,3
-Luigi Vendramini,Paddy Pimblett,0,4
-Kazula Vargas,Alex Da Silva,0,1
-Kazula Vargas,Brok Weaver,0,2
-Kazula Vargas,Rongzhu,1,3
-Kazula Vargas,Paddy Pimblett,0,4
-Jordan Leavitt,Claudio Puelles,0,1
-Jordan Leavitt,Matt Sayles,1,2
-Jordan Leavitt,Trey Ogden,1,3
-Jordan Leavitt,Paddy Pimblett,0,4
-Jordan Leavitt,Victor Martinez,1,5
-Jordan Leavitt,Chase Hooper,0,6
-Jared Gordon,Joe Solecki,1,1
-Jared Gordon,Grant Dawson,0,2
-Jared Gordon,Leonardo Santos,1,3
-Jared Gordon,Paddy Pimblett,0,4
-Jared Gordon,Mark Madsen,1,5
-Jared Gordon,Nasrat Haqparast,0,6
-Tony Ferguson,Beneil Dariush,0,1
-Tony Ferguson,Michael Chandler,0,2
-Tony Ferguson,Nate Diaz,0,3
-Tony Ferguson,King Green,0,4
-Tony Ferguson,Paddy Pimblett,0,5
-Tony Ferguson,Michael Chiesa,0,6
-Scott Holtzman,Nik Lentz,0,1
-Scott Holtzman,Dong Hyun Ma,1,2
-Scott Holtzman,Jim Miller,1,3
-Scott Holtzman,Beneil Dariush,0,4
-Scott Holtzman,Mateusz Gamrot,0,5
-Scott Holtzman,Clay Guida,0,6
-Diego Ferreira,Anthony Pettis,1,1
-Diego Ferreira,Beneil Dariush,0,2
-Diego Ferreira,Gregor Gillespie,0,3
-Diego Ferreira,Mateusz Gamrot,0,4
-Diego Ferreira,Michael Johnson,1,5
-Diego Ferreira,Mateusz Rebecki,1,6
-Luke Rockhold,Chris Weidman,1,1
-Luke Rockhold,Michael Bisping,0,2
-Luke Rockhold,David Branch,1,3
-Luke Rockhold,Yoel Romero,0,4
-Luke Rockhold,Jan Blachowicz,0,5
-Luke Rockhold,Paulo Costa,0,6
-Marlon Moraes,Henry Cejudo,0,1
-Marlon Moraes,Jose Aldo,1,2
-Marlon Moraes,Cory Sandhagen,0,3
-Marlon Moraes,Rob Font,0,4
-Marlon Moraes,Merab Dvalishvili,0,5
-Marlon Moraes,Song Yadong,0,6
-Cody Stamann,Said Nurmagomedov,0,1
-Cody Stamann,Eddie Wineland,1,2
-Cody Stamann,Luan Lacerda,1,3
-Cody Stamann,Douglas Silva de Andrade,0,4
-Cody Stamann,Taylor Lapilus,0,5
-Cody Stamann,Da'Mon Blackshear,0,6
-Nate Diaz,Conor McGregor,1,1
-Nate Diaz,Conor McGregor,0,2
-Nate Diaz,Anthony Pettis,1,3
-Nate Diaz,Jorge Masvidal,0,4
-Nate Diaz,Leon Edwards,0,5
-Nate Diaz,Tony Ferguson,1,6
-Jimmy Crute,Misha Cirkunov,0,1
-Jimmy Crute,Michal Oleksiejczuk,1,2
-Jimmy Crute,Modestas Bukauskas,1,3
-Jimmy Crute,Anthony Smith,0,4
-Jimmy Crute,Jamahal Hill,0,5
-Jimmy Crute,Alonzo Menifield,0,6
-Alex Oliveira,Max Griffin,1,1
-Alex Oliveira,Peter Sobotta,1,2
-Alex Oliveira,Shavkat Rakhmonov,0,3
-Alex Oliveira,Randy Brown,0,4
-Alex Oliveira,Niko Price,0,5
-Alex Oliveira,Kevin Holland,0,6
-Michel Prazeres,Mads Burnell,1,1
-Michel Prazeres,Desmond Green,1,2
-Michel Prazeres,Zak Cummings,1,3
-Michel Prazeres,Bartosz Fabinski,1,4
-Michel Prazeres,Ismail Naurdiev,0,5
-Michel Prazeres,Shavkat Rakhmonov,0,6
-Carlston Harris,Christian Aguilera,1,1
-Carlston Harris,Impa Kasanganay,1,2
-Carlston Harris,Shavkat Rakhmonov,0,3
-Carlston Harris,Jared Gooden,1,4
-Carlston Harris,Jeremiah Wells,1,5
-Carlston Harris,Khaos Williams,0,6
-Cesar Almeida,Lucas Fernando,1,1
-Cesar Almeida,Dylan Budka,1,2
-Cesar Almeida,Roman Kopylov,0,3
-Cesar Almeida,Ihor Potieria,1,4
-Josh Fremd,Anthony Hernandez,0,1
-Josh Fremd,Tresean Gore,0,2
-Josh Fremd,Sedriques Dumas,1,3
-Josh Fremd,Jamie Pickett,1,4
-Josh Fremd,Roman Kopylov,0,5
-Josh Fremd,Andre Petroski,0,6
-Claudio Ribeiro,Ivan Valenzuela,1,1
-Claudio Ribeiro,Abdul Razak Alhassan,0,2
-Claudio Ribeiro,Joseph Holmes,1,3
-Claudio Ribeiro,Roman Kopylov,0,4
-Claudio Ribeiro,Christian Leroy Duncan,0,5
-Punahele Soriano,Brendan Allen,0,1
-Punahele Soriano,Nick Maximov,0,2
-Punahele Soriano,Dalcha Lungiambula,1,3
-Punahele Soriano,Roman Kopylov,0,4
-Punahele Soriano,Dustin Stoltzfus,0,5
-Punahele Soriano,Miguel Baeza,1,6
-Alessio Di Chirico,Kevin Holland,0,1
-Alessio Di Chirico,Makhmud Muradov,0,2
-Alessio Di Chirico,Zak Cummings,0,3
-Alessio Di Chirico,Joaquin Buckley,1,4
-Alessio Di Chirico,Abdul Razak Alhassan,0,5
-Alessio Di Chirico,Roman Kopylov,0,6
-Da Woon Jung,William Knight,1,1
-Da Woon Jung,Kennedy Nzechukwu,1,2
-Da Woon Jung,Dustin Jacoby,0,3
-Da Woon Jung,Devin Clark,0,4
-Da Woon Jung,Carlos Ulberg,0,5
-Da Woon Jung,Oumar Sy,0,6
-Nicolae Negumereanu,Saparbeg Safarov,0,1
-Nicolae Negumereanu,Aleksa Camur,1,2
-Nicolae Negumereanu,Ike Villanueva,1,3
-Nicolae Negumereanu,Kennedy Nzechukwu,1,4
-Nicolae Negumereanu,Ihor Potieria,1,5
-Nicolae Negumereanu,Carlos Ulberg,0,6
-Tafon Nchukwi,Jamie Pickett,1,1
-Tafon Nchukwi,JunYong Park,0,2
-Tafon Nchukwi,Mike Rodriguez,1,3
-Tafon Nchukwi,Azamat Murzakanov,0,4
-Tafon Nchukwi,Carlos Ulberg,0,5
-Tafon Nchukwi,AJ Dobson,0,6
-Fabio Cherant,Aleksa Camur,0,1
-Fabio Cherant,Alonzo Menifield,0,2
-Fabio Cherant,William Knight,0,3
-Fabio Cherant,Carlos Ulberg,0,4
-Makhmud Muradov,Alessio Di Chirico,1,1
-Makhmud Muradov,Trevor Smith,1,2
-Makhmud Muradov,Andrew Sanchez,1,3
-Makhmud Muradov,Gerald Meerschaert,0,4
-Makhmud Muradov,Caio Borralho,0,5
-Makhmud Muradov,Bryan Barberena,1,6
-Blood Diamond,Jeremiah Wells,0,1
-Blood Diamond,Orion Cosce,0,2
-Blood Diamond,Charles Radtke,0,3
-Gilbert Urbina,Bryan Battle,0,1
-Gilbert Urbina,Orion Cosce,1,2
-Gilbert Urbina,Charles Radtke,0,3
-Alessandro Costa,Juan Andres Luna,1,1
-Alessandro Costa,Amir Albazi,0,2
-Alessandro Costa,Jimmy Flick,1,3
-Alessandro Costa,Steve Erceg,0,4
-Alessandro Costa,Kevin Borjas,1,5
-Francisco Figueiredo,Jerome Rivera,1,1
-Francisco Figueiredo,Malcolm Gordon,0,2
-Francisco Figueiredo,Daniel Lacerda,1,3
-Francisco Figueiredo,Amir Albazi,0,4
-Malcolm Gordon,Sumudaerji,0,1
-Malcolm Gordon,Francisco Figueiredo,1,2
-Malcolm Gordon,Denys Bondar,1,3
-Malcolm Gordon,Muhammad Mokaev,0,4
-Malcolm Gordon,Jake Hadley,0,5
-Malcolm Gordon,Jimmy Flick,0,6
-Matt Schnell,Tyson Nam,1,1
-Matt Schnell,Brandon Royval,0,2
-Matt Schnell,Sumudaerji,1,3
-Matt Schnell,Matheus Nicolau,0,4
-Matt Schnell,Steve Erceg,0,5
-Matt Schnell,Cody Durden,0,6
-Jake Matthews,Sean Brady,0,1
-Jake Matthews,Andre Fialho,1,2
-Jake Matthews,Matthew Semelsberger,0,3
-Jake Matthews,Darrius Flowers,1,4
-Jake Matthews,Michael Morales,0,5
-Jake Matthews,Phil Rowe,1,6
-Max Griffin,Song Kenan,1,1
-Max Griffin,Carlos Condit,1,2
-Max Griffin,Neil Magny,0,3
-Max Griffin,Tim Means,1,4
-Max Griffin,Michael Morales,0,5
-Max Griffin,Jeremiah Wells,1,6
-Adam Fugitt,Michael Morales,0,1
-Adam Fugitt,Yusaku Kinoshita,1,2
-Adam Fugitt,Mike Malott,0,3
-Adam Fugitt,Josh Quinlan,1,4
-Nikolay Veretennikov,Michael Morales,0,1
-Nikolay Veretennikov,Danny Barlow,0,2
-Carlos Hernandez,Victor Altamirano,1,1
-Carlos Hernandez,Allan Nascimento,0,2
-Carlos Hernandez,Denys Bondar,1,3
-Carlos Hernandez,Tatsuro Taira,0,4
-Carlos Hernandez,Rei Tsuruya,0,5
-Carlos Hernandez,Nyamjargal Tumendemberel,1,6
-Edgar Chairez,Clayton Carpenter,0,1
-Edgar Chairez,Tatsuro Taira,0,2
-Edgar Chairez,Daniel Lacerda,1,3
-Edgar Chairez,Joshua Van,0,4
-Jesus Aguilar,Erisson Ferreira,1,1
-Jesus Aguilar,Tatsuro Taira,0,2
-Jesus Aguilar,Shannon Ross,1,3
-Jesus Aguilar,Mateus Mendonca,1,4
-Jesus Aguilar,Stewart Nicoll,1,5
-CJ Vergara,Kleydson Rodrigues,1,1
-CJ Vergara,Tatsuro Taira,0,2
-CJ Vergara,Daniel Lacerda,1,3
-CJ Vergara,Vinicius Salvador,1,4
-CJ Vergara,Asu Almabayev,0,5
-CJ Vergara,Ramazan Temirov,0,6
-Jussier Formiga,Ben Nguyen,1,1
-Jussier Formiga,Sergio Pettis,1,2
-Jussier Formiga,Deiveson Figueiredo,1,3
-Jussier Formiga,Joseph Benavidez,0,4
-Jussier Formiga,Brandon Moreno,0,5
-Jussier Formiga,Alex Perez,0,6
-Dominick Cruz,Urijah Faber,1,1
-Dominick Cruz,Cody Garbrandt,0,2
-Dominick Cruz,Henry Cejudo,0,3
-Dominick Cruz,Casey Kenney,1,4
-Dominick Cruz,Pedro Munhoz,1,5
-Dominick Cruz,Marlon Vera,0,6
-James Llontop,Malik Lewis,1,1
-James Llontop,Chris Padilla,0,2
-James Llontop,Viacheslav Borshchev,0,3
-James Llontop,Mauricio Ruffy,0,4
-Raimond Magomedaliev,Mauricio Ruffy,0,1
-Adrian Yanez,Randy Costa,1,1
-Adrian Yanez,Davey Grant,1,2
-Adrian Yanez,Tony Kelley,1,3
-Adrian Yanez,Rob Font,0,4
-Adrian Yanez,Jonathan Martinez,0,5
-Adrian Yanez,Vinicius Salvador,1,6
-Raulian Paiva,Rogerio Bontorin,0,1
-Raulian Paiva,Mark De La Rosa,1,2
-Raulian Paiva,Zhalgas Zhumagulov,1,3
-Raulian Paiva,Kyler Phillips,1,4
-Raulian Paiva,Sean O'Malley,0,5
-Raulian Paiva,Sergey Morozov,0,6
-Marcelo Rojo,Charles Jourdain,0,1
-Marcelo Rojo,Kyler Phillips,0,2
-Marcelo Rojo,Francis Marshall,0,3
-Raoni Barcelos,Timur Valiev,0,1
-Raoni Barcelos,Victor Henry,0,2
-Raoni Barcelos,Trevin Jones,1,3
-Raoni Barcelos,Umar Nurmagomedov,0,4
-Raoni Barcelos,Kyler Phillips,0,5
-Raoni Barcelos,Cristian Quinonez,1,6
-Ricky Simon,Brian Kelleher,1,1
-Ricky Simon,Raphael Assuncao,1,2
-Ricky Simon,Jack Shore,1,3
-Ricky Simon,Song Yadong,0,4
-Ricky Simon,Mario Bautista,0,5
-Ricky Simon,Vinicius Oliveira,0,6
-Julio Arce,Hakeem Dawodu,0,1
-Julio Arce,Andre Ewell,1,2
-Julio Arce,Song Yadong,0,3
-Julio Arce,Daniel Santos,1,4
-Julio Arce,Montel Jackson,0,5
-Julio Arce,Herbert Burns,1,6
-Andre Muniz,Jacare Souza,1,1
-Andre Muniz,Eryk Anders,1,2
-Andre Muniz,Uriah Hall,1,3
-Andre Muniz,Brendan Allen,0,4
-Andre Muniz,Paul Craig,0,5
-Andre Muniz,JunYong Park,1,6
-Bo Nickal,Zachary Borrego,1,1
-Bo Nickal,Donovan Beard,1,2
-Bo Nickal,Jamie Pickett,1,3
-Bo Nickal,Val Woodburn,1,4
-Bo Nickal,Cody Brundage,1,5
-Bo Nickal,Paul Craig,1,6
-Edmen Shahbazyan,Jack Hermansson,0,1
-Edmen Shahbazyan,Nassourdine Imavov,0,2
-Edmen Shahbazyan,Dalcha Lungiambula,1,3
-Edmen Shahbazyan,Anthony Hernandez,0,4
-Edmen Shahbazyan,AJ Dobson,1,5
-Edmen Shahbazyan,Gerald Meerschaert,0,6
-Krzysztof Jotko,Marc-Andre Barriault,1,1
-Krzysztof Jotko,Eryk Anders,1,2
-Krzysztof Jotko,Sean Strickland,0,3
-Krzysztof Jotko,Misha Cirkunov,1,4
-Krzysztof Jotko,Gerald Meerschaert,1,5
-Krzysztof Jotko,Brendan Allen,0,6
-Kelvin Gastelum,Ian Heinisch,1,1
-Kelvin Gastelum,Robert Whittaker,0,2
-Kelvin Gastelum,Jared Cannonier,0,3
-Kelvin Gastelum,Chris Curtis,1,4
-Kelvin Gastelum,Sean Brady,0,5
-Kelvin Gastelum,Daniel Rodriguez,1,6
-Rodolfo Vieira,Saparbeg Safarov,1,1
-Rodolfo Vieira,Anthony Hernandez,0,2
-Rodolfo Vieira,Dustin Stoltzfus,1,3
-Rodolfo Vieira,Chris Curtis,0,4
-Rodolfo Vieira,Cody Brundage,1,5
-Rodolfo Vieira,Armen Petrosyan,1,6
-Eryk Anders,Darren Stewart,1,1
-Eryk Anders,Andre Muniz,0,2
-Eryk Anders,JunYong Park,0,3
-Eryk Anders,Kyle Daukaus,1,4
-Eryk Anders,Marc-Andre Barriault,0,5
-Eryk Anders,Jamie Pickett,1,6
-Dustin Stoltzfus,Gerald Meerschaert,0,1
-Dustin Stoltzfus,Dwight Grant,1,2
-Dustin Stoltzfus,Abus Magomedov,0,3
-Dustin Stoltzfus,Punahele Soriano,1,4
-Dustin Stoltzfus,Brunno Ferreira,0,5
-Dustin Stoltzfus,Marc-Andre Barriault,1,6
-Julian Marquez,Alessio Di Chirico,0,1
-Julian Marquez,Maki Pitolo,1,2
-Julian Marquez,Sam Alvey,1,3
-Julian Marquez,Gregory Rodrigues,0,4
-Julian Marquez,Marc-Andre Barriault,0,5
-Julian Marquez,Zachary Reese,0,6
-Phil Hawes,Kyle Daukaus,1,1
-Phil Hawes,Chris Curtis,0,2
-Phil Hawes,Deron Winn,1,3
-Phil Hawes,Roman Dolidze,0,4
-Phil Hawes,Ikram Aliskerov,0,5
-Phil Hawes,Brunno Ferreira,0,6
-Vitor Petrino,Rodolfo Bellato,1,1
-Vitor Petrino,Anton Turkalj,1,2
-Vitor Petrino,Marcin Prachnio,1,3
-Vitor Petrino,Modestas Bukauskas,1,4
-Vitor Petrino,Tyson Pedro,1,5
-Vitor Petrino,Anthony Smith,0,6
-Serghei Spivac,Tom Aspinall,0,1
-Serghei Spivac,Greg Hardy,1,2
-Serghei Spivac,Augusto Sakai,1,3
-Serghei Spivac,Derrick Lewis,1,4
-Serghei Spivac,Ciryl Gane,0,5
-Serghei Spivac,Marcin Tybura,1,6
-Tai Tuivasa,Derrick Lewis,1,1
-Tai Tuivasa,Ciryl Gane,0,2
-Tai Tuivasa,Sergei Pavlovich,0,3
-Tai Tuivasa,Alexander Volkov,0,4
-Tai Tuivasa,Marcin Tybura,0,5
-Tai Tuivasa,Jairzinho Rozenstruik,0,6
-Francis Ngannou,Curtis Blaydes,1,1
-Francis Ngannou,Cain Velasquez,1,2
-Francis Ngannou,Junior Dos Santos,1,3
-Francis Ngannou,Jairzinho Rozenstruik,1,4
-Francis Ngannou,Stipe Miocic,1,5
-Francis Ngannou,Ciryl Gane,1,6
-Alexander Volkov,Marcin Tybura,1,1
-Alexander Volkov,Tom Aspinall,0,2
-Alexander Volkov,Jairzinho Rozenstruik,1,3
-Alexander Volkov,Alexandr Romanov,1,4
-Alexander Volkov,Tai Tuivasa,1,5
-Alexander Volkov,Sergei Pavlovich,1,6
-Marcin Tybura,Alexandr Romanov,1,1
-Marcin Tybura,Blagoy Ivanov,1,2
-Marcin Tybura,Tom Aspinall,0,3
-Marcin Tybura,Tai Tuivasa,1,4
-Marcin Tybura,Serghei Spivac,0,5
-Marcin Tybura,Jhonata Diniz,1,6
-Bryan Barberena,Matt Brown,1,1
-Bryan Barberena,Robbie Lawler,1,2
-Bryan Barberena,Rafael Dos Anjos,0,3
-Bryan Barberena,Gunnar Nelson,0,4
-Bryan Barberena,Makhmud Muradov,0,5
-Bryan Barberena,Gerald Meerschaert,0,6
-Andre Petroski,Wellington Turman,1,1
-Andre Petroski,Gerald Meerschaert,1,2
-Andre Petroski,Michel Pereira,0,3
-Andre Petroski,Jacob Malkoun,0,4
-Andre Petroski,Josh Fremd,1,5
-Andre Petroski,Dylan Budka,1,6
-Corey Anderson,Ovince Saint Preux,0,1
-Corey Anderson,Patrick Cummins,1,2
-Corey Anderson,Glover Teixeira,1,3
-Corey Anderson,Ilir Latifi,1,4
-Corey Anderson,Johnny Walker,1,5
-Corey Anderson,Jan Blachowicz,0,6
-Jailton Almeida,Anton Turkalj,1,1
-Jailton Almeida,Shamil Abdurakhimov,1,2
-Jailton Almeida,Jairzinho Rozenstruik,1,3
-Jailton Almeida,Derrick Lewis,1,4
-Jailton Almeida,Curtis Blaydes,0,5
-Jailton Almeida,Alexandr Romanov,1,6
-Antonio Trocoli,Shara Magomedov,0,1
-Antonio Trocoli,Tresean Gore,0,2
-Shamil Abdurakhimov,Andrei Arlovski,1,1
-Shamil Abdurakhimov,Marcin Tybura,1,2
-Shamil Abdurakhimov,Curtis Blaydes,0,3
-Shamil Abdurakhimov,Chris Daukaus,0,4
-Shamil Abdurakhimov,Sergei Pavlovich,0,5
-Shamil Abdurakhimov,Jailton Almeida,0,6
-Charles Rosa,Kevin Aguilar,1,1
-Charles Rosa,Darrick Minner,0,2
-Charles Rosa,Justin Jaynes,1,3
-Charles Rosa,Damon Jackson,0,4
-Charles Rosa,TJ Brown,0,5
-Charles Rosa,Nathaniel Wood,0,6
-Kris Moutinho,Sean O'Malley,0,1
-Kris Moutinho,Guido Cannetti,0,2
-Zac Pauga,Mohammed Usman,0,1
-Zac Pauga,Jordan Wright,1,2
-Zac Pauga,Modestas Bukauskas,0,3
-Zac Pauga,Bogdan Guskov,0,4
-Shamil Gaziev,Greg Velasco,1,1
-Shamil Gaziev,Martin Buday,1,2
-Shamil Gaziev,Jairzinho Rozenstruik,0,3
-Shamil Gaziev,Don'Tale Mayes,1,4
-Ion Cutelaba,Ryan Spann,0,1
-Ion Cutelaba,Johnny Walker,0,2
-Ion Cutelaba,Kennedy Nzechukwu,0,3
-Ion Cutelaba,Tanner Boser,1,4
-Ion Cutelaba,Philipe Lins,0,5
-Ion Cutelaba,Ivan Erslan,1,6
-Alexandr Romanov,Chase Sherman,1,1
-Alexandr Romanov,Marcin Tybura,0,2
-Alexandr Romanov,Alexander Volkov,0,3
-Alexandr Romanov,Blagoy Ivanov,1,4
-Alexandr Romanov,Jailton Almeida,0,5
-Alexandr Romanov,Rodrigo Nascimento,1,6
+Fighter Name,Fighter A,Fighter B,Result,Fight_ID
+Ian Machado Garry,Ian Machado Garry,Gabe Green,1,1
+Ian Machado Garry,Ian Machado Garry,Song Kenan,1,2
+Ian Machado Garry,Ian Machado Garry,Daniel Rodriguez,1,3
+Ian Machado Garry,Ian Machado Garry,Neil Magny,1,4
+Ian Machado Garry,Ian Machado Garry,Geoff Neal,1,5
+Ian Machado Garry,Ian Machado Garry,Michael Page,1,6
+Charles Oliveira,Charles Oliveira,Dustin Poirier,1,1
+Charles Oliveira,Charles Oliveira,Justin Gaethje,1,2
+Charles Oliveira,Charles Oliveira,Islam Makhachev,0,3
+Charles Oliveira,Charles Oliveira,Beneil Dariush,1,4
+Charles Oliveira,Charles Oliveira,Arman Tsarukyan,0,5
+Charles Oliveira,Charles Oliveira,Michael Chandler,1,6
+Arman Tsarukyan,Arman Tsarukyan,Joel Alvarez,1,1
+Arman Tsarukyan,Arman Tsarukyan,Mateusz Gamrot,0,2
+Arman Tsarukyan,Arman Tsarukyan,Damir Ismagulov,1,3
+Arman Tsarukyan,Arman Tsarukyan,Joaquim Silva,1,4
+Arman Tsarukyan,Arman Tsarukyan,Beneil Dariush,1,5
+Arman Tsarukyan,Arman Tsarukyan,Charles Oliveira,1,6
+Mateusz Gamrot,Mateusz Gamrot,Arman Tsarukyan,1,1
+Mateusz Gamrot,Mateusz Gamrot,Beneil Dariush,0,2
+Mateusz Gamrot,Mateusz Gamrot,Jalin Turner,1,3
+Mateusz Gamrot,Mateusz Gamrot,Rafael Fiziev,1,4
+Mateusz Gamrot,Mateusz Gamrot,Rafael Dos Anjos,1,5
+Mateusz Gamrot,Mateusz Gamrot,Dan Hooker,0,6
+Dan Hooker,Dan Hooker,Nasrat Haqparast,1,1
+Dan Hooker,Dan Hooker,Islam Makhachev,0,2
+Dan Hooker,Dan Hooker,Arnold Allen,0,3
+Dan Hooker,Dan Hooker,Claudio Puelles,1,4
+Dan Hooker,Dan Hooker,Jalin Turner,1,5
+Dan Hooker,Dan Hooker,Mateusz Gamrot,1,6
+Arnold Allen,Arnold Allen,Sodiq Yusuff,1,1
+Arnold Allen,Arnold Allen,Dan Hooker,1,2
+Arnold Allen,Arnold Allen,Calvin Kattar,1,3
+Arnold Allen,Arnold Allen,Max Holloway,0,4
+Arnold Allen,Arnold Allen,Movsar Evloev,0,5
+Arnold Allen,Arnold Allen,Giga Chikadze,1,6
+Diego Lopes,Diego Lopes,Movsar Evloev,0,1
+Diego Lopes,Diego Lopes,Gavin Tucker,1,2
+Diego Lopes,Diego Lopes,Pat Sabatini,1,3
+Diego Lopes,Diego Lopes,Sodiq Yusuff,1,4
+Diego Lopes,Diego Lopes,Dan Ige,1,5
+Diego Lopes,Diego Lopes,Brian Ortega,1,6
+Kevin Holland,Kevin Holland,Santiago Ponzinibbio,1,1
+Kevin Holland,Kevin Holland,Michael Chiesa,1,2
+Kevin Holland,Kevin Holland,Jack Della Maddalena,0,3
+Kevin Holland,Kevin Holland,Michael Page,0,4
+Kevin Holland,Kevin Holland,Michal Oleksiejczuk,1,5
+Kevin Holland,Kevin Holland,Roman Dolidze,0,6
+Joaquin Buckley,Joaquin Buckley,Chris Curtis,0,1
+Joaquin Buckley,Joaquin Buckley,Andre Fialho,1,2
+Joaquin Buckley,Joaquin Buckley,Alex Morono,1,3
+Joaquin Buckley,Joaquin Buckley,Vicente Luque,1,4
+Joaquin Buckley,Joaquin Buckley,Nursulton Ruziboev,1,5
+Joaquin Buckley,Joaquin Buckley,Stephen Thompson,1,6
+Stephen Thompson,Stephen Thompson,Geoff Neal,1,1
+Stephen Thompson,Stephen Thompson,Gilbert Burns,0,2
+Stephen Thompson,Stephen Thompson,Belal Muhammad,0,3
+Stephen Thompson,Stephen Thompson,Kevin Holland,1,4
+Stephen Thompson,Stephen Thompson,Shavkat Rakhmonov,0,5
+Stephen Thompson,Stephen Thompson,Joaquin Buckley,0,6
+Jiri Prochazka,Jiri Prochazka,Volkan Oezdemir,1,1
+Jiri Prochazka,Jiri Prochazka,Dominick Reyes,1,2
+Jiri Prochazka,Jiri Prochazka,Glover Teixeira,1,3
+Jiri Prochazka,Jiri Prochazka,Alex Pereira,0,4
+Jiri Prochazka,Jiri Prochazka,Aleksandar Rakic,1,5
+Jiri Prochazka,Jiri Prochazka,Alex Pereira,0,6
+Alex Pereira,Alex Pereira,Israel Adesanya,0,1
+Alex Pereira,Alex Pereira,Jan Blachowicz,1,2
+Alex Pereira,Alex Pereira,Jiri Prochazka,1,3
+Alex Pereira,Alex Pereira,Jamahal Hill,1,4
+Alex Pereira,Alex Pereira,Jiri Prochazka,1,5
+Alex Pereira,Alex Pereira,Khalil Rountree Jr.,1,6
+Khalil Rountree Jr.,Khalil Rountree Jr.,Modestas Bukauskas,1,1
+Khalil Rountree Jr.,Khalil Rountree Jr.,Karl Roberson,1,2
+Khalil Rountree Jr.,Khalil Rountree Jr.,Dustin Jacoby,1,3
+Khalil Rountree Jr.,Khalil Rountree Jr.,Chris Daukaus,1,4
+Khalil Rountree Jr.,Khalil Rountree Jr.,Anthony Smith,1,5
+Khalil Rountree Jr.,Khalil Rountree Jr.,Alex Pereira,0,6
+Justin Gaethje,Justin Gaethje,Khabib Nurmagomedov,0,1
+Justin Gaethje,Justin Gaethje,Michael Chandler,1,2
+Justin Gaethje,Justin Gaethje,Charles Oliveira,0,3
+Justin Gaethje,Justin Gaethje,Rafael Fiziev,1,4
+Justin Gaethje,Justin Gaethje,Dustin Poirier,1,5
+Justin Gaethje,Justin Gaethje,Max Holloway,0,6
+Max Holloway,Max Holloway,Yair Rodriguez,1,1
+Max Holloway,Max Holloway,Alexander Volkanovski,0,2
+Max Holloway,Max Holloway,Arnold Allen,1,3
+Max Holloway,Max Holloway,Chan Sung Jung,1,4
+Max Holloway,Max Holloway,Justin Gaethje,1,5
+Max Holloway,Max Holloway,Ilia Topuria,0,6
+Ilia Topuria,Ilia Topuria,Ryan Hall,1,1
+Ilia Topuria,Ilia Topuria,Jai Herbert,1,2
+Ilia Topuria,Ilia Topuria,Bryce Mitchell,1,3
+Ilia Topuria,Ilia Topuria,Josh Emmett,1,4
+Ilia Topuria,Ilia Topuria,Alexander Volkanovski,1,5
+Ilia Topuria,Ilia Topuria,Max Holloway,1,6
+Alexander Volkanovski,Alexander Volkanovski,Chan Sung Jung,1,1
+Alexander Volkanovski,Alexander Volkanovski,Max Holloway,1,2
+Alexander Volkanovski,Alexander Volkanovski,Islam Makhachev,0,3
+Alexander Volkanovski,Alexander Volkanovski,Yair Rodriguez,1,4
+Alexander Volkanovski,Alexander Volkanovski,Islam Makhachev,0,5
+Alexander Volkanovski,Alexander Volkanovski,Ilia Topuria,0,6
+Jose Aldo,Jose Aldo,Marlon Vera,1,1
+Jose Aldo,Jose Aldo,Pedro Munhoz,1,2
+Jose Aldo,Jose Aldo,Rob Font,1,3
+Jose Aldo,Jose Aldo,Merab Dvalishvili,0,4
+Jose Aldo,Jose Aldo,Jonathan Martinez,1,5
+Jose Aldo,Jose Aldo,Mario Bautista,0,6
+Mario Bautista,Mario Bautista,Brian Kelleher,1,1
+Mario Bautista,Mario Bautista,Benito Lopez,1,2
+Mario Bautista,Mario Bautista,Guido Cannetti,1,3
+Mario Bautista,Mario Bautista,Da'Mon Blackshear,1,4
+Mario Bautista,Mario Bautista,Ricky Simon,1,5
+Mario Bautista,Mario Bautista,Jose Aldo,1,6
+Petr Yan,Petr Yan,Aljamain Sterling,0,1
+Petr Yan,Petr Yan,Cory Sandhagen,1,2
+Petr Yan,Petr Yan,Aljamain Sterling,0,3
+Petr Yan,Petr Yan,Sean O'Malley,0,4
+Petr Yan,Petr Yan,Merab Dvalishvili,0,5
+Petr Yan,Petr Yan,Song Yadong,1,6
+Israel Adesanya,Israel Adesanya,Robert Whittaker,1,1
+Israel Adesanya,Israel Adesanya,Jared Cannonier,1,2
+Israel Adesanya,Israel Adesanya,Alex Pereira,0,3
+Israel Adesanya,Israel Adesanya,Alex Pereira,1,4
+Israel Adesanya,Israel Adesanya,Sean Strickland,0,5
+Israel Adesanya,Israel Adesanya,Dricus Du Plessis,0,6
+Sean Strickland,Sean Strickland,Jared Cannonier,0,1
+Sean Strickland,Sean Strickland,Nassourdine Imavov,1,2
+Sean Strickland,Sean Strickland,Abus Magomedov,1,3
+Sean Strickland,Sean Strickland,Israel Adesanya,1,4
+Sean Strickland,Sean Strickland,Dricus Du Plessis,0,5
+Sean Strickland,Sean Strickland,Paulo Costa,1,6
+Robert Whittaker,Robert Whittaker,Israel Adesanya,0,1
+Robert Whittaker,Robert Whittaker,Marvin Vettori,1,2
+Robert Whittaker,Robert Whittaker,Dricus Du Plessis,0,3
+Robert Whittaker,Robert Whittaker,Paulo Costa,1,4
+Robert Whittaker,Robert Whittaker,Ikram Aliskerov,1,5
+Robert Whittaker,Robert Whittaker,Khamzat Chimaev,0,6
+Khamzat Chimaev,Khamzat Chimaev,Gerald Meerschaert,1,1
+Khamzat Chimaev,Khamzat Chimaev,Li Jingliang,1,2
+Khamzat Chimaev,Khamzat Chimaev,Gilbert Burns,1,3
+Khamzat Chimaev,Khamzat Chimaev,Kevin Holland,1,4
+Khamzat Chimaev,Khamzat Chimaev,Kamaru Usman,1,5
+Khamzat Chimaev,Khamzat Chimaev,Robert Whittaker,1,6
+Kamaru Usman,Kamaru Usman,Gilbert Burns,1,1
+Kamaru Usman,Kamaru Usman,Jorge Masvidal,1,2
+Kamaru Usman,Kamaru Usman,Colby Covington,1,3
+Kamaru Usman,Kamaru Usman,Leon Edwards,0,4
+Kamaru Usman,Kamaru Usman,Leon Edwards,0,5
+Kamaru Usman,Kamaru Usman,Khamzat Chimaev,0,6
+Belal Muhammad,Belal Muhammad,Demian Maia,1,1
+Belal Muhammad,Belal Muhammad,Stephen Thompson,1,2
+Belal Muhammad,Belal Muhammad,Vicente Luque,1,3
+Belal Muhammad,Belal Muhammad,Sean Brady,1,4
+Belal Muhammad,Belal Muhammad,Gilbert Burns,1,5
+Belal Muhammad,Belal Muhammad,Leon Edwards,1,6
+Colby Covington,Colby Covington,Robbie Lawler,1,1
+Colby Covington,Colby Covington,Kamaru Usman,0,2
+Colby Covington,Colby Covington,Tyron Woodley,1,3
+Colby Covington,Colby Covington,Kamaru Usman,0,4
+Colby Covington,Colby Covington,Jorge Masvidal,1,5
+Colby Covington,Colby Covington,Leon Edwards,0,6
+Vicente Luque,Vicente Luque,Tyron Woodley,1,1
+Vicente Luque,Vicente Luque,Michael Chiesa,1,2
+Vicente Luque,Vicente Luque,Belal Muhammad,0,3
+Vicente Luque,Vicente Luque,Geoff Neal,0,4
+Vicente Luque,Vicente Luque,Rafael Dos Anjos,1,5
+Vicente Luque,Vicente Luque,Joaquin Buckley,0,6
+Aljamain Sterling,Aljamain Sterling,Petr Yan,1,1
+Aljamain Sterling,Aljamain Sterling,Petr Yan,1,2
+Aljamain Sterling,Aljamain Sterling,TJ Dillashaw,1,3
+Aljamain Sterling,Aljamain Sterling,Henry Cejudo,1,4
+Aljamain Sterling,Aljamain Sterling,Sean O'Malley,0,5
+Aljamain Sterling,Aljamain Sterling,Calvin Kattar,1,6
+Calvin Kattar,Calvin Kattar,Dan Ige,1,1
+Calvin Kattar,Calvin Kattar,Max Holloway,0,2
+Calvin Kattar,Calvin Kattar,Giga Chikadze,1,3
+Calvin Kattar,Calvin Kattar,Josh Emmett,0,4
+Calvin Kattar,Calvin Kattar,Arnold Allen,0,5
+Calvin Kattar,Calvin Kattar,Aljamain Sterling,0,6
+Movsar Evloev,Movsar Evloev,Mike Grundy,1,1
+Movsar Evloev,Movsar Evloev,Nik Lentz,1,2
+Movsar Evloev,Movsar Evloev,Hakeem Dawodu,1,3
+Movsar Evloev,Movsar Evloev,Dan Ige,1,4
+Movsar Evloev,Movsar Evloev,Diego Lopes,1,5
+Movsar Evloev,Movsar Evloev,Arnold Allen,1,6
+Deiveson Figueiredo,Deiveson Figueiredo,Brandon Moreno,0,1
+Deiveson Figueiredo,Deiveson Figueiredo,Brandon Moreno,1,2
+Deiveson Figueiredo,Deiveson Figueiredo,Brandon Moreno,0,3
+Deiveson Figueiredo,Deiveson Figueiredo,Rob Font,1,4
+Deiveson Figueiredo,Deiveson Figueiredo,Cody Garbrandt,1,5
+Deiveson Figueiredo,Deiveson Figueiredo,Marlon Vera,1,6
+Magomed Ankalaev,Magomed Ankalaev,Nikita Krylov,1,1
+Magomed Ankalaev,Magomed Ankalaev,Volkan Oezdemir,1,2
+Magomed Ankalaev,Magomed Ankalaev,Thiago Santos,1,3
+Magomed Ankalaev,Magomed Ankalaev,Anthony Smith,1,4
+Magomed Ankalaev,Magomed Ankalaev,Johnny Walker,1,5
+Magomed Ankalaev,Magomed Ankalaev,Aleksandar Rakic,1,6
+Jon Jones,Jon Jones,Alexander Gustafsson,1,1
+Jon Jones,Jon Jones,Anthony Smith,1,2
+Jon Jones,Jon Jones,Thiago Santos,1,3
+Jon Jones,Jon Jones,Dominick Reyes,1,4
+Jon Jones,Jon Jones,Ciryl Gane,1,5
+Jon Jones,Jon Jones,Stipe Miocic,1,6
+Daniel Zellhuber,Daniel Zellhuber,Lucas Almeida,1,1
+Daniel Zellhuber,Daniel Zellhuber,Trey Ogden,0,2
+Daniel Zellhuber,Daniel Zellhuber,Lando Vannata,1,3
+Daniel Zellhuber,Daniel Zellhuber,Christos Giagos,1,4
+Daniel Zellhuber,Daniel Zellhuber,Francisco Prado,1,5
+Daniel Zellhuber,Daniel Zellhuber,Esteban Ribovics,0,6
+Esteban Ribovics,Esteban Ribovics,Thomas Paull,1,1
+Esteban Ribovics,Esteban Ribovics,Loik Radzhabov,0,2
+Esteban Ribovics,Esteban Ribovics,Kamuela Kirk,1,3
+Esteban Ribovics,Esteban Ribovics,Terrance McKinney,1,4
+Esteban Ribovics,Esteban Ribovics,Daniel Zellhuber,1,5
+Jamie Mullarkey,Jamie Mullarkey,Michael Johnson,1,1
+Jamie Mullarkey,Jamie Mullarkey,Francisco Prado,1,2
+Jamie Mullarkey,Jamie Mullarkey,Muhammad Naimov,0,3
+Jamie Mullarkey,Jamie Mullarkey,John Makdessi,1,4
+Jamie Mullarkey,Jamie Mullarkey,Nasrat Haqparast,0,5
+Jamie Mullarkey,Jamie Mullarkey,Mauricio Ruffy,0,6
+Jalin Turner,Jalin Turner,Jamie Mullarkey,1,1
+Jalin Turner,Jalin Turner,Brad Riddell,1,2
+Jalin Turner,Jalin Turner,Mateusz Gamrot,0,3
+Jalin Turner,Jalin Turner,Dan Hooker,0,4
+Jalin Turner,Jalin Turner,King Green,1,5
+Jalin Turner,Jalin Turner,Renato Moicano,0,6
+Dustin Poirier,Dustin Poirier,Conor McGregor,1,1
+Dustin Poirier,Dustin Poirier,Charles Oliveira,0,2
+Dustin Poirier,Dustin Poirier,Michael Chandler,1,3
+Dustin Poirier,Dustin Poirier,Justin Gaethje,0,4
+Dustin Poirier,Dustin Poirier,Benoit Saint Denis,1,5
+Dustin Poirier,Dustin Poirier,Islam Makhachev,0,6
+Benoit Saint Denis,Benoit Saint Denis,Gabriel Miranda,1,1
+Benoit Saint Denis,Benoit Saint Denis,Ismael Bonfim,1,2
+Benoit Saint Denis,Benoit Saint Denis,Thiago Moises,1,3
+Benoit Saint Denis,Benoit Saint Denis,Matt Frevola,1,4
+Benoit Saint Denis,Benoit Saint Denis,Dustin Poirier,0,5
+Benoit Saint Denis,Benoit Saint Denis,Renato Moicano,0,6
+Renato Moicano,Renato Moicano,Alexander Hernandez,1,1
+Renato Moicano,Renato Moicano,Rafael Dos Anjos,0,2
+Renato Moicano,Renato Moicano,Brad Riddell,1,3
+Renato Moicano,Renato Moicano,Drew Dober,1,4
+Renato Moicano,Renato Moicano,Jalin Turner,1,5
+Renato Moicano,Renato Moicano,Benoit Saint Denis,1,6
+Drew Dober,Drew Dober,Rafael Alves,1,1
+Drew Dober,Drew Dober,King Green,1,2
+Drew Dober,Drew Dober,Matt Frevola,0,3
+Drew Dober,Drew Dober,Ricky Glenn,1,4
+Drew Dober,Drew Dober,Renato Moicano,0,5
+Drew Dober,Drew Dober,Jean Silva,0,6
+Jean Silva,Jean Silva,Kevin Vallejos,1,1
+Jean Silva,Jean Silva,Westin Wilson,1,2
+Jean Silva,Jean Silva,Charles Jourdain,1,3
+Jean Silva,Jean Silva,Drew Dober,1,4
+Charles Jourdain,Charles Jourdain,Nathaniel Wood,0,1
+Charles Jourdain,Charles Jourdain,Kron Gracie,1,2
+Charles Jourdain,Charles Jourdain,Ricardo Ramos,1,3
+Charles Jourdain,Charles Jourdain,Sean Woodson,0,4
+Charles Jourdain,Charles Jourdain,Jean Silva,0,5
+Charles Jourdain,Charles Jourdain,Victor Henry,1,6
+Sean Woodson,Sean Woodson,Julian Erosa,0,1
+Sean Woodson,Sean Woodson,Youssef Zalal,1,2
+Sean Woodson,Sean Woodson,Collin Anglin,1,3
+Sean Woodson,Sean Woodson,Dennis Buzukja,1,4
+Sean Woodson,Sean Woodson,Charles Jourdain,1,5
+Sean Woodson,Sean Woodson,Alex Caceres,1,6
+Alex Caceres,Alex Caceres,SeungWoo Choi,1,1
+Alex Caceres,Alex Caceres,Sodiq Yusuff,0,2
+Alex Caceres,Alex Caceres,Julian Erosa,1,3
+Alex Caceres,Alex Caceres,Daniel Pineda,1,4
+Alex Caceres,Alex Caceres,Giga Chikadze,0,5
+Alex Caceres,Alex Caceres,Sean Woodson,0,6
+Giga Chikadze,Giga Chikadze,Jamey Simmons,1,1
+Giga Chikadze,Giga Chikadze,Cub Swanson,1,2
+Giga Chikadze,Giga Chikadze,Edson Barboza,1,3
+Giga Chikadze,Giga Chikadze,Calvin Kattar,0,4
+Giga Chikadze,Giga Chikadze,Alex Caceres,1,5
+Giga Chikadze,Giga Chikadze,Arnold Allen,0,6
+Josh Emmett,Josh Emmett,Shane Burgos,1,1
+Josh Emmett,Josh Emmett,Dan Ige,1,2
+Josh Emmett,Josh Emmett,Calvin Kattar,1,3
+Josh Emmett,Josh Emmett,Yair Rodriguez,0,4
+Josh Emmett,Josh Emmett,Ilia Topuria,0,5
+Josh Emmett,Josh Emmett,Bryce Mitchell,1,6
+Yair Rodriguez,Yair Rodriguez,Jeremy Stephens,1,1
+Yair Rodriguez,Yair Rodriguez,Max Holloway,0,2
+Yair Rodriguez,Yair Rodriguez,Brian Ortega,1,3
+Yair Rodriguez,Yair Rodriguez,Josh Emmett,1,4
+Yair Rodriguez,Yair Rodriguez,Alexander Volkanovski,0,5
+Yair Rodriguez,Yair Rodriguez,Brian Ortega,0,6
+Dan Ige,Dan Ige,Damon Jackson,1,1
+Dan Ige,Dan Ige,Nate Landwehr,1,2
+Dan Ige,Dan Ige,Bryce Mitchell,0,3
+Dan Ige,Dan Ige,Andre Fili,1,4
+Dan Ige,Dan Ige,Diego Lopes,0,5
+Dan Ige,Dan Ige,Lerone Murphy,0,6
+Lerone Murphy,Lerone Murphy,Douglas Silva de Andrade,1,1
+Lerone Murphy,Lerone Murphy,Makwan Amirkhani,1,2
+Lerone Murphy,Lerone Murphy,Gabriel Santos,1,3
+Lerone Murphy,Lerone Murphy,Josh Culibao,1,4
+Lerone Murphy,Lerone Murphy,Edson Barboza,1,5
+Lerone Murphy,Lerone Murphy,Dan Ige,1,6
+Edson Barboza,Edson Barboza,Shane Burgos,1,1
+Edson Barboza,Edson Barboza,Giga Chikadze,0,2
+Edson Barboza,Edson Barboza,Bryce Mitchell,0,3
+Edson Barboza,Edson Barboza,Billy Quarantillo,1,4
+Edson Barboza,Edson Barboza,Sodiq Yusuff,1,5
+Edson Barboza,Edson Barboza,Lerone Murphy,0,6
+Demetrious Johnson,Demetrious Johnson,John Dodson,1,1
+Demetrious Johnson,Demetrious Johnson,Henry Cejudo,1,2
+Demetrious Johnson,Demetrious Johnson,Tim Elliott,1,3
+Demetrious Johnson,Demetrious Johnson,Wilson Reis,1,4
+Demetrious Johnson,Demetrious Johnson,Ray Borg,1,5
+Demetrious Johnson,Demetrious Johnson,Henry Cejudo,0,6
+Cody Garbrandt,Cody Garbrandt,Raphael Assuncao,1,1
+Cody Garbrandt,Cody Garbrandt,Rob Font,0,2
+Cody Garbrandt,Cody Garbrandt,Kai Kara-France,0,3
+Cody Garbrandt,Cody Garbrandt,Trevin Jones,1,4
+Cody Garbrandt,Cody Garbrandt,Brian Kelleher,1,5
+Cody Garbrandt,Cody Garbrandt,Deiveson Figueiredo,0,6
+Kai Kara-France,Kai Kara-France,Rogerio Bontorin,1,1
+Kai Kara-France,Kai Kara-France,Cody Garbrandt,1,2
+Kai Kara-France,Kai Kara-France,Askar Askarov,1,3
+Kai Kara-France,Kai Kara-France,Brandon Moreno,0,4
+Kai Kara-France,Kai Kara-France,Amir Albazi,0,5
+Kai Kara-France,Kai Kara-France,Steve Erceg,1,6
+Manel Kape,Manel Kape,Matheus Nicolau,0,1
+Manel Kape,Manel Kape,Ode Osbourne,1,2
+Manel Kape,Manel Kape,Zhalgas Zhumagulov,1,3
+Manel Kape,Manel Kape,David Dvorak,1,4
+Manel Kape,Manel Kape,Felipe dos Santos,1,5
+Manel Kape,Manel Kape,Muhammad Mokaev,0,6
+Jim Miller,Jim Miller,Donald Cerrone,1,1
+Jim Miller,Jim Miller,Alexander Hernandez,0,2
+Jim Miller,Jim Miller,Jesse Butler,1,3
+Jim Miller,Jim Miller,Gabriel Benitez,1,4
+Jim Miller,Jim Miller,King Green,0,5
+Jim Miller,Jim Miller,Damon Jackson,1,6
+Damon Jackson,Damon Jackson,Pat Sabatini,1,1
+Damon Jackson,Damon Jackson,Dan Ige,0,2
+Damon Jackson,Damon Jackson,Billy Quarantillo,0,3
+Damon Jackson,Damon Jackson,Alexander Hernandez,1,4
+Damon Jackson,Damon Jackson,Chepe Mariscal,0,5
+Damon Jackson,Damon Jackson,Jim Miller,0,6
+Carlos Prates,Carlos Prates,Mitch Ramirez,1,1
+Carlos Prates,Carlos Prates,Trevin Giles,1,2
+Carlos Prates,Carlos Prates,Charles Radtke,1,3
+Carlos Prates,Carlos Prates,Li Jingliang,1,4
+Carlos Prates,Carlos Prates,Neil Magny,1,5
+Neil Magny,Neil Magny,Gilbert Burns,0,1
+Neil Magny,Neil Magny,Phil Rowe,1,2
+Neil Magny,Neil Magny,Ian Machado Garry,0,3
+Neil Magny,Neil Magny,Mike Malott,1,4
+Neil Magny,Neil Magny,Michael Morales,0,5
+Neil Magny,Neil Magny,Carlos Prates,0,6
+Li Jingliang,Li Jingliang,Neil Magny,0,1
+Li Jingliang,Li Jingliang,Santiago Ponzinibbio,1,2
+Li Jingliang,Li Jingliang,Khamzat Chimaev,0,3
+Li Jingliang,Li Jingliang,Muslim Salikhov,1,4
+Li Jingliang,Li Jingliang,Daniel Rodriguez,0,5
+Li Jingliang,Li Jingliang,Carlos Prates,0,6
+Matthew Semelsberger,Matthew Semelsberger,Alex Morono,0,1
+Matthew Semelsberger,Matthew Semelsberger,Jake Matthews,1,2
+Matthew Semelsberger,Matthew Semelsberger,Jeremiah Wells,0,3
+Matthew Semelsberger,Matthew Semelsberger,Uros Medic,0,4
+Matthew Semelsberger,Matthew Semelsberger,Preston Parsons,0,5
+Matthew Semelsberger,Matthew Semelsberger,Charles Radtke,0,6
+Amir Albazi,Amir Albazi,Malcolm Gordon,1,1
+Amir Albazi,Amir Albazi,Zhalgas Zhumagulov,1,2
+Amir Albazi,Amir Albazi,Francisco Figueiredo,1,3
+Amir Albazi,Amir Albazi,Alessandro Costa,1,4
+Amir Albazi,Amir Albazi,Kai Kara-France,1,5
+Amir Albazi,Amir Albazi,Brandon Moreno,0,6
+Steve Erceg,Steve Erceg,David Dvorak,1,1
+Steve Erceg,Steve Erceg,Alessandro Costa,1,2
+Steve Erceg,Steve Erceg,Matt Schnell,1,3
+Steve Erceg,Steve Erceg,Alexandre Pantoja,0,4
+Steve Erceg,Steve Erceg,Kai Kara-France,0,5
+Brandon Royval,Brandon Royval,Rogerio Bontorin,1,1
+Brandon Royval,Brandon Royval,Matt Schnell,1,2
+Brandon Royval,Brandon Royval,Matheus Nicolau,1,3
+Brandon Royval,Brandon Royval,Alexandre Pantoja,0,4
+Brandon Royval,Brandon Royval,Brandon Moreno,1,5
+Brandon Royval,Brandon Royval,Tatsuro Taira,1,6
+Michael Morales,Michael Morales,Nikolay Veretennikov,1,1
+Michael Morales,Michael Morales,Trevin Giles,1,2
+Michael Morales,Michael Morales,Adam Fugitt,1,3
+Michael Morales,Michael Morales,Max Griffin,1,4
+Michael Morales,Michael Morales,Jake Matthews,1,5
+Michael Morales,Michael Morales,Neil Magny,1,6
+Tatsuro Taira,Tatsuro Taira,CJ Vergara,1,1
+Tatsuro Taira,Tatsuro Taira,Jesus Aguilar,1,2
+Tatsuro Taira,Tatsuro Taira,Edgar Chairez,1,3
+Tatsuro Taira,Tatsuro Taira,Carlos Hernandez,1,4
+Tatsuro Taira,Tatsuro Taira,Alex Perez,1,5
+Tatsuro Taira,Tatsuro Taira,Brandon Royval,0,6
+Alex Perez,Alex Perez,Jussier Formiga,1,1
+Alex Perez,Alex Perez,Deiveson Figueiredo,0,2
+Alex Perez,Alex Perez,Alexandre Pantoja,0,3
+Alex Perez,Alex Perez,Muhammad Mokaev,0,4
+Alex Perez,Alex Perez,Matheus Nicolau,1,5
+Alex Perez,Alex Perez,Tatsuro Taira,0,6
+Marlon Vera,Marlon Vera,Rob Font,1,1
+Marlon Vera,Marlon Vera,Dominick Cruz,1,2
+Marlon Vera,Marlon Vera,Cory Sandhagen,0,3
+Marlon Vera,Marlon Vera,Pedro Munhoz,1,4
+Marlon Vera,Marlon Vera,Sean O'Malley,0,5
+Marlon Vera,Marlon Vera,Deiveson Figueiredo,0,6
+Rob Font,Rob Font,Jose Aldo,0,1
+Rob Font,Rob Font,Marlon Vera,0,2
+Rob Font,Rob Font,Adrian Yanez,1,3
+Rob Font,Rob Font,Cory Sandhagen,0,4
+Rob Font,Rob Font,Deiveson Figueiredo,0,5
+Rob Font,Rob Font,Kyler Phillips,1,6
+Kyler Phillips,Kyler Phillips,Song Yadong,1,1
+Kyler Phillips,Kyler Phillips,Raulian Paiva,0,2
+Kyler Phillips,Kyler Phillips,Marcelo Rojo,1,3
+Kyler Phillips,Kyler Phillips,Raoni Barcelos,1,4
+Kyler Phillips,Kyler Phillips,Pedro Munhoz,1,5
+Kyler Phillips,Kyler Phillips,Rob Font,0,6
+Song Yadong,Song Yadong,Julio Arce,1,1
+Song Yadong,Song Yadong,Marlon Moraes,1,2
+Song Yadong,Song Yadong,Cory Sandhagen,0,3
+Song Yadong,Song Yadong,Ricky Simon,1,4
+Song Yadong,Song Yadong,Chris Gutierrez,1,5
+Song Yadong,Song Yadong,Petr Yan,0,6
+Chris Gutierrez,Chris Gutierrez,Batgerel Danaa,1,1
+Chris Gutierrez,Chris Gutierrez,Frankie Edgar,1,2
+Chris Gutierrez,Chris Gutierrez,Pedro Munhoz,0,3
+Chris Gutierrez,Chris Gutierrez,Alatengheili,1,4
+Chris Gutierrez,Chris Gutierrez,Song Yadong,0,5
+Chris Gutierrez,Chris Gutierrez,Quang Le,1,6
+Paul Craig,Paul Craig,Volkan Oezdemir,0,1
+Paul Craig,Paul Craig,Johnny Walker,0,2
+Paul Craig,Paul Craig,Andre Muniz,1,3
+Paul Craig,Paul Craig,Brendan Allen,0,4
+Paul Craig,Paul Craig,Caio Borralho,0,5
+Paul Craig,Paul Craig,Bo Nickal,0,6
+Caio Borralho,Caio Borralho,Armen Petrosyan,1,1
+Caio Borralho,Caio Borralho,Makhmud Muradov,1,2
+Caio Borralho,Caio Borralho,Michal Oleksiejczuk,1,3
+Caio Borralho,Caio Borralho,Abus Magomedov,1,4
+Caio Borralho,Caio Borralho,Paul Craig,1,5
+Caio Borralho,Caio Borralho,Jared Cannonier,1,6
+Jared Cannonier,Jared Cannonier,Derek Brunson,1,1
+Jared Cannonier,Jared Cannonier,Israel Adesanya,0,2
+Jared Cannonier,Jared Cannonier,Sean Strickland,1,3
+Jared Cannonier,Jared Cannonier,Marvin Vettori,1,4
+Jared Cannonier,Jared Cannonier,Nassourdine Imavov,0,5
+Jared Cannonier,Jared Cannonier,Caio Borralho,0,6
+Nassourdine Imavov,Nassourdine Imavov,Edmen Shahbazyan,1,1
+Nassourdine Imavov,Nassourdine Imavov,Joaquin Buckley,1,2
+Nassourdine Imavov,Nassourdine Imavov,Sean Strickland,0,3
+Nassourdine Imavov,Nassourdine Imavov,Roman Dolidze,1,4
+Nassourdine Imavov,Nassourdine Imavov,Jared Cannonier,1,5
+Nassourdine Imavov,Nassourdine Imavov,Brendan Allen,1,6
+Brendan Allen,Brendan Allen,Krzysztof Jotko,1,1
+Brendan Allen,Brendan Allen,Andre Muniz,1,2
+Brendan Allen,Brendan Allen,Bruno Silva,1,3
+Brendan Allen,Brendan Allen,Paul Craig,1,4
+Brendan Allen,Brendan Allen,Chris Curtis,1,5
+Brendan Allen,Brendan Allen,Nassourdine Imavov,0,6
+Chris Curtis,Chris Curtis,Rodolfo Vieira,1,1
+Chris Curtis,Chris Curtis,Jack Hermansson,0,2
+Chris Curtis,Chris Curtis,Joaquin Buckley,1,3
+Chris Curtis,Chris Curtis,Kelvin Gastelum,0,4
+Chris Curtis,Chris Curtis,Marc-Andre Barriault,1,5
+Chris Curtis,Chris Curtis,Brendan Allen,0,6
+Marc-Andre Barriault,Marc-Andre Barriault,Anthony Hernandez,0,1
+Marc-Andre Barriault,Marc-Andre Barriault,Julian Marquez,1,2
+Marc-Andre Barriault,Marc-Andre Barriault,Eryk Anders,1,3
+Marc-Andre Barriault,Marc-Andre Barriault,Chris Curtis,0,4
+Marc-Andre Barriault,Marc-Andre Barriault,Joe Pyfer,0,5
+Marc-Andre Barriault,Marc-Andre Barriault,Dustin Stoltzfus,0,6
+Joe Pyfer,Joe Pyfer,Ozzy Diaz,1,1
+Joe Pyfer,Joe Pyfer,Alen Amedovski,1,2
+Joe Pyfer,Joe Pyfer,Gerald Meerschaert,1,3
+Joe Pyfer,Joe Pyfer,Abdul Razak Alhassan,1,4
+Joe Pyfer,Joe Pyfer,Jack Hermansson,0,5
+Joe Pyfer,Joe Pyfer,Marc-Andre Barriault,1,6
+Jack Hermansson,Jack Hermansson,Marvin Vettori,0,1
+Jack Hermansson,Jack Hermansson,Edmen Shahbazyan,1,2
+Jack Hermansson,Jack Hermansson,Sean Strickland,0,3
+Jack Hermansson,Jack Hermansson,Chris Curtis,1,4
+Jack Hermansson,Jack Hermansson,Roman Dolidze,0,5
+Jack Hermansson,Jack Hermansson,Joe Pyfer,1,6
+Roman Dolidze,Roman Dolidze,Phil Hawes,1,1
+Roman Dolidze,Roman Dolidze,Jack Hermansson,1,2
+Roman Dolidze,Roman Dolidze,Marvin Vettori,0,3
+Roman Dolidze,Roman Dolidze,Nassourdine Imavov,0,4
+Roman Dolidze,Roman Dolidze,Anthony Smith,1,5
+Roman Dolidze,Roman Dolidze,Kevin Holland,1,6
+Marvin Vettori,Marvin Vettori,Kevin Holland,1,1
+Marvin Vettori,Marvin Vettori,Israel Adesanya,0,2
+Marvin Vettori,Marvin Vettori,Paulo Costa,1,3
+Marvin Vettori,Marvin Vettori,Robert Whittaker,0,4
+Marvin Vettori,Marvin Vettori,Roman Dolidze,1,5
+Marvin Vettori,Marvin Vettori,Jared Cannonier,0,6
+Alonzo Menifield,Alonzo Menifield,Askar Mozharov,1,1
+Alonzo Menifield,Alonzo Menifield,Misha Cirkunov,1,2
+Alonzo Menifield,Alonzo Menifield,Jimmy Crute,1,3
+Alonzo Menifield,Alonzo Menifield,Dustin Jacoby,1,4
+Alonzo Menifield,Alonzo Menifield,Carlos Ulberg,0,5
+Alonzo Menifield,Alonzo Menifield,Azamat Murzakanov,0,6
+Carlos Ulberg,Carlos Ulberg,Fabio Cherant,1,1
+Carlos Ulberg,Carlos Ulberg,Tafon Nchukwi,1,2
+Carlos Ulberg,Carlos Ulberg,Nicolae Negumereanu,1,3
+Carlos Ulberg,Carlos Ulberg,Ihor Potieria,1,4
+Carlos Ulberg,Carlos Ulberg,Da Woon Jung,1,5
+Carlos Ulberg,Carlos Ulberg,Alonzo Menifield,1,6
+Ihor Potieria,Ihor Potieria,Mauricio Rua,1,1
+Ihor Potieria,Ihor Potieria,Carlos Ulberg,0,2
+Ihor Potieria,Ihor Potieria,Rodolfo Bellato,0,3
+Ihor Potieria,Ihor Potieria,Robert Bryczek,1,4
+Ihor Potieria,Ihor Potieria,Michel Pereira,0,5
+Ihor Potieria,Ihor Potieria,Cesar Almeida,0,6
+Roman Kopylov,Roman Kopylov,Alessio Di Chirico,1,1
+Roman Kopylov,Roman Kopylov,Punahele Soriano,1,2
+Roman Kopylov,Roman Kopylov,Claudio Ribeiro,1,3
+Roman Kopylov,Roman Kopylov,Josh Fremd,1,4
+Roman Kopylov,Roman Kopylov,Anthony Hernandez,0,5
+Roman Kopylov,Roman Kopylov,Cesar Almeida,1,6
+Anthony Hernandez,Anthony Hernandez,Rodolfo Vieira,1,1
+Anthony Hernandez,Anthony Hernandez,Josh Fremd,1,2
+Anthony Hernandez,Anthony Hernandez,Marc-Andre Barriault,1,3
+Anthony Hernandez,Anthony Hernandez,Edmen Shahbazyan,1,4
+Anthony Hernandez,Anthony Hernandez,Roman Kopylov,1,5
+Anthony Hernandez,Anthony Hernandez,Michel Pereira,1,6
+Michel Pereira,Michel Pereira,Andre Fialho,1,1
+Michel Pereira,Michel Pereira,Santiago Ponzinibbio,1,2
+Michel Pereira,Michel Pereira,Andre Petroski,1,3
+Michel Pereira,Michel Pereira,Michal Oleksiejczuk,1,4
+Michel Pereira,Michel Pereira,Ihor Potieria,1,5
+Michel Pereira,Michel Pereira,Anthony Hernandez,0,6
+Geoff Neal,Geoff Neal,Neil Magny,0,1
+Geoff Neal,Geoff Neal,Santiago Ponzinibbio,1,2
+Geoff Neal,Geoff Neal,Vicente Luque,1,3
+Geoff Neal,Geoff Neal,Shavkat Rakhmonov,0,4
+Geoff Neal,Geoff Neal,Ian Machado Garry,0,5
+Geoff Neal,Geoff Neal,Rafael Dos Anjos,1,6
+Shavkat Rakhmonov,Shavkat Rakhmonov,Alex Oliveira,1,1
+Shavkat Rakhmonov,Shavkat Rakhmonov,Michel Prazeres,1,2
+Shavkat Rakhmonov,Shavkat Rakhmonov,Carlston Harris,1,3
+Shavkat Rakhmonov,Shavkat Rakhmonov,Neil Magny,1,4
+Shavkat Rakhmonov,Shavkat Rakhmonov,Geoff Neal,1,5
+Shavkat Rakhmonov,Shavkat Rakhmonov,Stephen Thompson,1,6
+Jan Blachowicz,Jan Blachowicz,Corey Anderson,1,1
+Jan Blachowicz,Jan Blachowicz,Dominick Reyes,1,2
+Jan Blachowicz,Jan Blachowicz,Israel Adesanya,1,3
+Jan Blachowicz,Jan Blachowicz,Glover Teixeira,0,4
+Jan Blachowicz,Jan Blachowicz,Aleksandar Rakic,1,5
+Jan Blachowicz,Jan Blachowicz,Alex Pereira,0,6
+Glover Teixeira,Glover Teixeira,Nikita Krylov,1,1
+Glover Teixeira,Glover Teixeira,Anthony Smith,1,2
+Glover Teixeira,Glover Teixeira,Thiago Santos,1,3
+Glover Teixeira,Glover Teixeira,Jan Blachowicz,1,4
+Glover Teixeira,Glover Teixeira,Jiri Prochazka,0,5
+Glover Teixeira,Glover Teixeira,Jamahal Hill,0,6
+Jamahal Hill,Jamahal Hill,Paul Craig,0,1
+Jamahal Hill,Jamahal Hill,Jimmy Crute,1,2
+Jamahal Hill,Jamahal Hill,Johnny Walker,1,3
+Jamahal Hill,Jamahal Hill,Thiago Santos,1,4
+Jamahal Hill,Jamahal Hill,Glover Teixeira,1,5
+Jamahal Hill,Jamahal Hill,Alex Pereira,0,6
+Islam Makhachev,Islam Makhachev,Dan Hooker,1,1
+Islam Makhachev,Islam Makhachev,King Green,1,2
+Islam Makhachev,Islam Makhachev,Charles Oliveira,1,3
+Islam Makhachev,Islam Makhachev,Alexander Volkanovski,1,4
+Islam Makhachev,Islam Makhachev,Alexander Volkanovski,1,5
+Islam Makhachev,Islam Makhachev,Dustin Poirier,1,6
+Shara Magomedov,Shara Magomedov,Bruno Silva,1,1
+Shara Magomedov,Shara Magomedov,Antonio Trocoli,1,2
+Shara Magomedov,Shara Magomedov,Michal Oleksiejczuk,1,3
+Shara Magomedov,Shara Magomedov,Armen Petrosyan,1,4
+Armen Petrosyan,Armen Petrosyan,Gregory Rodrigues,1,1
+Armen Petrosyan,Armen Petrosyan,Caio Borralho,0,2
+Armen Petrosyan,Armen Petrosyan,AJ Dobson,1,3
+Armen Petrosyan,Armen Petrosyan,Christian Leroy Duncan,1,4
+Armen Petrosyan,Armen Petrosyan,Rodolfo Vieira,0,5
+Armen Petrosyan,Armen Petrosyan,Shara Magomedov,0,6
+Michal Oleksiejczuk,Michal Oleksiejczuk,Cody Brundage,1,1
+Michal Oleksiejczuk,Michal Oleksiejczuk,Caio Borralho,0,2
+Michal Oleksiejczuk,Michal Oleksiejczuk,Chidi Njokuani,1,3
+Michal Oleksiejczuk,Michal Oleksiejczuk,Michel Pereira,0,4
+Michal Oleksiejczuk,Michal Oleksiejczuk,Kevin Holland,0,5
+Michal Oleksiejczuk,Michal Oleksiejczuk,Shara Magomedov,0,6
+Derrick Lewis,Derrick Lewis,Tai Tuivasa,0,1
+Derrick Lewis,Derrick Lewis,Sergei Pavlovich,0,2
+Derrick Lewis,Derrick Lewis,Serghei Spivac,0,3
+Derrick Lewis,Derrick Lewis,Marcos Rogerio de Lima,1,4
+Derrick Lewis,Derrick Lewis,Jailton Almeida,0,5
+Derrick Lewis,Derrick Lewis,Rodrigo Nascimento,1,6
+Curtis Blaydes,Curtis Blaydes,Jairzinho Rozenstruik,1,1
+Curtis Blaydes,Curtis Blaydes,Chris Daukaus,1,2
+Curtis Blaydes,Curtis Blaydes,Tom Aspinall,1,3
+Curtis Blaydes,Curtis Blaydes,Sergei Pavlovich,0,4
+Curtis Blaydes,Curtis Blaydes,Jailton Almeida,1,5
+Curtis Blaydes,Curtis Blaydes,Tom Aspinall,0,6
+Tom Aspinall,Tom Aspinall,Serghei Spivac,1,1
+Tom Aspinall,Tom Aspinall,Alexander Volkov,1,2
+Tom Aspinall,Tom Aspinall,Curtis Blaydes,0,3
+Tom Aspinall,Tom Aspinall,Marcin Tybura,1,4
+Tom Aspinall,Tom Aspinall,Sergei Pavlovich,1,5
+Tom Aspinall,Tom Aspinall,Curtis Blaydes,1,6
+Sergei Pavlovich,Sergei Pavlovich,Shamil Abdurakhimov,1,1
+Sergei Pavlovich,Sergei Pavlovich,Derrick Lewis,1,2
+Sergei Pavlovich,Sergei Pavlovich,Tai Tuivasa,1,3
+Sergei Pavlovich,Sergei Pavlovich,Curtis Blaydes,1,4
+Sergei Pavlovich,Sergei Pavlovich,Tom Aspinall,0,5
+Sergei Pavlovich,Sergei Pavlovich,Alexander Volkov,0,6
+Merab Dvalishvili,Merab Dvalishvili,Cody Stamann,1,1
+Merab Dvalishvili,Merab Dvalishvili,Marlon Moraes,1,2
+Merab Dvalishvili,Merab Dvalishvili,Jose Aldo,1,3
+Merab Dvalishvili,Merab Dvalishvili,Petr Yan,1,4
+Merab Dvalishvili,Merab Dvalishvili,Henry Cejudo,1,5
+Merab Dvalishvili,Merab Dvalishvili,Sean O'Malley,1,6
+Alexandre Pantoja,Alexandre Pantoja,Manel Kape,1,1
+Alexandre Pantoja,Alexandre Pantoja,Brandon Royval,1,2
+Alexandre Pantoja,Alexandre Pantoja,Alex Perez,1,3
+Alexandre Pantoja,Alexandre Pantoja,Brandon Moreno,1,4
+Alexandre Pantoja,Alexandre Pantoja,Brandon Royval,1,5
+Alexandre Pantoja,Alexandre Pantoja,Steve Erceg,1,6
+Dricus Du Plessis,Dricus Du Plessis,Brad Tavares,1,1
+Dricus Du Plessis,Dricus Du Plessis,Darren Till,1,2
+Dricus Du Plessis,Dricus Du Plessis,Derek Brunson,1,3
+Dricus Du Plessis,Dricus Du Plessis,Robert Whittaker,1,4
+Dricus Du Plessis,Dricus Du Plessis,Sean Strickland,1,5
+Dricus Du Plessis,Dricus Du Plessis,Israel Adesanya,1,6
+Leon Edwards,Leon Edwards,Rafael Dos Anjos,1,1
+Leon Edwards,Leon Edwards,Nate Diaz,1,2
+Leon Edwards,Leon Edwards,Kamaru Usman,1,3
+Leon Edwards,Leon Edwards,Kamaru Usman,1,4
+Leon Edwards,Leon Edwards,Colby Covington,1,5
+Leon Edwards,Leon Edwards,Belal Muhammad,0,6
+Bryce Mitchell,Bryce Mitchell,Charles Rosa,1,1
+Bryce Mitchell,Bryce Mitchell,Andre Fili,1,2
+Bryce Mitchell,Bryce Mitchell,Edson Barboza,1,3
+Bryce Mitchell,Bryce Mitchell,Ilia Topuria,0,4
+Bryce Mitchell,Bryce Mitchell,Dan Ige,1,5
+Bryce Mitchell,Bryce Mitchell,Josh Emmett,0,6
+Sean Brady,Sean Brady,Christian Aguilera,1,1
+Sean Brady,Sean Brady,Jake Matthews,1,2
+Sean Brady,Sean Brady,Michael Chiesa,1,3
+Sean Brady,Sean Brady,Belal Muhammad,0,4
+Sean Brady,Sean Brady,Kelvin Gastelum,1,5
+Sean Brady,Sean Brady,Gilbert Burns,1,6
+Sean O'Malley,Sean O'Malley,Kris Moutinho,1,1
+Sean O'Malley,Sean O'Malley,Raulian Paiva,1,2
+Sean O'Malley,Sean O'Malley,Petr Yan,1,3
+Sean O'Malley,Sean O'Malley,Aljamain Sterling,1,4
+Sean O'Malley,Sean O'Malley,Marlon Vera,1,5
+Sean O'Malley,Sean O'Malley,Merab Dvalishvili,0,6
+Umar Nurmagomedov,Umar Nurmagomedov,Sergey Morozov,1,1
+Umar Nurmagomedov,Umar Nurmagomedov,Brian Kelleher,1,2
+Umar Nurmagomedov,Umar Nurmagomedov,Nate Maness,1,3
+Umar Nurmagomedov,Umar Nurmagomedov,Raoni Barcelos,1,4
+Umar Nurmagomedov,Umar Nurmagomedov,Bekzat Almakhan,1,5
+Umar Nurmagomedov,Umar Nurmagomedov,Cory Sandhagen,1,6
+Bogdan Guskov,Bogdan Guskov,Volkan Oezdemir,0,1
+Bogdan Guskov,Bogdan Guskov,Zac Pauga,1,2
+Bogdan Guskov,Bogdan Guskov,Ryan Spann,1,3
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Curtis Blaydes,0,1
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Alexander Volkov,0,2
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Chris Daukaus,1,3
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Jailton Almeida,0,4
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Shamil Gaziev,1,5
+Jairzinho Rozenstruik,Jairzinho Rozenstruik,Tai Tuivasa,1,6
+Aleksandar Rakic,Aleksandar Rakic,Volkan Oezdemir,0,1
+Aleksandar Rakic,Aleksandar Rakic,Anthony Smith,1,2
+Aleksandar Rakic,Aleksandar Rakic,Thiago Santos,1,3
+Aleksandar Rakic,Aleksandar Rakic,Jan Blachowicz,0,4
+Aleksandar Rakic,Aleksandar Rakic,Jiri Prochazka,0,5
+Aleksandar Rakic,Aleksandar Rakic,Magomed Ankalaev,0,6
+Johnny Walker,Johnny Walker,Jamahal Hill,0,1
+Johnny Walker,Johnny Walker,Ion Cutelaba,1,2
+Johnny Walker,Johnny Walker,Paul Craig,1,3
+Johnny Walker,Johnny Walker,Anthony Smith,1,4
+Johnny Walker,Johnny Walker,Magomed Ankalaev,0,5
+Johnny Walker,Johnny Walker,Volkan Oezdemir,0,6
+Nikita Krylov,Nikita Krylov,Johnny Walker,1,1
+Nikita Krylov,Nikita Krylov,Magomed Ankalaev,0,2
+Nikita Krylov,Nikita Krylov,Paul Craig,0,3
+Nikita Krylov,Nikita Krylov,Alexander Gustafsson,1,4
+Nikita Krylov,Nikita Krylov,Volkan Oezdemir,1,5
+Nikita Krylov,Nikita Krylov,Ryan Spann,1,6
+Azamat Murzakanov,Azamat Murzakanov,Matheus Scheffel,1,1
+Azamat Murzakanov,Azamat Murzakanov,Tafon Nchukwi,1,2
+Azamat Murzakanov,Azamat Murzakanov,Devin Clark,1,3
+Azamat Murzakanov,Azamat Murzakanov,Dustin Jacoby,1,4
+Azamat Murzakanov,Azamat Murzakanov,Alonzo Menifield,1,5
+Anthony Smith,Anthony Smith,Magomed Ankalaev,0,1
+Anthony Smith,Anthony Smith,Johnny Walker,0,2
+Anthony Smith,Anthony Smith,Ryan Spann,1,3
+Anthony Smith,Anthony Smith,Khalil Rountree Jr.,0,4
+Anthony Smith,Anthony Smith,Vitor Petrino,1,5
+Anthony Smith,Anthony Smith,Roman Dolidze,0,6
+Paulo Costa,Paulo Costa,Yoel Romero,1,1
+Paulo Costa,Paulo Costa,Israel Adesanya,0,2
+Paulo Costa,Paulo Costa,Marvin Vettori,0,3
+Paulo Costa,Paulo Costa,Luke Rockhold,1,4
+Paulo Costa,Paulo Costa,Robert Whittaker,0,5
+Paulo Costa,Paulo Costa,Sean Strickland,0,6
+Jack Della Maddalena,Jack Della Maddalena,Ramazan Emeev,1,1
+Jack Della Maddalena,Jack Della Maddalena,Danny Roberts,1,2
+Jack Della Maddalena,Jack Della Maddalena,Randy Brown,1,3
+Jack Della Maddalena,Jack Della Maddalena,Bassil Hafez,1,4
+Jack Della Maddalena,Jack Della Maddalena,Kevin Holland,1,5
+Jack Della Maddalena,Jack Della Maddalena,Gilbert Burns,1,6
+Gilbert Burns,Gilbert Burns,Khamzat Chimaev,0,1
+Gilbert Burns,Gilbert Burns,Neil Magny,1,2
+Gilbert Burns,Gilbert Burns,Jorge Masvidal,1,3
+Gilbert Burns,Gilbert Burns,Belal Muhammad,0,4
+Gilbert Burns,Gilbert Burns,Jack Della Maddalena,0,5
+Gilbert Burns,Gilbert Burns,Sean Brady,0,6
+Rafael Fiziev,Rafael Fiziev,Renato Moicano,1,1
+Rafael Fiziev,Rafael Fiziev,King Green,1,2
+Rafael Fiziev,Rafael Fiziev,Brad Riddell,1,3
+Rafael Fiziev,Rafael Fiziev,Rafael Dos Anjos,1,4
+Rafael Fiziev,Rafael Fiziev,Justin Gaethje,0,5
+Rafael Fiziev,Rafael Fiziev,Mateusz Gamrot,0,6
+Beneil Dariush,Beneil Dariush,Scott Holtzman,1,1
+Beneil Dariush,Beneil Dariush,Diego Ferreira,1,2
+Beneil Dariush,Beneil Dariush,Tony Ferguson,1,3
+Beneil Dariush,Beneil Dariush,Mateusz Gamrot,1,4
+Beneil Dariush,Beneil Dariush,Charles Oliveira,0,5
+Beneil Dariush,Beneil Dariush,Arman Tsarukyan,0,6
+Paddy Pimblett,Paddy Pimblett,Luigi Vendramini,1,1
+Paddy Pimblett,Paddy Pimblett,Kazula Vargas,1,2
+Paddy Pimblett,Paddy Pimblett,Jordan Leavitt,1,3
+Paddy Pimblett,Paddy Pimblett,Jared Gordon,1,4
+Paddy Pimblett,Paddy Pimblett,Tony Ferguson,1,5
+Paddy Pimblett,Paddy Pimblett,King Green,1,6
+Ryan Spann,Ryan Spann,Ion Cutelaba,1,1
+Ryan Spann,Ryan Spann,Dominick Reyes,1,2
+Ryan Spann,Ryan Spann,Nikita Krylov,0,3
+Ryan Spann,Ryan Spann,Anthony Smith,0,4
+Ryan Spann,Ryan Spann,Bogdan Guskov,0,5
+Ryan Spann,Ryan Spann,Ovince Saint Preux,1,6
+Mauricio Ruffy,Mauricio Ruffy,Raimond Magomedaliev,1,1
+Mauricio Ruffy,Mauricio Ruffy,Jamie Mullarkey,1,2
+Mauricio Ruffy,Mauricio Ruffy,James Llontop,1,3
+King Green,King Green,Drew Dober,0,1
+King Green,King Green,Tony Ferguson,1,2
+King Green,King Green,Grant Dawson,1,3
+King Green,King Green,Jalin Turner,0,4
+King Green,King Green,Jim Miller,1,5
+King Green,King Green,Paddy Pimblett,0,6
+Grant Dawson,Grant Dawson,Jared Gordon,1,1
+Grant Dawson,Grant Dawson,Mark Madsen,1,2
+Grant Dawson,Grant Dawson,Damir Ismagulov,1,3
+Grant Dawson,Grant Dawson,King Green,0,4
+Grant Dawson,Grant Dawson,Joe Solecki,1,5
+Grant Dawson,Grant Dawson,Rafa Garcia,1,6
+Bruno Silva,Bruno Silva,Gerald Meerschaert,0,1
+Bruno Silva,Bruno Silva,Brad Tavares,1,2
+Bruno Silva,Bruno Silva,Brendan Allen,0,3
+Bruno Silva,Bruno Silva,Shara Magomedov,0,4
+Bruno Silva,Bruno Silva,Chris Weidman,0,5
+Bruno Silva,Bruno Silva,Ismail Naurdiev,0,6
+Claudio Puelles,Claudio Puelles,Marcos Mariano,1,1
+Claudio Puelles,Claudio Puelles,Jordan Leavitt,1,2
+Claudio Puelles,Claudio Puelles,Chris Gruetzemacher,1,3
+Claudio Puelles,Claudio Puelles,Clay Guida,1,4
+Claudio Puelles,Claudio Puelles,Dan Hooker,0,5
+Claudio Puelles,Claudio Puelles,Fares Ziam,0,6
+Rafael Dos Anjos,Rafael Dos Anjos,Renato Moicano,1,1
+Rafael Dos Anjos,Rafael Dos Anjos,Rafael Fiziev,0,2
+Rafael Dos Anjos,Rafael Dos Anjos,Bryan Barberena,1,3
+Rafael Dos Anjos,Rafael Dos Anjos,Vicente Luque,0,4
+Rafael Dos Anjos,Rafael Dos Anjos,Mateusz Gamrot,0,5
+Rafael Dos Anjos,Rafael Dos Anjos,Geoff Neal,0,6
+Francisco Prado,Francisco Prado,Jamie Mullarkey,0,1
+Francisco Prado,Francisco Prado,Ottman Azaitar,1,2
+Francisco Prado,Francisco Prado,Daniel Zellhuber,0,3
+Gabe Green,Gabe Green,Daniel Rodriguez,0,1
+Gabe Green,Gabe Green,Phil Rowe,1,2
+Gabe Green,Gabe Green,Yohan Lainesse,1,3
+Gabe Green,Gabe Green,Ian Machado Garry,0,4
+Gabe Green,Gabe Green,Bryan Battle,0,5
+Song Kenan,Song Kenan,Callan Potter,1,1
+Song Kenan,Song Kenan,Max Griffin,0,2
+Song Kenan,Song Kenan,Ian Machado Garry,0,3
+Song Kenan,Song Kenan,Rolando Bedoya,1,4
+Song Kenan,Song Kenan,Kevin Jousset,0,5
+Song Kenan,Song Kenan,Ricky Glenn,1,6
+Daniel Rodriguez,Daniel Rodriguez,Kevin Lee,1,1
+Daniel Rodriguez,Daniel Rodriguez,Li Jingliang,1,2
+Daniel Rodriguez,Daniel Rodriguez,Neil Magny,0,3
+Daniel Rodriguez,Daniel Rodriguez,Ian Machado Garry,0,4
+Daniel Rodriguez,Daniel Rodriguez,Kelvin Gastelum,0,5
+Daniel Rodriguez,Daniel Rodriguez,Alex Morono,1,6
+Michael Page,Michael Page,Kevin Holland,1,1
+Michael Page,Michael Page,Ian Machado Garry,0,2
+Michael Chandler,Michael Chandler,Dan Hooker,1,1
+Michael Chandler,Michael Chandler,Charles Oliveira,0,2
+Michael Chandler,Michael Chandler,Justin Gaethje,0,3
+Michael Chandler,Michael Chandler,Tony Ferguson,1,4
+Michael Chandler,Michael Chandler,Dustin Poirier,0,5
+Michael Chandler,Michael Chandler,Charles Oliveira,0,6
+Joel Alvarez,Joel Alvarez,Joe Duffy,1,1
+Joel Alvarez,Joel Alvarez,Alexander Yakovlev,1,2
+Joel Alvarez,Joel Alvarez,Thiago Moises,1,3
+Joel Alvarez,Joel Alvarez,Arman Tsarukyan,0,4
+Joel Alvarez,Joel Alvarez,Marc Diakiese,1,5
+Joel Alvarez,Joel Alvarez,Elves Brener,1,6
+Damir Ismagulov,Damir Ismagulov,Joel Alvarez,1,1
+Damir Ismagulov,Damir Ismagulov,Thiago Moises,1,2
+Damir Ismagulov,Damir Ismagulov,Rafael Alves,1,3
+Damir Ismagulov,Damir Ismagulov,Guram Kutateladze,1,4
+Damir Ismagulov,Damir Ismagulov,Arman Tsarukyan,0,5
+Damir Ismagulov,Damir Ismagulov,Grant Dawson,0,6
+Joaquim Silva,Joaquim Silva,Nasrat Haqparast,0,1
+Joaquim Silva,Joaquim Silva,Ricky Glenn,0,2
+Joaquim Silva,Joaquim Silva,Jesse Ronson,1,3
+Joaquim Silva,Joaquim Silva,Arman Tsarukyan,0,4
+Joaquim Silva,Joaquim Silva,Clay Guida,1,5
+Joaquim Silva,Joaquim Silva,Drakkar Klose,0,6
+Nasrat Haqparast,Nasrat Haqparast,Dan Hooker,0,1
+Nasrat Haqparast,Nasrat Haqparast,King Green,0,2
+Nasrat Haqparast,Nasrat Haqparast,John Makdessi,1,3
+Nasrat Haqparast,Nasrat Haqparast,Landon Quinones,1,4
+Nasrat Haqparast,Nasrat Haqparast,Jamie Mullarkey,1,5
+Nasrat Haqparast,Nasrat Haqparast,Jared Gordon,1,6
+Sodiq Yusuff,Sodiq Yusuff,Andre Fili,1,1
+Sodiq Yusuff,Sodiq Yusuff,Arnold Allen,0,2
+Sodiq Yusuff,Sodiq Yusuff,Alex Caceres,1,3
+Sodiq Yusuff,Sodiq Yusuff,Don Shainis,1,4
+Sodiq Yusuff,Sodiq Yusuff,Edson Barboza,0,5
+Sodiq Yusuff,Sodiq Yusuff,Diego Lopes,0,6
+Pat Sabatini,Pat Sabatini,Tucker Lutz,1,1
+Pat Sabatini,Pat Sabatini,TJ Laramie,1,2
+Pat Sabatini,Pat Sabatini,Damon Jackson,0,3
+Pat Sabatini,Pat Sabatini,Lucas Almeida,1,4
+Pat Sabatini,Pat Sabatini,Diego Lopes,0,5
+Pat Sabatini,Pat Sabatini,Jonathan Pearce,1,6
+Brian Ortega,Brian Ortega,Max Holloway,0,1
+Brian Ortega,Brian Ortega,Chan Sung Jung,1,2
+Brian Ortega,Brian Ortega,Alexander Volkanovski,0,3
+Brian Ortega,Brian Ortega,Yair Rodriguez,0,4
+Brian Ortega,Brian Ortega,Yair Rodriguez,1,5
+Brian Ortega,Brian Ortega,Diego Lopes,0,6
+Santiago Ponzinibbio,Santiago Ponzinibbio,Miguel Baeza,1,1
+Santiago Ponzinibbio,Santiago Ponzinibbio,Geoff Neal,0,2
+Santiago Ponzinibbio,Santiago Ponzinibbio,Michel Pereira,0,3
+Santiago Ponzinibbio,Santiago Ponzinibbio,Alex Morono,1,4
+Santiago Ponzinibbio,Santiago Ponzinibbio,Kevin Holland,0,5
+Santiago Ponzinibbio,Santiago Ponzinibbio,Muslim Salikhov,0,6
+Michael Chiesa,Michael Chiesa,Rafael Dos Anjos,1,1
+Michael Chiesa,Michael Chiesa,Neil Magny,1,2
+Michael Chiesa,Michael Chiesa,Vicente Luque,0,3
+Michael Chiesa,Michael Chiesa,Sean Brady,0,4
+Michael Chiesa,Michael Chiesa,Kevin Holland,0,5
+Michael Chiesa,Michael Chiesa,Tony Ferguson,1,6
+Andre Fialho,Andre Fialho,Miguel Baeza,1,1
+Andre Fialho,Andre Fialho,Cameron VanCamp,1,2
+Andre Fialho,Andre Fialho,Jake Matthews,0,3
+Andre Fialho,Andre Fialho,Muslim Salikhov,0,4
+Andre Fialho,Andre Fialho,Joaquin Buckley,0,5
+Andre Fialho,Andre Fialho,Tim Means,0,6
+Alex Morono,Alex Morono,Santiago Ponzinibbio,0,1
+Alex Morono,Alex Morono,Tim Means,1,2
+Alex Morono,Alex Morono,Joaquin Buckley,0,3
+Alex Morono,Alex Morono,Court McGee,1,4
+Alex Morono,Alex Morono,Niko Price,0,5
+Alex Morono,Alex Morono,Daniel Rodriguez,0,6
+Nursulton Ruziboev,Nursulton Ruziboev,Brunno Ferreira,1,1
+Nursulton Ruziboev,Nursulton Ruziboev,Sedriques Dumas,1,2
+Nursulton Ruziboev,Nursulton Ruziboev,Joaquin Buckley,0,3
+Dustin Jacoby,Dustin Jacoby,Da Woon Jung,1,1
+Dustin Jacoby,Dustin Jacoby,Khalil Rountree Jr.,0,2
+Dustin Jacoby,Dustin Jacoby,Azamat Murzakanov,0,3
+Dustin Jacoby,Dustin Jacoby,Kennedy Nzechukwu,1,4
+Dustin Jacoby,Dustin Jacoby,Alonzo Menifield,0,5
+Dustin Jacoby,Dustin Jacoby,Dominick Reyes,0,6
+Karl Roberson,Karl Roberson,Wellington Turman,1,1
+Karl Roberson,Karl Roberson,Roman Kopylov,1,2
+Karl Roberson,Karl Roberson,Marvin Vettori,0,3
+Karl Roberson,Karl Roberson,Brendan Allen,0,4
+Karl Roberson,Karl Roberson,Khalil Rountree Jr.,0,5
+Karl Roberson,Karl Roberson,Kennedy Nzechukwu,0,6
+Modestas Bukauskas,Modestas Bukauskas,Michal Oleksiejczuk,0,1
+Modestas Bukauskas,Modestas Bukauskas,Khalil Rountree Jr.,0,2
+Modestas Bukauskas,Modestas Bukauskas,Tyson Pedro,1,3
+Modestas Bukauskas,Modestas Bukauskas,Zac Pauga,1,4
+Modestas Bukauskas,Modestas Bukauskas,Vitor Petrino,0,5
+Modestas Bukauskas,Modestas Bukauskas,Marcin Prachnio,1,6
+Khabib Nurmagomedov,Khabib Nurmagomedov,Michael Johnson,1,1
+Khabib Nurmagomedov,Khabib Nurmagomedov,Edson Barboza,1,2
+Khabib Nurmagomedov,Khabib Nurmagomedov,Al Iaquinta,1,3
+Khabib Nurmagomedov,Khabib Nurmagomedov,Conor McGregor,1,4
+Khabib Nurmagomedov,Khabib Nurmagomedov,Dustin Poirier,1,5
+Khabib Nurmagomedov,Khabib Nurmagomedov,Justin Gaethje,1,6
+Chan Sung Jung,Chan Sung Jung,Renato Moicano,1,1
+Chan Sung Jung,Chan Sung Jung,Frankie Edgar,1,2
+Chan Sung Jung,Chan Sung Jung,Brian Ortega,0,3
+Chan Sung Jung,Chan Sung Jung,Dan Ige,1,4
+Chan Sung Jung,Chan Sung Jung,Alexander Volkanovski,0,5
+Chan Sung Jung,Chan Sung Jung,Max Holloway,0,6
+Ryan Hall,Ryan Hall,Artem Lobov,1,1
+Ryan Hall,Ryan Hall,Gray Maynard,1,2
+Ryan Hall,Ryan Hall,BJ Penn,1,3
+Ryan Hall,Ryan Hall,Darren Elkins,1,4
+Ryan Hall,Ryan Hall,Ilia Topuria,0,5
+Ryan Hall,Ryan Hall,Darrick Minner,1,6
+Jai Herbert,Jai Herbert,Renato Moicano,0,1
+Jai Herbert,Jai Herbert,Khama Worthy,1,2
+Jai Herbert,Jai Herbert,Ilia Topuria,0,3
+Jai Herbert,Jai Herbert,Kyle Nelson,1,4
+Jai Herbert,Jai Herbert,Fares Ziam,0,5
+Jai Herbert,Jai Herbert,Rolando Bedoya,1,6
+Pedro Munhoz,Pedro Munhoz,Jose Aldo,0,1
+Pedro Munhoz,Pedro Munhoz,Dominick Cruz,0,2
+Pedro Munhoz,Pedro Munhoz,Chris Gutierrez,1,3
+Pedro Munhoz,Pedro Munhoz,Marlon Vera,0,4
+Pedro Munhoz,Pedro Munhoz,Kyler Phillips,0,5
+Pedro Munhoz,Pedro Munhoz,Aiemann Zahabi,0,6
+Jonathan Martinez,Jonathan Martinez,Vince Morales,1,1
+Jonathan Martinez,Jonathan Martinez,Cub Swanson,1,2
+Jonathan Martinez,Jonathan Martinez,Said Nurmagomedov,1,3
+Jonathan Martinez,Jonathan Martinez,Adrian Yanez,1,4
+Jonathan Martinez,Jonathan Martinez,Jose Aldo,0,5
+Jonathan Martinez,Jonathan Martinez,Marcus McGhee,0,6
+Ikram Aliskerov,Ikram Aliskerov,Mario Sousa,1,1
+Ikram Aliskerov,Ikram Aliskerov,Phil Hawes,1,2
+Ikram Aliskerov,Ikram Aliskerov,Warlley Alves,1,3
+Ikram Aliskerov,Ikram Aliskerov,Robert Whittaker,0,4
+Nik Lentz,Nik Lentz,David Teymur,0,1
+Nik Lentz,Nik Lentz,Gray Maynard,1,2
+Nik Lentz,Nik Lentz,Scott Holtzman,1,3
+Nik Lentz,Nik Lentz,Charles Oliveira,0,4
+Nik Lentz,Nik Lentz,Arnold Allen,0,5
+Nik Lentz,Nik Lentz,Movsar Evloev,0,6
+Hakeem Dawodu,Hakeem Dawodu,Julio Arce,1,1
+Hakeem Dawodu,Hakeem Dawodu,Zubaira Tukhugov,1,2
+Hakeem Dawodu,Hakeem Dawodu,Movsar Evloev,0,3
+Hakeem Dawodu,Hakeem Dawodu,Michael Trizano,1,4
+Hakeem Dawodu,Hakeem Dawodu,Julian Erosa,0,5
+Hakeem Dawodu,Hakeem Dawodu,Cub Swanson,0,6
+Brandon Moreno,Brandon Moreno,Deiveson Figueiredo,0,1
+Brandon Moreno,Brandon Moreno,Kai Kara-France,1,2
+Brandon Moreno,Brandon Moreno,Deiveson Figueiredo,1,3
+Brandon Moreno,Brandon Moreno,Alexandre Pantoja,0,4
+Brandon Moreno,Brandon Moreno,Brandon Royval,0,5
+Brandon Moreno,Brandon Moreno,Amir Albazi,1,6
+Lucas Almeida,Lucas Almeida,Daniel Zellhuber,0,1
+Lucas Almeida,Lucas Almeida,Michael Trizano,1,2
+Lucas Almeida,Lucas Almeida,Pat Sabatini,0,3
+Lucas Almeida,Lucas Almeida,Andre Fili,0,4
+Lucas Almeida,Lucas Almeida,Timmy Cuamba,1,5
+Trey Ogden,Trey Ogden,Jordan Leavitt,0,1
+Trey Ogden,Trey Ogden,Daniel Zellhuber,1,2
+Trey Ogden,Trey Ogden,Ignacio Bahamondes,0,3
+Trey Ogden,Trey Ogden,Kurt Holobaugh,1,4
+Trey Ogden,Trey Ogden,Loik Radzhabov,1,5
+Lando Vannata,Lando Vannata,Marc Diakiese,0,1
+Lando Vannata,Lando Vannata,Yancy Medeiros,1,2
+Lando Vannata,Lando Vannata,King Green,0,3
+Lando Vannata,Lando Vannata,Mike Grundy,1,4
+Lando Vannata,Lando Vannata,Charles Jourdain,0,5
+Lando Vannata,Lando Vannata,Daniel Zellhuber,0,6
+Christos Giagos,Christos Giagos,Sean Soriano,1,1
+Christos Giagos,Christos Giagos,Arman Tsarukyan,0,2
+Christos Giagos,Christos Giagos,Thiago Moises,0,3
+Christos Giagos,Christos Giagos,Ricky Glenn,1,4
+Christos Giagos,Christos Giagos,Daniel Zellhuber,0,5
+Christos Giagos,Christos Giagos,Ignacio Bahamondes,0,6
+Loik Radzhabov,Loik Radzhabov,Esteban Ribovics,1,1
+Loik Radzhabov,Loik Radzhabov,Mateusz Rebecki,0,2
+Loik Radzhabov,Loik Radzhabov,Abdul-Kareem Al-Selwady,1,3
+Loik Radzhabov,Loik Radzhabov,Trey Ogden,0,4
+Kamuela Kirk,Kamuela Kirk,Billy Quarantillo,0,1
+Kamuela Kirk,Kamuela Kirk,Makwan Amirkhani,1,2
+Kamuela Kirk,Kamuela Kirk,Damon Jackson,0,3
+Kamuela Kirk,Kamuela Kirk,Esteban Ribovics,0,4
+Terrance McKinney,Terrance McKinney,Erick Gonzalez,1,1
+Terrance McKinney,Terrance McKinney,Ismael Bonfim,0,2
+Terrance McKinney,Terrance McKinney,Nazim Sadykhov,0,3
+Terrance McKinney,Terrance McKinney,Mike Breeden,1,4
+Terrance McKinney,Terrance McKinney,Brendon Marotte,1,5
+Terrance McKinney,Terrance McKinney,Esteban Ribovics,0,6
+Michael Johnson,Michael Johnson,Clay Guida,0,1
+Michael Johnson,Michael Johnson,Alan Patrick,1,2
+Michael Johnson,Michael Johnson,Jamie Mullarkey,0,3
+Michael Johnson,Michael Johnson,Marc Diakiese,1,4
+Michael Johnson,Michael Johnson,Diego Ferreira,0,5
+Michael Johnson,Michael Johnson,Darrius Flowers,1,6
+Muhammad Naimov,Muhammad Naimov,Collin Anglin,0,1
+Muhammad Naimov,Muhammad Naimov,Jamie Mullarkey,1,2
+Muhammad Naimov,Muhammad Naimov,Nathaniel Wood,1,3
+Muhammad Naimov,Muhammad Naimov,Erik Silva,1,4
+Muhammad Naimov,Muhammad Naimov,Felipe Lima,0,5
+John Makdessi,John Makdessi,Ross Pearson,1,1
+John Makdessi,John Makdessi,Jesus Pinedo,1,2
+John Makdessi,John Makdessi,Francisco Trinaldo,0,3
+John Makdessi,John Makdessi,Ignacio Bahamondes,1,4
+John Makdessi,John Makdessi,Nasrat Haqparast,0,5
+John Makdessi,John Makdessi,Jamie Mullarkey,0,6
+Brad Riddell,Brad Riddell,Magomed Mustafaev,1,1
+Brad Riddell,Brad Riddell,Alex Da Silva,1,2
+Brad Riddell,Brad Riddell,Drew Dober,1,3
+Brad Riddell,Brad Riddell,Rafael Fiziev,0,4
+Brad Riddell,Brad Riddell,Jalin Turner,0,5
+Brad Riddell,Brad Riddell,Renato Moicano,0,6
+Conor McGregor,Conor McGregor,Nate Diaz,1,1
+Conor McGregor,Conor McGregor,Eddie Alvarez,1,2
+Conor McGregor,Conor McGregor,Khabib Nurmagomedov,0,3
+Conor McGregor,Conor McGregor,Donald Cerrone,1,4
+Conor McGregor,Conor McGregor,Dustin Poirier,0,5
+Conor McGregor,Conor McGregor,Dustin Poirier,0,6
+Gabriel Miranda,Gabriel Miranda,Benoit Saint Denis,0,1
+Gabriel Miranda,Gabriel Miranda,Shane Young,1,2
+Gabriel Miranda,Gabriel Miranda,Morgan Charriere,0,3
+Ismael Bonfim,Ismael Bonfim,Nariman Abbasov,1,1
+Ismael Bonfim,Ismael Bonfim,Terrance McKinney,1,2
+Ismael Bonfim,Ismael Bonfim,Benoit Saint Denis,0,3
+Ismael Bonfim,Ismael Bonfim,Vinc Pichel,1,4
+Thiago Moises,Thiago Moises,Joel Alvarez,0,1
+Thiago Moises,Thiago Moises,Christos Giagos,1,2
+Thiago Moises,Thiago Moises,Melquizael Costa,1,3
+Thiago Moises,Thiago Moises,Benoit Saint Denis,0,4
+Thiago Moises,Thiago Moises,Mitch Ramirez,1,5
+Thiago Moises,Thiago Moises,Ludovit Klein,0,6
+Matt Frevola,Matt Frevola,Terrance McKinney,0,1
+Matt Frevola,Matt Frevola,Genaro Valdez,1,2
+Matt Frevola,Matt Frevola,Ottman Azaitar,1,3
+Matt Frevola,Matt Frevola,Drew Dober,1,4
+Matt Frevola,Matt Frevola,Benoit Saint Denis,0,5
+Matt Frevola,Matt Frevola,Fares Ziam,0,6
+Alexander Hernandez,Alexander Hernandez,Renato Moicano,0,1
+Alexander Hernandez,Alexander Hernandez,Billy Quarantillo,0,2
+Alexander Hernandez,Alexander Hernandez,Jim Miller,1,3
+Alexander Hernandez,Alexander Hernandez,Bill Algeo,0,4
+Alexander Hernandez,Alexander Hernandez,Damon Jackson,0,5
+Alexander Hernandez,Alexander Hernandez,Austin Hubbard,1,6
+Rafael Alves,Rafael Alves,Alejandro Flores,1,1
+Rafael Alves,Rafael Alves,Damir Ismagulov,0,2
+Rafael Alves,Rafael Alves,Marc Diakiese,1,3
+Rafael Alves,Rafael Alves,Drew Dober,0,4
+Rafael Alves,Rafael Alves,Nurullo Aliev,0,5
+Nathaniel Wood,Nathaniel Wood,Casey Kenney,0,1
+Nathaniel Wood,Nathaniel Wood,Charles Rosa,1,2
+Nathaniel Wood,Nathaniel Wood,Charles Jourdain,1,3
+Nathaniel Wood,Nathaniel Wood,Andre Fili,1,4
+Nathaniel Wood,Nathaniel Wood,Muhammad Naimov,0,5
+Nathaniel Wood,Nathaniel Wood,Daniel Pineda,1,6
+Kron Gracie,Kron Gracie,Alex Caceres,1,1
+Kron Gracie,Kron Gracie,Cub Swanson,0,2
+Kron Gracie,Kron Gracie,Charles Jourdain,0,3
+Ricardo Ramos,Ricardo Ramos,Bill Algeo,1,1
+Ricardo Ramos,Ricardo Ramos,Zubaira Tukhugov,0,2
+Ricardo Ramos,Ricardo Ramos,Danny Chavez,1,3
+Ricardo Ramos,Ricardo Ramos,Charles Jourdain,0,4
+Ricardo Ramos,Ricardo Ramos,Julian Erosa,0,5
+Ricardo Ramos,Ricardo Ramos,Josh Culibao,1,6
+Victor Henry,Victor Henry,Raoni Barcelos,1,1
+Victor Henry,Victor Henry,Raphael Assuncao,0,2
+Victor Henry,Victor Henry,Tony Gravely,1,3
+Victor Henry,Victor Henry,Rani Yahya,1,4
+Victor Henry,Victor Henry,Charles Jourdain,0,5
+Youssef Zalal,Youssef Zalal,Ilia Topuria,0,1
+Youssef Zalal,Youssef Zalal,SeungWoo Choi,0,2
+Youssef Zalal,Youssef Zalal,Sean Woodson,0,3
+Youssef Zalal,Youssef Zalal,Billy Quarantillo,1,4
+Youssef Zalal,Youssef Zalal,Jarno Errens,1,5
+Youssef Zalal,Youssef Zalal,Jack Shore,1,6
+Collin Anglin,Collin Anglin,Muhammad Naimov,1,1
+Collin Anglin,Collin Anglin,Melsik Baghdasaryan,0,2
+Collin Anglin,Collin Anglin,Sean Woodson,0,3
+Dennis Buzukja,Dennis Buzukja,Melsik Baghdasaryan,0,1
+Dennis Buzukja,Dennis Buzukja,Kaleio Romero,1,2
+Dennis Buzukja,Dennis Buzukja,Sean Woodson,0,3
+Dennis Buzukja,Dennis Buzukja,Jamall Emmers,0,4
+Dennis Buzukja,Dennis Buzukja,Connor Matthews,1,5
+Dennis Buzukja,Dennis Buzukja,Francis Marshall,0,6
+Volkan Oezdemir,Volkan Oezdemir,Magomed Ankalaev,0,1
+Volkan Oezdemir,Volkan Oezdemir,Paul Craig,1,2
+Volkan Oezdemir,Volkan Oezdemir,Nikita Krylov,0,3
+Volkan Oezdemir,Volkan Oezdemir,Bogdan Guskov,1,4
+Volkan Oezdemir,Volkan Oezdemir,Johnny Walker,1,5
+Volkan Oezdemir,Volkan Oezdemir,Carlos Ulberg,0,6
+Charles Radtke,Charles Radtke,Blood Diamond,1,1
+Charles Radtke,Charles Radtke,Gilbert Urbina,1,2
+Charles Radtke,Charles Radtke,Carlos Prates,0,3
+Charles Radtke,Charles Radtke,Matthew Semelsberger,1,4
+Gavin Tucker,Gavin Tucker,Ricky Glenn,0,1
+Gavin Tucker,Gavin Tucker,SeungWoo Choi,1,2
+Gavin Tucker,Gavin Tucker,Justin Jaynes,1,3
+Gavin Tucker,Gavin Tucker,Billy Quarantillo,1,4
+Gavin Tucker,Gavin Tucker,Dan Ige,0,5
+Gavin Tucker,Gavin Tucker,Diego Lopes,0,6
+Dominick Reyes,Dominick Reyes,Chris Weidman,1,1
+Dominick Reyes,Dominick Reyes,Jon Jones,0,2
+Dominick Reyes,Dominick Reyes,Jan Blachowicz,0,3
+Dominick Reyes,Dominick Reyes,Jiri Prochazka,0,4
+Dominick Reyes,Dominick Reyes,Ryan Spann,0,5
+Dominick Reyes,Dominick Reyes,Dustin Jacoby,1,6
+Chris Daukaus,Chris Daukaus,Aleksei Oleinik,1,1
+Chris Daukaus,Chris Daukaus,Shamil Abdurakhimov,1,2
+Chris Daukaus,Chris Daukaus,Derrick Lewis,0,3
+Chris Daukaus,Chris Daukaus,Curtis Blaydes,0,4
+Chris Daukaus,Chris Daukaus,Jairzinho Rozenstruik,0,5
+Chris Daukaus,Chris Daukaus,Khalil Rountree Jr.,0,6
+Cory Sandhagen,Cory Sandhagen,TJ Dillashaw,0,1
+Cory Sandhagen,Cory Sandhagen,Petr Yan,0,2
+Cory Sandhagen,Cory Sandhagen,Song Yadong,1,3
+Cory Sandhagen,Cory Sandhagen,Marlon Vera,1,4
+Cory Sandhagen,Cory Sandhagen,Rob Font,1,5
+Cory Sandhagen,Cory Sandhagen,Umar Nurmagomedov,0,6
+Abus Magomedov,Abus Magomedov,Dustin Stoltzfus,1,1
+Abus Magomedov,Abus Magomedov,Sean Strickland,0,2
+Abus Magomedov,Abus Magomedov,Caio Borralho,0,3
+Abus Magomedov,Abus Magomedov,Warlley Alves,1,4
+Abus Magomedov,Abus Magomedov,Brunno Ferreira,1,5
+Gerald Meerschaert,Gerald Meerschaert,Bruno Silva,1,1
+Gerald Meerschaert,Gerald Meerschaert,Joe Pyfer,0,2
+Gerald Meerschaert,Gerald Meerschaert,Andre Petroski,0,3
+Gerald Meerschaert,Gerald Meerschaert,Bryan Barberena,1,4
+Gerald Meerschaert,Gerald Meerschaert,Edmen Shahbazyan,1,5
+Gerald Meerschaert,Gerald Meerschaert,Reinier de Ridder,0,6
+Jorge Masvidal,Jorge Masvidal,Ben Askren,1,1
+Jorge Masvidal,Jorge Masvidal,Nate Diaz,1,2
+Jorge Masvidal,Jorge Masvidal,Kamaru Usman,0,3
+Jorge Masvidal,Jorge Masvidal,Kamaru Usman,0,4
+Jorge Masvidal,Jorge Masvidal,Colby Covington,0,5
+Jorge Masvidal,Jorge Masvidal,Gilbert Burns,0,6
+Demian Maia,Demian Maia,Kamaru Usman,0,1
+Demian Maia,Demian Maia,Lyman Good,1,2
+Demian Maia,Demian Maia,Anthony Rocco Martin,1,3
+Demian Maia,Demian Maia,Ben Askren,1,4
+Demian Maia,Demian Maia,Gilbert Burns,0,5
+Demian Maia,Demian Maia,Belal Muhammad,0,6
+Tyron Woodley,Tyron Woodley,Demian Maia,1,1
+Tyron Woodley,Tyron Woodley,Darren Till,1,2
+Tyron Woodley,Tyron Woodley,Kamaru Usman,0,3
+Tyron Woodley,Tyron Woodley,Gilbert Burns,0,4
+Tyron Woodley,Tyron Woodley,Colby Covington,0,5
+Tyron Woodley,Tyron Woodley,Vicente Luque,0,6
+Robbie Lawler,Robbie Lawler,Ben Askren,0,1
+Robbie Lawler,Robbie Lawler,Colby Covington,0,2
+Robbie Lawler,Robbie Lawler,Neil Magny,0,3
+Robbie Lawler,Robbie Lawler,Nick Diaz,1,4
+Robbie Lawler,Robbie Lawler,Bryan Barberena,0,5
+Robbie Lawler,Robbie Lawler,Niko Price,1,6
+Henry Cejudo,Henry Cejudo,Demetrious Johnson,1,1
+Henry Cejudo,Henry Cejudo,TJ Dillashaw,1,2
+Henry Cejudo,Henry Cejudo,Marlon Moraes,1,3
+Henry Cejudo,Henry Cejudo,Dominick Cruz,1,4
+Henry Cejudo,Henry Cejudo,Aljamain Sterling,0,5
+Henry Cejudo,Henry Cejudo,Merab Dvalishvili,0,6
+TJ Dillashaw,TJ Dillashaw,John Lineker,1,1
+TJ Dillashaw,TJ Dillashaw,Cody Garbrandt,1,2
+TJ Dillashaw,TJ Dillashaw,Cody Garbrandt,1,3
+TJ Dillashaw,TJ Dillashaw,Henry Cejudo,0,4
+TJ Dillashaw,TJ Dillashaw,Cory Sandhagen,1,5
+TJ Dillashaw,TJ Dillashaw,Aljamain Sterling,0,6
+Mike Grundy,Mike Grundy,Nad Narimani,1,1
+Mike Grundy,Mike Grundy,Movsar Evloev,0,2
+Mike Grundy,Mike Grundy,Lando Vannata,0,3
+Mike Grundy,Mike Grundy,Makwan Amirkhani,0,4
+Thiago Santos,Thiago Santos,Jon Jones,0,1
+Thiago Santos,Thiago Santos,Glover Teixeira,0,2
+Thiago Santos,Thiago Santos,Aleksandar Rakic,0,3
+Thiago Santos,Thiago Santos,Johnny Walker,1,4
+Thiago Santos,Thiago Santos,Magomed Ankalaev,0,5
+Thiago Santos,Thiago Santos,Jamahal Hill,0,6
+Ciryl Gane,Ciryl Gane,Alexander Volkov,1,1
+Ciryl Gane,Ciryl Gane,Derrick Lewis,1,2
+Ciryl Gane,Ciryl Gane,Francis Ngannou,0,3
+Ciryl Gane,Ciryl Gane,Tai Tuivasa,1,4
+Ciryl Gane,Ciryl Gane,Jon Jones,0,5
+Ciryl Gane,Ciryl Gane,Serghei Spivac,1,6
+Stipe Miocic,Stipe Miocic,Francis Ngannou,1,1
+Stipe Miocic,Stipe Miocic,Daniel Cormier,0,2
+Stipe Miocic,Stipe Miocic,Daniel Cormier,1,3
+Stipe Miocic,Stipe Miocic,Daniel Cormier,1,4
+Stipe Miocic,Stipe Miocic,Francis Ngannou,0,5
+Stipe Miocic,Stipe Miocic,Jon Jones,0,6
+Thomas Paull,Thomas Paull,Esteban Ribovics,0,1
+Alexander Gustafsson,Alexander Gustafsson,Jan Blachowicz,1,1
+Alexander Gustafsson,Alexander Gustafsson,Glover Teixeira,1,2
+Alexander Gustafsson,Alexander Gustafsson,Jon Jones,0,3
+Alexander Gustafsson,Alexander Gustafsson,Anthony Smith,0,4
+Alexander Gustafsson,Alexander Gustafsson,Fabricio Werdum,0,5
+Alexander Gustafsson,Alexander Gustafsson,Nikita Krylov,0,6
+Ricky Glenn,Ricky Glenn,Dennis Bermudez,1,1
+Ricky Glenn,Ricky Glenn,Kevin Aguilar,0,2
+Ricky Glenn,Ricky Glenn,Joaquim Silva,1,3
+Ricky Glenn,Ricky Glenn,Christos Giagos,0,4
+Ricky Glenn,Ricky Glenn,Drew Dober,0,5
+Ricky Glenn,Ricky Glenn,Song Kenan,0,6
+Westin Wilson,Westin Wilson,Joanderson Brito,0,1
+Westin Wilson,Westin Wilson,Jean Silva,0,2
+Westin Wilson,Westin Wilson,Jeka Saragih,1,3
+Kevin Vallejos,Kevin Vallejos,Jean Silva,0,1
+Kevin Vallejos,Kevin Vallejos,Cam Teague,1,2
+Julian Erosa,Julian Erosa,Steven Peterson,1,1
+Julian Erosa,Julian Erosa,Hakeem Dawodu,1,2
+Julian Erosa,Julian Erosa,Alex Caceres,0,3
+Julian Erosa,Julian Erosa,Fernando Padilla,0,4
+Julian Erosa,Julian Erosa,Ricardo Ramos,1,5
+Julian Erosa,Julian Erosa,Christian Rodriguez,1,6
+Daniel Pineda,Daniel Pineda,Herbert Burns,1,1
+Daniel Pineda,Daniel Pineda,Cub Swanson,0,2
+Daniel Pineda,Daniel Pineda,Tucker Lutz,1,3
+Daniel Pineda,Daniel Pineda,Alex Caceres,0,4
+Daniel Pineda,Daniel Pineda,Nathaniel Wood,0,5
+Daniel Pineda,Daniel Pineda,Darren Elkins,0,6
+SeungWoo Choi,SeungWoo Choi,Julian Erosa,1,1
+SeungWoo Choi,SeungWoo Choi,Alex Caceres,0,2
+SeungWoo Choi,SeungWoo Choi,Josh Culibao,0,3
+SeungWoo Choi,SeungWoo Choi,Michael Trizano,0,4
+SeungWoo Choi,SeungWoo Choi,Jarno Errens,1,5
+SeungWoo Choi,SeungWoo Choi,Steve Garcia,0,6
+Jamey Simmons,Jamey Simmons,Giga Chikadze,0,1
+Jamey Simmons,Jamey Simmons,Johnny Munoz,0,2
+Cub Swanson,Cub Swanson,Daniel Pineda,1,1
+Cub Swanson,Cub Swanson,Giga Chikadze,0,2
+Cub Swanson,Cub Swanson,Darren Elkins,1,3
+Cub Swanson,Cub Swanson,Jonathan Martinez,0,4
+Cub Swanson,Cub Swanson,Hakeem Dawodu,1,5
+Cub Swanson,Cub Swanson,Andre Fili,0,6
+Shane Burgos,Shane Burgos,Cub Swanson,1,1
+Shane Burgos,Shane Burgos,Makwan Amirkhani,1,2
+Shane Burgos,Shane Burgos,Josh Emmett,0,3
+Shane Burgos,Shane Burgos,Edson Barboza,0,4
+Shane Burgos,Shane Burgos,Billy Quarantillo,1,5
+Shane Burgos,Shane Burgos,Charles Jourdain,1,6
+Jeremy Stephens,Jeremy Stephens,Josh Emmett,1,1
+Jeremy Stephens,Jeremy Stephens,Jose Aldo,0,2
+Jeremy Stephens,Jeremy Stephens,Zabit Magomedsharipov,0,3
+Jeremy Stephens,Jeremy Stephens,Yair Rodriguez,0,4
+Jeremy Stephens,Jeremy Stephens,Calvin Kattar,0,5
+Jeremy Stephens,Jeremy Stephens,Mateusz Gamrot,0,6
+Nate Landwehr,Nate Landwehr,Julian Erosa,0,1
+Nate Landwehr,Nate Landwehr,Ludovit Klein,1,2
+Nate Landwehr,Nate Landwehr,David Onama,1,3
+Nate Landwehr,Nate Landwehr,Austin Lingo,1,4
+Nate Landwehr,Nate Landwehr,Dan Ige,0,5
+Nate Landwehr,Nate Landwehr,Jamall Emmers,1,6
+Andre Fili,Andre Fili,Joanderson Brito,0,1
+Andre Fili,Andre Fili,Bill Algeo,1,2
+Andre Fili,Andre Fili,Nathaniel Wood,0,3
+Andre Fili,Andre Fili,Lucas Almeida,1,4
+Andre Fili,Andre Fili,Dan Ige,0,5
+Andre Fili,Andre Fili,Cub Swanson,1,6
+Billy Quarantillo,Billy Quarantillo,Gabriel Benitez,1,1
+Billy Quarantillo,Billy Quarantillo,Shane Burgos,0,2
+Billy Quarantillo,Billy Quarantillo,Alexander Hernandez,1,3
+Billy Quarantillo,Billy Quarantillo,Edson Barboza,0,4
+Billy Quarantillo,Billy Quarantillo,Damon Jackson,1,5
+Billy Quarantillo,Billy Quarantillo,Youssef Zalal,0,6
+Josh Culibao,Josh Culibao,Shayilan Nuerdanbieke,1,1
+Josh Culibao,Josh Culibao,SeungWoo Choi,1,2
+Josh Culibao,Josh Culibao,Melsik Baghdasaryan,1,3
+Josh Culibao,Josh Culibao,Lerone Murphy,0,4
+Josh Culibao,Josh Culibao,Danny Silva,0,5
+Josh Culibao,Josh Culibao,Ricardo Ramos,0,6
+Gabriel Santos,Gabriel Santos,Lerone Murphy,0,1
+Gabriel Santos,Gabriel Santos,David Onama,0,2
+Gabriel Santos,Gabriel Santos,Yizha,1,3
+Makwan Amirkhani,Makwan Amirkhani,Edson Barboza,0,1
+Makwan Amirkhani,Makwan Amirkhani,Kamuela Kirk,0,2
+Makwan Amirkhani,Makwan Amirkhani,Lerone Murphy,0,3
+Makwan Amirkhani,Makwan Amirkhani,Mike Grundy,1,4
+Makwan Amirkhani,Makwan Amirkhani,Jonathan Pearce,0,5
+Makwan Amirkhani,Makwan Amirkhani,Jack Shore,0,6
+Douglas Silva de Andrade,Douglas Silva de Andrade,Lerone Murphy,0,1
+Douglas Silva de Andrade,Douglas Silva de Andrade,Gaetano Pirrello,1,2
+Douglas Silva de Andrade,Douglas Silva de Andrade,Sergey Morozov,1,3
+Douglas Silva de Andrade,Douglas Silva de Andrade,Said Nurmagomedov,0,4
+Douglas Silva de Andrade,Douglas Silva de Andrade,Cody Stamann,1,5
+Douglas Silva de Andrade,Douglas Silva de Andrade,Miles Johns,0,6
+Yoel Romero,Yoel Romero,Chris Weidman,1,1
+Yoel Romero,Yoel Romero,Robert Whittaker,0,2
+Yoel Romero,Yoel Romero,Luke Rockhold,1,3
+Yoel Romero,Yoel Romero,Robert Whittaker,0,4
+Yoel Romero,Yoel Romero,Paulo Costa,0,5
+Yoel Romero,Yoel Romero,Israel Adesanya,0,6
+Askar Askarov,Askar Askarov,Tim Elliott,1,1
+Askar Askarov,Askar Askarov,Alexandre Pantoja,1,2
+Askar Askarov,Askar Askarov,Joseph Benavidez,1,3
+Askar Askarov,Askar Askarov,Kai Kara-France,0,4
+Rogerio Bontorin,Rogerio Bontorin,Gustavo Gabriel,1,1
+Rogerio Bontorin,Rogerio Bontorin,Bibulatov Magomed,1,2
+Rogerio Bontorin,Rogerio Bontorin,Raulian Paiva,1,3
+Rogerio Bontorin,Rogerio Bontorin,Ray Borg,0,4
+Rogerio Bontorin,Rogerio Bontorin,Kai Kara-France,0,5
+Rogerio Bontorin,Rogerio Bontorin,Brandon Royval,0,6
+Matheus Nicolau,Matheus Nicolau,Tim Elliott,1,1
+Matheus Nicolau,Matheus Nicolau,David Dvorak,1,2
+Matheus Nicolau,Matheus Nicolau,Matt Schnell,1,3
+Matheus Nicolau,Matheus Nicolau,Brandon Royval,0,4
+Matheus Nicolau,Matheus Nicolau,Alex Perez,0,5
+Matheus Nicolau,Matheus Nicolau,Asu Almabayev,0,6
+Ode Osbourne,Ode Osbourne,Zarrukh Adashev,1,1
+Ode Osbourne,Ode Osbourne,Tyson Nam,0,2
+Ode Osbourne,Ode Osbourne,Charles Johnson,1,3
+Ode Osbourne,Ode Osbourne,Asu Almabayev,0,4
+Ode Osbourne,Ode Osbourne,Jafel Filho,0,5
+Ode Osbourne,Ode Osbourne,Ronaldo Rodriguez,0,6
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Amir Albazi,0,1
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Jerome Rivera,1,2
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Manel Kape,0,3
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Jeff Molina,0,4
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Charles Johnson,0,5
+Zhalgas Zhumagulov,Zhalgas Zhumagulov,Joshua Van,0,6
+David Dvorak,David Dvorak,Bruno Silva,1,1
+David Dvorak,David Dvorak,Jordan Espinosa,1,2
+David Dvorak,David Dvorak,Juancamilo Ronderos,1,3
+David Dvorak,David Dvorak,Matheus Nicolau,0,4
+David Dvorak,David Dvorak,Manel Kape,0,5
+David Dvorak,David Dvorak,Steve Erceg,0,6
+Felipe dos Santos,Felipe dos Santos,Manel Kape,0,1
+Felipe dos Santos,Felipe dos Santos,Victor Altamirano,1,2
+Felipe dos Santos,Felipe dos Santos,Andre Lima,0,3
+Muhammad Mokaev,Muhammad Mokaev,Charles Johnson,1,1
+Muhammad Mokaev,Muhammad Mokaev,Malcolm Gordon,1,2
+Muhammad Mokaev,Muhammad Mokaev,Jafel Filho,1,3
+Muhammad Mokaev,Muhammad Mokaev,Tim Elliott,1,4
+Muhammad Mokaev,Muhammad Mokaev,Alex Perez,1,5
+Muhammad Mokaev,Muhammad Mokaev,Manel Kape,1,6
+Donald Cerrone,Donald Cerrone,Tony Ferguson,0,1
+Donald Cerrone,Donald Cerrone,Justin Gaethje,0,2
+Donald Cerrone,Donald Cerrone,Conor McGregor,0,3
+Donald Cerrone,Donald Cerrone,Anthony Pettis,0,4
+Donald Cerrone,Donald Cerrone,Alex Morono,0,5
+Donald Cerrone,Donald Cerrone,Jim Miller,0,6
+Jesse Butler,Jesse Butler,Jim Miller,0,1
+Jesse Butler,Jesse Butler,Brad Katona,0,2
+Gabriel Benitez,Gabriel Benitez,Justin Jaynes,1,1
+Gabriel Benitez,Gabriel Benitez,Billy Quarantillo,0,2
+Gabriel Benitez,Gabriel Benitez,David Onama,0,3
+Gabriel Benitez,Gabriel Benitez,Charlie Ontiveros,1,4
+Gabriel Benitez,Gabriel Benitez,Jim Miller,0,5
+Gabriel Benitez,Gabriel Benitez,Maheshate,0,6
+Mitch Ramirez,Mitch Ramirez,Carlos Prates,0,1
+Mitch Ramirez,Mitch Ramirez,Thiago Moises,0,2
+Trevin Giles,Trevin Giles,Michael Morales,0,1
+Trevin Giles,Trevin Giles,Louis Cosce,1,2
+Trevin Giles,Trevin Giles,Preston Parsons,1,3
+Trevin Giles,Trevin Giles,Gabriel Bonfim,0,4
+Trevin Giles,Trevin Giles,Carlos Prates,0,5
+Trevin Giles,Trevin Giles,Mike Malott,0,6
+Phil Rowe,Phil Rowe,Gabe Green,0,1
+Phil Rowe,Phil Rowe,Orion Cosce,1,2
+Phil Rowe,Phil Rowe,Jason Witt,1,3
+Phil Rowe,Phil Rowe,Niko Price,1,4
+Phil Rowe,Phil Rowe,Neil Magny,0,5
+Phil Rowe,Phil Rowe,Jake Matthews,0,6
+Mike Malott,Mike Malott,Shimon Smotritsky,1,1
+Mike Malott,Mike Malott,Mickey Gall,1,2
+Mike Malott,Mike Malott,Yohan Lainesse,1,3
+Mike Malott,Mike Malott,Adam Fugitt,1,4
+Mike Malott,Mike Malott,Neil Magny,0,5
+Mike Malott,Mike Malott,Trevin Giles,1,6
+Ramazan Emeev,Ramazan Emeev,Stefan Sekulic,1,1
+Ramazan Emeev,Ramazan Emeev,Anthony Rocco Martin,0,2
+Ramazan Emeev,Ramazan Emeev,Niklas Stolze,1,3
+Ramazan Emeev,Ramazan Emeev,David Zawada,1,4
+Ramazan Emeev,Ramazan Emeev,Danny Roberts,0,5
+Ramazan Emeev,Ramazan Emeev,Jack Della Maddalena,0,6
+Danny Roberts,Danny Roberts,Michel Pereira,0,1
+Danny Roberts,Danny Roberts,Zelim Imadaev,1,2
+Danny Roberts,Danny Roberts,Ramazan Emeev,1,3
+Danny Roberts,Danny Roberts,Francisco Trinaldo,0,4
+Danny Roberts,Danny Roberts,Jack Della Maddalena,0,5
+Danny Roberts,Danny Roberts,Jonny Parsons,0,6
+Randy Brown,Randy Brown,Khaos Williams,1,1
+Randy Brown,Randy Brown,Francisco Trinaldo,1,2
+Randy Brown,Randy Brown,Jack Della Maddalena,0,3
+Randy Brown,Randy Brown,Wellington Turman,1,4
+Randy Brown,Randy Brown,Muslim Salikhov,1,5
+Randy Brown,Randy Brown,Elizeu Zaleski dos Santos,1,6
+Bassil Hafez,Bassil Hafez,Jack Della Maddalena,0,1
+Bassil Hafez,Bassil Hafez,Mickey Gall,1,2
+Bassil Hafez,Bassil Hafez,Oban Elliott,0,3
+Brad Tavares,Brad Tavares,Omari Akhmedov,1,1
+Brad Tavares,Brad Tavares,Dricus Du Plessis,0,2
+Brad Tavares,Brad Tavares,Bruno Silva,0,3
+Brad Tavares,Brad Tavares,Chris Weidman,1,4
+Brad Tavares,Brad Tavares,Gregory Rodrigues,0,5
+Brad Tavares,Brad Tavares,JunYong Park,0,6
+Darren Till,Darren Till,Tyron Woodley,0,1
+Darren Till,Darren Till,Jorge Masvidal,0,2
+Darren Till,Darren Till,Kelvin Gastelum,1,3
+Darren Till,Darren Till,Robert Whittaker,0,4
+Darren Till,Darren Till,Derek Brunson,0,5
+Darren Till,Darren Till,Dricus Du Plessis,0,6
+Derek Brunson,Derek Brunson,Ian Heinisch,1,1
+Derek Brunson,Derek Brunson,Edmen Shahbazyan,1,2
+Derek Brunson,Derek Brunson,Kevin Holland,1,3
+Derek Brunson,Derek Brunson,Darren Till,1,4
+Derek Brunson,Derek Brunson,Jared Cannonier,0,5
+Derek Brunson,Derek Brunson,Dricus Du Plessis,0,6
+Luigi Vendramini,Luigi Vendramini,Elizeu Zaleski dos Santos,0,1
+Luigi Vendramini,Luigi Vendramini,Jessin Ayari,1,2
+Luigi Vendramini,Luigi Vendramini,Fares Ziam,0,3
+Luigi Vendramini,Luigi Vendramini,Paddy Pimblett,0,4
+Kazula Vargas,Kazula Vargas,Alex Da Silva,0,1
+Kazula Vargas,Kazula Vargas,Brok Weaver,0,2
+Kazula Vargas,Kazula Vargas,Rongzhu,1,3
+Kazula Vargas,Kazula Vargas,Paddy Pimblett,0,4
+Jordan Leavitt,Jordan Leavitt,Claudio Puelles,0,1
+Jordan Leavitt,Jordan Leavitt,Matt Sayles,1,2
+Jordan Leavitt,Jordan Leavitt,Trey Ogden,1,3
+Jordan Leavitt,Jordan Leavitt,Paddy Pimblett,0,4
+Jordan Leavitt,Jordan Leavitt,Victor Martinez,1,5
+Jordan Leavitt,Jordan Leavitt,Chase Hooper,0,6
+Jared Gordon,Jared Gordon,Joe Solecki,1,1
+Jared Gordon,Jared Gordon,Grant Dawson,0,2
+Jared Gordon,Jared Gordon,Leonardo Santos,1,3
+Jared Gordon,Jared Gordon,Paddy Pimblett,0,4
+Jared Gordon,Jared Gordon,Mark Madsen,1,5
+Jared Gordon,Jared Gordon,Nasrat Haqparast,0,6
+Tony Ferguson,Tony Ferguson,Beneil Dariush,0,1
+Tony Ferguson,Tony Ferguson,Michael Chandler,0,2
+Tony Ferguson,Tony Ferguson,Nate Diaz,0,3
+Tony Ferguson,Tony Ferguson,King Green,0,4
+Tony Ferguson,Tony Ferguson,Paddy Pimblett,0,5
+Tony Ferguson,Tony Ferguson,Michael Chiesa,0,6
+Scott Holtzman,Scott Holtzman,Nik Lentz,0,1
+Scott Holtzman,Scott Holtzman,Dong Hyun Ma,1,2
+Scott Holtzman,Scott Holtzman,Jim Miller,1,3
+Scott Holtzman,Scott Holtzman,Beneil Dariush,0,4
+Scott Holtzman,Scott Holtzman,Mateusz Gamrot,0,5
+Scott Holtzman,Scott Holtzman,Clay Guida,0,6
+Diego Ferreira,Diego Ferreira,Anthony Pettis,1,1
+Diego Ferreira,Diego Ferreira,Beneil Dariush,0,2
+Diego Ferreira,Diego Ferreira,Gregor Gillespie,0,3
+Diego Ferreira,Diego Ferreira,Mateusz Gamrot,0,4
+Diego Ferreira,Diego Ferreira,Michael Johnson,1,5
+Diego Ferreira,Diego Ferreira,Mateusz Rebecki,1,6
+Luke Rockhold,Luke Rockhold,Chris Weidman,1,1
+Luke Rockhold,Luke Rockhold,Michael Bisping,0,2
+Luke Rockhold,Luke Rockhold,David Branch,1,3
+Luke Rockhold,Luke Rockhold,Yoel Romero,0,4
+Luke Rockhold,Luke Rockhold,Jan Blachowicz,0,5
+Luke Rockhold,Luke Rockhold,Paulo Costa,0,6
+Marlon Moraes,Marlon Moraes,Henry Cejudo,0,1
+Marlon Moraes,Marlon Moraes,Jose Aldo,1,2
+Marlon Moraes,Marlon Moraes,Cory Sandhagen,0,3
+Marlon Moraes,Marlon Moraes,Rob Font,0,4
+Marlon Moraes,Marlon Moraes,Merab Dvalishvili,0,5
+Marlon Moraes,Marlon Moraes,Song Yadong,0,6
+Cody Stamann,Cody Stamann,Said Nurmagomedov,0,1
+Cody Stamann,Cody Stamann,Eddie Wineland,1,2
+Cody Stamann,Cody Stamann,Luan Lacerda,1,3
+Cody Stamann,Cody Stamann,Douglas Silva de Andrade,0,4
+Cody Stamann,Cody Stamann,Taylor Lapilus,0,5
+Cody Stamann,Cody Stamann,Da'Mon Blackshear,0,6
+Nate Diaz,Nate Diaz,Conor McGregor,1,1
+Nate Diaz,Nate Diaz,Conor McGregor,0,2
+Nate Diaz,Nate Diaz,Anthony Pettis,1,3
+Nate Diaz,Nate Diaz,Jorge Masvidal,0,4
+Nate Diaz,Nate Diaz,Leon Edwards,0,5
+Nate Diaz,Nate Diaz,Tony Ferguson,1,6
+Jimmy Crute,Jimmy Crute,Misha Cirkunov,0,1
+Jimmy Crute,Jimmy Crute,Michal Oleksiejczuk,1,2
+Jimmy Crute,Jimmy Crute,Modestas Bukauskas,1,3
+Jimmy Crute,Jimmy Crute,Anthony Smith,0,4
+Jimmy Crute,Jimmy Crute,Jamahal Hill,0,5
+Jimmy Crute,Jimmy Crute,Alonzo Menifield,0,6
+Alex Oliveira,Alex Oliveira,Max Griffin,1,1
+Alex Oliveira,Alex Oliveira,Peter Sobotta,1,2
+Alex Oliveira,Alex Oliveira,Shavkat Rakhmonov,0,3
+Alex Oliveira,Alex Oliveira,Randy Brown,0,4
+Alex Oliveira,Alex Oliveira,Niko Price,0,5
+Alex Oliveira,Alex Oliveira,Kevin Holland,0,6
+Michel Prazeres,Michel Prazeres,Mads Burnell,1,1
+Michel Prazeres,Michel Prazeres,Desmond Green,1,2
+Michel Prazeres,Michel Prazeres,Zak Cummings,1,3
+Michel Prazeres,Michel Prazeres,Bartosz Fabinski,1,4
+Michel Prazeres,Michel Prazeres,Ismail Naurdiev,0,5
+Michel Prazeres,Michel Prazeres,Shavkat Rakhmonov,0,6
+Carlston Harris,Carlston Harris,Christian Aguilera,1,1
+Carlston Harris,Carlston Harris,Impa Kasanganay,1,2
+Carlston Harris,Carlston Harris,Shavkat Rakhmonov,0,3
+Carlston Harris,Carlston Harris,Jared Gooden,1,4
+Carlston Harris,Carlston Harris,Jeremiah Wells,1,5
+Carlston Harris,Carlston Harris,Khaos Williams,0,6
+Cesar Almeida,Cesar Almeida,Lucas Fernando,1,1
+Cesar Almeida,Cesar Almeida,Dylan Budka,1,2
+Cesar Almeida,Cesar Almeida,Roman Kopylov,0,3
+Cesar Almeida,Cesar Almeida,Ihor Potieria,1,4
+Josh Fremd,Josh Fremd,Anthony Hernandez,0,1
+Josh Fremd,Josh Fremd,Tresean Gore,0,2
+Josh Fremd,Josh Fremd,Sedriques Dumas,1,3
+Josh Fremd,Josh Fremd,Jamie Pickett,1,4
+Josh Fremd,Josh Fremd,Roman Kopylov,0,5
+Josh Fremd,Josh Fremd,Andre Petroski,0,6
+Claudio Ribeiro,Claudio Ribeiro,Ivan Valenzuela,1,1
+Claudio Ribeiro,Claudio Ribeiro,Abdul Razak Alhassan,0,2
+Claudio Ribeiro,Claudio Ribeiro,Joseph Holmes,1,3
+Claudio Ribeiro,Claudio Ribeiro,Roman Kopylov,0,4
+Claudio Ribeiro,Claudio Ribeiro,Christian Leroy Duncan,0,5
+Punahele Soriano,Punahele Soriano,Brendan Allen,0,1
+Punahele Soriano,Punahele Soriano,Nick Maximov,0,2
+Punahele Soriano,Punahele Soriano,Dalcha Lungiambula,1,3
+Punahele Soriano,Punahele Soriano,Roman Kopylov,0,4
+Punahele Soriano,Punahele Soriano,Dustin Stoltzfus,0,5
+Punahele Soriano,Punahele Soriano,Miguel Baeza,1,6
+Alessio Di Chirico,Alessio Di Chirico,Kevin Holland,0,1
+Alessio Di Chirico,Alessio Di Chirico,Makhmud Muradov,0,2
+Alessio Di Chirico,Alessio Di Chirico,Zak Cummings,0,3
+Alessio Di Chirico,Alessio Di Chirico,Joaquin Buckley,1,4
+Alessio Di Chirico,Alessio Di Chirico,Abdul Razak Alhassan,0,5
+Alessio Di Chirico,Alessio Di Chirico,Roman Kopylov,0,6
+Da Woon Jung,Da Woon Jung,William Knight,1,1
+Da Woon Jung,Da Woon Jung,Kennedy Nzechukwu,1,2
+Da Woon Jung,Da Woon Jung,Dustin Jacoby,0,3
+Da Woon Jung,Da Woon Jung,Devin Clark,0,4
+Da Woon Jung,Da Woon Jung,Carlos Ulberg,0,5
+Da Woon Jung,Da Woon Jung,Oumar Sy,0,6
+Nicolae Negumereanu,Nicolae Negumereanu,Saparbeg Safarov,0,1
+Nicolae Negumereanu,Nicolae Negumereanu,Aleksa Camur,1,2
+Nicolae Negumereanu,Nicolae Negumereanu,Ike Villanueva,1,3
+Nicolae Negumereanu,Nicolae Negumereanu,Kennedy Nzechukwu,1,4
+Nicolae Negumereanu,Nicolae Negumereanu,Ihor Potieria,1,5
+Nicolae Negumereanu,Nicolae Negumereanu,Carlos Ulberg,0,6
+Tafon Nchukwi,Tafon Nchukwi,Jamie Pickett,1,1
+Tafon Nchukwi,Tafon Nchukwi,JunYong Park,0,2
+Tafon Nchukwi,Tafon Nchukwi,Mike Rodriguez,1,3
+Tafon Nchukwi,Tafon Nchukwi,Azamat Murzakanov,0,4
+Tafon Nchukwi,Tafon Nchukwi,Carlos Ulberg,0,5
+Tafon Nchukwi,Tafon Nchukwi,AJ Dobson,0,6
+Fabio Cherant,Fabio Cherant,Aleksa Camur,0,1
+Fabio Cherant,Fabio Cherant,Alonzo Menifield,0,2
+Fabio Cherant,Fabio Cherant,William Knight,0,3
+Fabio Cherant,Fabio Cherant,Carlos Ulberg,0,4
+Makhmud Muradov,Makhmud Muradov,Alessio Di Chirico,1,1
+Makhmud Muradov,Makhmud Muradov,Trevor Smith,1,2
+Makhmud Muradov,Makhmud Muradov,Andrew Sanchez,1,3
+Makhmud Muradov,Makhmud Muradov,Gerald Meerschaert,0,4
+Makhmud Muradov,Makhmud Muradov,Caio Borralho,0,5
+Makhmud Muradov,Makhmud Muradov,Bryan Barberena,1,6
+Blood Diamond,Blood Diamond,Jeremiah Wells,0,1
+Blood Diamond,Blood Diamond,Orion Cosce,0,2
+Blood Diamond,Blood Diamond,Charles Radtke,0,3
+Gilbert Urbina,Gilbert Urbina,Bryan Battle,0,1
+Gilbert Urbina,Gilbert Urbina,Orion Cosce,1,2
+Gilbert Urbina,Gilbert Urbina,Charles Radtke,0,3
+Alessandro Costa,Alessandro Costa,Juan Andres Luna,1,1
+Alessandro Costa,Alessandro Costa,Amir Albazi,0,2
+Alessandro Costa,Alessandro Costa,Jimmy Flick,1,3
+Alessandro Costa,Alessandro Costa,Steve Erceg,0,4
+Alessandro Costa,Alessandro Costa,Kevin Borjas,1,5
+Francisco Figueiredo,Francisco Figueiredo,Jerome Rivera,1,1
+Francisco Figueiredo,Francisco Figueiredo,Malcolm Gordon,0,2
+Francisco Figueiredo,Francisco Figueiredo,Daniel Lacerda,1,3
+Francisco Figueiredo,Francisco Figueiredo,Amir Albazi,0,4
+Malcolm Gordon,Malcolm Gordon,Sumudaerji,0,1
+Malcolm Gordon,Malcolm Gordon,Francisco Figueiredo,1,2
+Malcolm Gordon,Malcolm Gordon,Denys Bondar,1,3
+Malcolm Gordon,Malcolm Gordon,Muhammad Mokaev,0,4
+Malcolm Gordon,Malcolm Gordon,Jake Hadley,0,5
+Malcolm Gordon,Malcolm Gordon,Jimmy Flick,0,6
+Matt Schnell,Matt Schnell,Tyson Nam,1,1
+Matt Schnell,Matt Schnell,Brandon Royval,0,2
+Matt Schnell,Matt Schnell,Sumudaerji,1,3
+Matt Schnell,Matt Schnell,Matheus Nicolau,0,4
+Matt Schnell,Matt Schnell,Steve Erceg,0,5
+Matt Schnell,Matt Schnell,Cody Durden,0,6
+Jake Matthews,Jake Matthews,Sean Brady,0,1
+Jake Matthews,Jake Matthews,Andre Fialho,1,2
+Jake Matthews,Jake Matthews,Matthew Semelsberger,0,3
+Jake Matthews,Jake Matthews,Darrius Flowers,1,4
+Jake Matthews,Jake Matthews,Michael Morales,0,5
+Jake Matthews,Jake Matthews,Phil Rowe,1,6
+Max Griffin,Max Griffin,Song Kenan,1,1
+Max Griffin,Max Griffin,Carlos Condit,1,2
+Max Griffin,Max Griffin,Neil Magny,0,3
+Max Griffin,Max Griffin,Tim Means,1,4
+Max Griffin,Max Griffin,Michael Morales,0,5
+Max Griffin,Max Griffin,Jeremiah Wells,1,6
+Adam Fugitt,Adam Fugitt,Michael Morales,0,1
+Adam Fugitt,Adam Fugitt,Yusaku Kinoshita,1,2
+Adam Fugitt,Adam Fugitt,Mike Malott,0,3
+Adam Fugitt,Adam Fugitt,Josh Quinlan,1,4
+Nikolay Veretennikov,Nikolay Veretennikov,Michael Morales,0,1
+Nikolay Veretennikov,Nikolay Veretennikov,Danny Barlow,0,2
+Carlos Hernandez,Carlos Hernandez,Victor Altamirano,1,1
+Carlos Hernandez,Carlos Hernandez,Allan Nascimento,0,2
+Carlos Hernandez,Carlos Hernandez,Denys Bondar,1,3
+Carlos Hernandez,Carlos Hernandez,Tatsuro Taira,0,4
+Carlos Hernandez,Carlos Hernandez,Rei Tsuruya,0,5
+Carlos Hernandez,Carlos Hernandez,Nyamjargal Tumendemberel,1,6
+Edgar Chairez,Edgar Chairez,Clayton Carpenter,0,1
+Edgar Chairez,Edgar Chairez,Tatsuro Taira,0,2
+Edgar Chairez,Edgar Chairez,Daniel Lacerda,1,3
+Edgar Chairez,Edgar Chairez,Joshua Van,0,4
+Jesus Aguilar,Jesus Aguilar,Erisson Ferreira,1,1
+Jesus Aguilar,Jesus Aguilar,Tatsuro Taira,0,2
+Jesus Aguilar,Jesus Aguilar,Shannon Ross,1,3
+Jesus Aguilar,Jesus Aguilar,Mateus Mendonca,1,4
+Jesus Aguilar,Jesus Aguilar,Stewart Nicoll,1,5
+CJ Vergara,CJ Vergara,Kleydson Rodrigues,1,1
+CJ Vergara,CJ Vergara,Tatsuro Taira,0,2
+CJ Vergara,CJ Vergara,Daniel Lacerda,1,3
+CJ Vergara,CJ Vergara,Vinicius Salvador,1,4
+CJ Vergara,CJ Vergara,Asu Almabayev,0,5
+CJ Vergara,CJ Vergara,Ramazan Temirov,0,6
+Jussier Formiga,Jussier Formiga,Ben Nguyen,1,1
+Jussier Formiga,Jussier Formiga,Sergio Pettis,1,2
+Jussier Formiga,Jussier Formiga,Deiveson Figueiredo,1,3
+Jussier Formiga,Jussier Formiga,Joseph Benavidez,0,4
+Jussier Formiga,Jussier Formiga,Brandon Moreno,0,5
+Jussier Formiga,Jussier Formiga,Alex Perez,0,6
+Dominick Cruz,Dominick Cruz,Urijah Faber,1,1
+Dominick Cruz,Dominick Cruz,Cody Garbrandt,0,2
+Dominick Cruz,Dominick Cruz,Henry Cejudo,0,3
+Dominick Cruz,Dominick Cruz,Casey Kenney,1,4
+Dominick Cruz,Dominick Cruz,Pedro Munhoz,1,5
+Dominick Cruz,Dominick Cruz,Marlon Vera,0,6
+James Llontop,James Llontop,Malik Lewis,1,1
+James Llontop,James Llontop,Chris Padilla,0,2
+James Llontop,James Llontop,Viacheslav Borshchev,0,3
+James Llontop,James Llontop,Mauricio Ruffy,0,4
+Raimond Magomedaliev,Raimond Magomedaliev,Mauricio Ruffy,0,1
+Adrian Yanez,Adrian Yanez,Randy Costa,1,1
+Adrian Yanez,Adrian Yanez,Davey Grant,1,2
+Adrian Yanez,Adrian Yanez,Tony Kelley,1,3
+Adrian Yanez,Adrian Yanez,Rob Font,0,4
+Adrian Yanez,Adrian Yanez,Jonathan Martinez,0,5
+Adrian Yanez,Adrian Yanez,Vinicius Salvador,1,6
+Raulian Paiva,Raulian Paiva,Rogerio Bontorin,0,1
+Raulian Paiva,Raulian Paiva,Mark De La Rosa,1,2
+Raulian Paiva,Raulian Paiva,Zhalgas Zhumagulov,1,3
+Raulian Paiva,Raulian Paiva,Kyler Phillips,1,4
+Raulian Paiva,Raulian Paiva,Sean O'Malley,0,5
+Raulian Paiva,Raulian Paiva,Sergey Morozov,0,6
+Marcelo Rojo,Marcelo Rojo,Charles Jourdain,0,1
+Marcelo Rojo,Marcelo Rojo,Kyler Phillips,0,2
+Marcelo Rojo,Marcelo Rojo,Francis Marshall,0,3
+Raoni Barcelos,Raoni Barcelos,Timur Valiev,0,1
+Raoni Barcelos,Raoni Barcelos,Victor Henry,0,2
+Raoni Barcelos,Raoni Barcelos,Trevin Jones,1,3
+Raoni Barcelos,Raoni Barcelos,Umar Nurmagomedov,0,4
+Raoni Barcelos,Raoni Barcelos,Kyler Phillips,0,5
+Raoni Barcelos,Raoni Barcelos,Cristian Quinonez,1,6
+Ricky Simon,Ricky Simon,Brian Kelleher,1,1
+Ricky Simon,Ricky Simon,Raphael Assuncao,1,2
+Ricky Simon,Ricky Simon,Jack Shore,1,3
+Ricky Simon,Ricky Simon,Song Yadong,0,4
+Ricky Simon,Ricky Simon,Mario Bautista,0,5
+Ricky Simon,Ricky Simon,Vinicius Oliveira,0,6
+Julio Arce,Julio Arce,Hakeem Dawodu,0,1
+Julio Arce,Julio Arce,Andre Ewell,1,2
+Julio Arce,Julio Arce,Song Yadong,0,3
+Julio Arce,Julio Arce,Daniel Santos,1,4
+Julio Arce,Julio Arce,Montel Jackson,0,5
+Julio Arce,Julio Arce,Herbert Burns,1,6
+Andre Muniz,Andre Muniz,Jacare Souza,1,1
+Andre Muniz,Andre Muniz,Eryk Anders,1,2
+Andre Muniz,Andre Muniz,Uriah Hall,1,3
+Andre Muniz,Andre Muniz,Brendan Allen,0,4
+Andre Muniz,Andre Muniz,Paul Craig,0,5
+Andre Muniz,Andre Muniz,JunYong Park,1,6
+Bo Nickal,Bo Nickal,Zachary Borrego,1,1
+Bo Nickal,Bo Nickal,Donovan Beard,1,2
+Bo Nickal,Bo Nickal,Jamie Pickett,1,3
+Bo Nickal,Bo Nickal,Val Woodburn,1,4
+Bo Nickal,Bo Nickal,Cody Brundage,1,5
+Bo Nickal,Bo Nickal,Paul Craig,1,6
+Edmen Shahbazyan,Edmen Shahbazyan,Jack Hermansson,0,1
+Edmen Shahbazyan,Edmen Shahbazyan,Nassourdine Imavov,0,2
+Edmen Shahbazyan,Edmen Shahbazyan,Dalcha Lungiambula,1,3
+Edmen Shahbazyan,Edmen Shahbazyan,Anthony Hernandez,0,4
+Edmen Shahbazyan,Edmen Shahbazyan,AJ Dobson,1,5
+Edmen Shahbazyan,Edmen Shahbazyan,Gerald Meerschaert,0,6
+Krzysztof Jotko,Krzysztof Jotko,Marc-Andre Barriault,1,1
+Krzysztof Jotko,Krzysztof Jotko,Eryk Anders,1,2
+Krzysztof Jotko,Krzysztof Jotko,Sean Strickland,0,3
+Krzysztof Jotko,Krzysztof Jotko,Misha Cirkunov,1,4
+Krzysztof Jotko,Krzysztof Jotko,Gerald Meerschaert,1,5
+Krzysztof Jotko,Krzysztof Jotko,Brendan Allen,0,6
+Kelvin Gastelum,Kelvin Gastelum,Ian Heinisch,1,1
+Kelvin Gastelum,Kelvin Gastelum,Robert Whittaker,0,2
+Kelvin Gastelum,Kelvin Gastelum,Jared Cannonier,0,3
+Kelvin Gastelum,Kelvin Gastelum,Chris Curtis,1,4
+Kelvin Gastelum,Kelvin Gastelum,Sean Brady,0,5
+Kelvin Gastelum,Kelvin Gastelum,Daniel Rodriguez,1,6
+Rodolfo Vieira,Rodolfo Vieira,Saparbeg Safarov,1,1
+Rodolfo Vieira,Rodolfo Vieira,Anthony Hernandez,0,2
+Rodolfo Vieira,Rodolfo Vieira,Dustin Stoltzfus,1,3
+Rodolfo Vieira,Rodolfo Vieira,Chris Curtis,0,4
+Rodolfo Vieira,Rodolfo Vieira,Cody Brundage,1,5
+Rodolfo Vieira,Rodolfo Vieira,Armen Petrosyan,1,6
+Eryk Anders,Eryk Anders,Darren Stewart,1,1
+Eryk Anders,Eryk Anders,Andre Muniz,0,2
+Eryk Anders,Eryk Anders,JunYong Park,0,3
+Eryk Anders,Eryk Anders,Kyle Daukaus,1,4
+Eryk Anders,Eryk Anders,Marc-Andre Barriault,0,5
+Eryk Anders,Eryk Anders,Jamie Pickett,1,6
+Dustin Stoltzfus,Dustin Stoltzfus,Gerald Meerschaert,0,1
+Dustin Stoltzfus,Dustin Stoltzfus,Dwight Grant,1,2
+Dustin Stoltzfus,Dustin Stoltzfus,Abus Magomedov,0,3
+Dustin Stoltzfus,Dustin Stoltzfus,Punahele Soriano,1,4
+Dustin Stoltzfus,Dustin Stoltzfus,Brunno Ferreira,0,5
+Dustin Stoltzfus,Dustin Stoltzfus,Marc-Andre Barriault,1,6
+Julian Marquez,Julian Marquez,Alessio Di Chirico,0,1
+Julian Marquez,Julian Marquez,Maki Pitolo,1,2
+Julian Marquez,Julian Marquez,Sam Alvey,1,3
+Julian Marquez,Julian Marquez,Gregory Rodrigues,0,4
+Julian Marquez,Julian Marquez,Marc-Andre Barriault,0,5
+Julian Marquez,Julian Marquez,Zachary Reese,0,6
+Phil Hawes,Phil Hawes,Kyle Daukaus,1,1
+Phil Hawes,Phil Hawes,Chris Curtis,0,2
+Phil Hawes,Phil Hawes,Deron Winn,1,3
+Phil Hawes,Phil Hawes,Roman Dolidze,0,4
+Phil Hawes,Phil Hawes,Ikram Aliskerov,0,5
+Phil Hawes,Phil Hawes,Brunno Ferreira,0,6
+Vitor Petrino,Vitor Petrino,Rodolfo Bellato,1,1
+Vitor Petrino,Vitor Petrino,Anton Turkalj,1,2
+Vitor Petrino,Vitor Petrino,Marcin Prachnio,1,3
+Vitor Petrino,Vitor Petrino,Modestas Bukauskas,1,4
+Vitor Petrino,Vitor Petrino,Tyson Pedro,1,5
+Vitor Petrino,Vitor Petrino,Anthony Smith,0,6
+Serghei Spivac,Serghei Spivac,Tom Aspinall,0,1
+Serghei Spivac,Serghei Spivac,Greg Hardy,1,2
+Serghei Spivac,Serghei Spivac,Augusto Sakai,1,3
+Serghei Spivac,Serghei Spivac,Derrick Lewis,1,4
+Serghei Spivac,Serghei Spivac,Ciryl Gane,0,5
+Serghei Spivac,Serghei Spivac,Marcin Tybura,1,6
+Tai Tuivasa,Tai Tuivasa,Derrick Lewis,1,1
+Tai Tuivasa,Tai Tuivasa,Ciryl Gane,0,2
+Tai Tuivasa,Tai Tuivasa,Sergei Pavlovich,0,3
+Tai Tuivasa,Tai Tuivasa,Alexander Volkov,0,4
+Tai Tuivasa,Tai Tuivasa,Marcin Tybura,0,5
+Tai Tuivasa,Tai Tuivasa,Jairzinho Rozenstruik,0,6
+Francis Ngannou,Francis Ngannou,Curtis Blaydes,1,1
+Francis Ngannou,Francis Ngannou,Cain Velasquez,1,2
+Francis Ngannou,Francis Ngannou,Junior Dos Santos,1,3
+Francis Ngannou,Francis Ngannou,Jairzinho Rozenstruik,1,4
+Francis Ngannou,Francis Ngannou,Stipe Miocic,1,5
+Francis Ngannou,Francis Ngannou,Ciryl Gane,1,6
+Alexander Volkov,Alexander Volkov,Marcin Tybura,1,1
+Alexander Volkov,Alexander Volkov,Tom Aspinall,0,2
+Alexander Volkov,Alexander Volkov,Jairzinho Rozenstruik,1,3
+Alexander Volkov,Alexander Volkov,Alexandr Romanov,1,4
+Alexander Volkov,Alexander Volkov,Tai Tuivasa,1,5
+Alexander Volkov,Alexander Volkov,Sergei Pavlovich,1,6
+Marcin Tybura,Marcin Tybura,Alexandr Romanov,1,1
+Marcin Tybura,Marcin Tybura,Blagoy Ivanov,1,2
+Marcin Tybura,Marcin Tybura,Tom Aspinall,0,3
+Marcin Tybura,Marcin Tybura,Tai Tuivasa,1,4
+Marcin Tybura,Marcin Tybura,Serghei Spivac,0,5
+Marcin Tybura,Marcin Tybura,Jhonata Diniz,1,6
+Bryan Barberena,Bryan Barberena,Matt Brown,1,1
+Bryan Barberena,Bryan Barberena,Robbie Lawler,1,2
+Bryan Barberena,Bryan Barberena,Rafael Dos Anjos,0,3
+Bryan Barberena,Bryan Barberena,Gunnar Nelson,0,4
+Bryan Barberena,Bryan Barberena,Makhmud Muradov,0,5
+Bryan Barberena,Bryan Barberena,Gerald Meerschaert,0,6
+Andre Petroski,Andre Petroski,Wellington Turman,1,1
+Andre Petroski,Andre Petroski,Gerald Meerschaert,1,2
+Andre Petroski,Andre Petroski,Michel Pereira,0,3
+Andre Petroski,Andre Petroski,Jacob Malkoun,0,4
+Andre Petroski,Andre Petroski,Josh Fremd,1,5
+Andre Petroski,Andre Petroski,Dylan Budka,1,6
+Corey Anderson,Corey Anderson,Ovince Saint Preux,0,1
+Corey Anderson,Corey Anderson,Patrick Cummins,1,2
+Corey Anderson,Corey Anderson,Glover Teixeira,1,3
+Corey Anderson,Corey Anderson,Ilir Latifi,1,4
+Corey Anderson,Corey Anderson,Johnny Walker,1,5
+Corey Anderson,Corey Anderson,Jan Blachowicz,0,6
+Jailton Almeida,Jailton Almeida,Anton Turkalj,1,1
+Jailton Almeida,Jailton Almeida,Shamil Abdurakhimov,1,2
+Jailton Almeida,Jailton Almeida,Jairzinho Rozenstruik,1,3
+Jailton Almeida,Jailton Almeida,Derrick Lewis,1,4
+Jailton Almeida,Jailton Almeida,Curtis Blaydes,0,5
+Jailton Almeida,Jailton Almeida,Alexandr Romanov,1,6
+Antonio Trocoli,Antonio Trocoli,Shara Magomedov,0,1
+Antonio Trocoli,Antonio Trocoli,Tresean Gore,0,2
+Shamil Abdurakhimov,Shamil Abdurakhimov,Andrei Arlovski,1,1
+Shamil Abdurakhimov,Shamil Abdurakhimov,Marcin Tybura,1,2
+Shamil Abdurakhimov,Shamil Abdurakhimov,Curtis Blaydes,0,3
+Shamil Abdurakhimov,Shamil Abdurakhimov,Chris Daukaus,0,4
+Shamil Abdurakhimov,Shamil Abdurakhimov,Sergei Pavlovich,0,5
+Shamil Abdurakhimov,Shamil Abdurakhimov,Jailton Almeida,0,6
+Charles Rosa,Charles Rosa,Kevin Aguilar,1,1
+Charles Rosa,Charles Rosa,Darrick Minner,0,2
+Charles Rosa,Charles Rosa,Justin Jaynes,1,3
+Charles Rosa,Charles Rosa,Damon Jackson,0,4
+Charles Rosa,Charles Rosa,TJ Brown,0,5
+Charles Rosa,Charles Rosa,Nathaniel Wood,0,6
+Kris Moutinho,Kris Moutinho,Sean O'Malley,0,1
+Kris Moutinho,Kris Moutinho,Guido Cannetti,0,2
+Zac Pauga,Zac Pauga,Mohammed Usman,0,1
+Zac Pauga,Zac Pauga,Jordan Wright,1,2
+Zac Pauga,Zac Pauga,Modestas Bukauskas,0,3
+Zac Pauga,Zac Pauga,Bogdan Guskov,0,4
+Shamil Gaziev,Shamil Gaziev,Greg Velasco,1,1
+Shamil Gaziev,Shamil Gaziev,Martin Buday,1,2
+Shamil Gaziev,Shamil Gaziev,Jairzinho Rozenstruik,0,3
+Shamil Gaziev,Shamil Gaziev,Don'Tale Mayes,1,4
+Ion Cutelaba,Ion Cutelaba,Ryan Spann,0,1
+Ion Cutelaba,Ion Cutelaba,Johnny Walker,0,2
+Ion Cutelaba,Ion Cutelaba,Kennedy Nzechukwu,0,3
+Ion Cutelaba,Ion Cutelaba,Tanner Boser,1,4
+Ion Cutelaba,Ion Cutelaba,Philipe Lins,0,5
+Ion Cutelaba,Ion Cutelaba,Ivan Erslan,1,6
+Alexandr Romanov,Alexandr Romanov,Chase Sherman,1,1
+Alexandr Romanov,Alexandr Romanov,Marcin Tybura,0,2
+Alexandr Romanov,Alexandr Romanov,Alexander Volkov,0,3
+Alexandr Romanov,Alexandr Romanov,Blagoy Ivanov,1,4
+Alexandr Romanov,Alexandr Romanov,Jailton Almeida,0,5
+Alexandr Romanov,Alexandr Romanov,Rodrigo Nascimento,1,6
