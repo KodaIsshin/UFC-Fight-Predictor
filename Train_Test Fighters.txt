@@ -112,3 +112,6 @@ Anthony Smith
 Alexander Volkov
 Ciryl Gane
 Brandon Moreno
+Joe Pyfer
+Grant Dawson
+Joel Alvarez

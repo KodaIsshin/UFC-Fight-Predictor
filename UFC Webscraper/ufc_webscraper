@@ -301,18 +301,17 @@ def main():
                 print(fighter_urls)
             case 2:
                 fighter_name, opp_links, opps = update_csv(fighter_urls, month_abbr)
-                dupe_check = all(item in opp_links for item in opp_urls)
-                if dupe_check is False:
-                    opp_urls.extend(opp_links)
-                    opp_names.extend(opps)
                 train_list = open("Train_Test Fighters.txt", "a")
                 read_list = open("Train_Test Fighters.txt", "r")
                 if fighter_name not in read_list.read():
+                    dupe_check = all(item in opp_urls for item in opp_links)
+                    if dupe_check is False:
+                        opp_urls.extend(opp_links)
+                        opp_names.extend(opps)
                     train_list.write(fighter_name + "\n")
+                    train_list.close()
                 else:
                     print("Fighter already in Train List")
-                    opp_links = []
-                    opp_names = []
             case 3:
                 fit_for_training()
             case 4:
@@ -329,10 +328,9 @@ def main():
                             print("No you haven't lol")
                             pass
                         else:
-                            print("Dope. See ya")
                             break
                     case 2:
                         pass
-    print("See ya.")
+    print("Dope, See ya.")
 
 main()
