@@ -148,7 +148,7 @@ INPUT_SIZE = 17 #input size of the LSTM model
 HIDDEN_SIZE = 17 #hidden size of the LSTM model
 train_fights = [] #list of fights to train models
 test_fights = [] #list of fights to test model
-num_epochs = 50
+num_epochs = 100
 for i in train_list:
     fighter_name = i.strip()
     train_data, test_data = test_train_dataloader(fighter_name, outcomes_dict[fighter_name])

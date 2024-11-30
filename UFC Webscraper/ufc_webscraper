@@ -161,7 +161,7 @@ def fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, 
                 fighter_a = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
                 fight_result = 1 if fighter_name in fighter_a else 0
                 fighter_b = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_gray").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
-                fight_performance.append([(fighter_name), (fighter_b if fight_result == 1 else fighter_a), fight_result, fight_id])
+                fight_performance.append([(fighter_name), (fighter_name), (fighter_b if fight_result == 1 else fighter_a), fight_result, fight_id])
             else:
                 print(f"Failed to fetch fight details for: {url}")
 
@@ -191,6 +191,9 @@ def weight_class(event_link, fight_link, weight):
                 
 
 def update_csv(fighter_links, month_abbr):
+    fighters = []
+    opp_links = []
+    opps = []
     for i in fighter_links:
         # Send a GET request to the URL
         response = requests.get(i)
@@ -202,7 +205,10 @@ def update_csv(fighter_links, month_abbr):
             fight_outcomes = soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")[:8] if len(soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")) > 6 else soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")
             # Extract general fighter information
             fighter_name, height, weight, reach, wins, losses, age = fighter_base_stats(soup, month_abbr)
-            fight_links, opp_links, opp_names = fighter_history(links, fighter_name, fight_outcomes)
+            fighters.append(fighter_name)
+            fight_links, links, opp_names = fighter_history(links, fighter_name, fight_outcomes)
+            opp_links.extend(links)
+            opps.extend(opp_names)
             fighter_exists = False
             with open('UFC Fighter Dataset.csv', 'rt') as f:
                 reader = csv.reader(f, delimiter=',')
@@ -247,7 +253,7 @@ def update_csv(fighter_links, month_abbr):
     last_fighter = df.iloc[-1]["Fighter Name"]
     print(f"# OF FIGHTERS CURRENTLY ADDED:\n{unique_count}")
     print(f"LAST FIGHTER ADDED:\n{last_fighter}")
-    return fighter_name, opp_links, opp_names
+    return fighters, opp_links, opps
 
 
 def fit_for_training():
@@ -303,15 +309,17 @@ def main():
                 fighter_name, opp_links, opps = update_csv(fighter_urls, month_abbr)
                 train_list = open("Train_Test Fighters.txt", "a")
                 read_list = open("Train_Test Fighters.txt", "r")
-                if fighter_name not in read_list.read():
-                    dupe_check = all(item in opp_urls for item in opp_links)
-                    if dupe_check is False:
-                        opp_urls.extend(opp_links)
-                        opp_names.extend(opps)
-                    train_list.write(fighter_name + "\n")
-                    train_list.close()
-                else:
-                    print("Fighter already in Train List")
+                for i in fighter_name:
+                    if i not in read_list.read():
+                        dupe_check = all(item in opp_urls for item in opp_links)
+                        if dupe_check is False:
+                            opp_urls.extend(opp_links)
+                            opp_names.extend(opps)
+                        train_list.write(i + "\n")
+                    else:
+                        print("Fighter already in Train List")
+                train_list.close()
+
             case 3:
                 fit_for_training()
             case 4:
