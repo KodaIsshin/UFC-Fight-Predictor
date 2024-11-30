@@ -247,7 +247,35 @@ def update_csv(fighter_links, month_abbr):
     last_fighter = df.iloc[-1]["Fighter Name"]
     print(f"# OF FIGHTERS CURRENTLY ADDED:\n{unique_count}")
     print(f"LAST FIGHTER ADDED:\n{last_fighter}")
-    return opp_links, opp_names
+    return fighter_name, opp_links, opp_names
+
+
+def fit_for_training():
+    fighter_input = str(input("Enter Fighter To Check: ")).strip()
+    fighters = fighter_input.strip().split(",")
+    for fighter_name in fighters:
+        fighter_names = []
+        with open("UFC Outcomes.csv", 'rt') as f:
+            reader = csv.reader(f, delimiter=',')
+            for row in reader:
+                if fighter_name == row[0].strip():
+                    fighter_names.append(row[1])
+        if len(fighter_names) < 1:
+            print(f"{fighter_name} is not fit for training:\nError Type: Fighter not logged in UFC Outcomes.")
+            break
+        else:
+            fighter_dupe = fighter_names.copy()
+            for i in fighter_names:
+                with open("UFC Fighter Dataset.csv", 'rt') as f:
+                    reader = csv.reader(f, delimiter=',')
+                    for row in reader:
+                        if i == row[0].strip():
+                            fighter_dupe.remove(i)
+                            break
+            if len(fighter_dupe) == 0:
+                print(f"{fighter_name} is fit for training")
+            else:
+                print(f"{fighter_name} is not fit for training\nError Type: Opponent Fight History not in database.\nMissing Fighters:\n{fighter_dupe}")      
 
 
 def main():
@@ -272,36 +300,21 @@ def main():
                         fighter_urls.remove(i)
                 print(fighter_urls)
             case 2:
-                opp_links, opps = update_csv(fighter_urls, month_abbr)
-                opp_urls.extend(opp_links)
-                opp_names.extend(opps)
-                
+                fighter_name, opp_links, opps = update_csv(fighter_urls, month_abbr)
+                dupe_check = all(item in opp_links for item in opp_urls)
+                if dupe_check is False:
+                    opp_urls.extend(opp_links)
+                    opp_names.extend(opps)
+                train_list = open("Train_Test Fighters.txt", "a")
+                read_list = open("Train_Test Fighters.txt", "r")
+                if fighter_name not in read_list.read():
+                    train_list.write(fighter_name + "\n")
+                else:
+                    print("Fighter already in Train List")
+                    opp_links = []
+                    opp_names = []
             case 3:
-                fighter_input = str(input("Enter Fighter To Check: ")).strip()
-                fighters = fighter_input.strip().split(",")
-                for fighter_name in fighters:
-                    fighter_names = []
-                    with open("UFC Outcomes.csv", 'rt') as f:
-                        reader = csv.reader(f, delimiter=',')
-                        for row in reader:
-                            if fighter_name == row[0].strip():
-                                fighter_names.append(row[1])
-                    if len(fighter_names) < 1:
-                        print(f"{fighter_name} is not fit for training:\nError Type: Fighter not logged in UFC Outcomes.")
-                        break
-                    else:
-                        fighter_dupe = fighter_names.copy()
-                        for i in fighter_names:
-                            with open("UFC Fighter Dataset.csv", 'rt') as f:
-                                reader = csv.reader(f, delimiter=',')
-                                for row in reader:
-                                    if i == row[0].strip():
-                                        fighter_dupe.remove(i)
-                                        break
-                        if len(fighter_dupe) == 0:
-                            print(f"{fighter_name} is fit for training")
-                        else:
-                            print(f"{fighter_name} is not fit for training\nError Type: Opponent Fight History not in database.\nMissing Fighters:\n{fighter_dupe}")      
+                fit_for_training()
             case 4:
                 update_csv(opp_urls, month_abbr)
                 opp_urls = []
