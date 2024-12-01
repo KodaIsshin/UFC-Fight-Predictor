@@ -302,7 +302,7 @@ def main():
                 link = str(input("Enter Fighter URL: "))
                 fighter_urls = link.split(",")
                 for i in fighter_urls:
-                    if len(i) != 56 and "fighter-details" not in i:
+                    if len(i) != 56 and "http://www.ufcstats.com/fighter-details/" not in i:
                         fighter_urls.remove(i)
                 print(fighter_urls)
             case 2:
