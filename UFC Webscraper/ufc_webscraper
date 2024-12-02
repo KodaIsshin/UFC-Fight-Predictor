@@ -265,7 +265,7 @@ def fit_for_training():
             reader = csv.reader(f, delimiter=',')
             for row in reader:
                 if fighter_name == row[0].strip():
-                    fighter_names.append(row[1])
+                    fighter_names.append(row[2])
         if len(fighter_names) < 1:
             print(f"{fighter_name} is not fit for training:\nError Type: Fighter not logged in UFC Outcomes.")
             break
