@@ -27,7 +27,7 @@ class FighterProfileLSTM(nn.Module):
         statistics and a profile given from the history given
         _____________________________________________________
         TRAIN:
-        The training of this model will just be feeding roughly 100 fighters and predicting match ups
+        The training of this model will just be feeding roughly 180 fighters and predicting match ups
         of their 6 fights.
         
         TEST:
@@ -155,20 +155,24 @@ for i in train_list:
     train_fights.extend(train_data)
     test_fights.extend(test_data)
 
+
 lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
 predictor_model = FightPredictor(HIDDEN_SIZE)
-
-criterion = nn.BCELoss() #Binary Cross Entropy Loss
 optimizer = torch.optim.Adam(
-    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=0.001)
-
+    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=0.001
+)
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
+criterion = nn.BCELoss() #Binary Cross Entropy Loss
+
 def train():
+    accuracy_list = []
     for epoch in range(num_epochs):
         lstm_model.train()
         predictor_model.train()
         total_loss = 0
+        correct_predictions = 0
+        total_predictions = 0
         for i in train_fights:
             #clear gradients (Biases from any past fights it analyzed)
             optimizer.zero_grad()
@@ -198,8 +202,15 @@ def train():
 
             total_loss += loss.item()
 
-        print(f"Epoch {epoch + 1}/{num_epochs}, Loss {total_loss:.4f}")
+            # Calculate accuracy
+            predicted = (prediction > 0.5).float()  # Binary conversion
+            correct_predictions += (predicted == outcome).sum().item()
+            total_predictions += 1
 
+        epoch_accuracy = correct_predictions / total_predictions * 100
+        accuracy_list.append(epoch_accuracy)
+        print(f"Epoch {epoch + 1}/{num_epochs}, Loss {total_loss:.4f}, Epoch Accuracy {epoch_accuracy:.2f}%")
+    print(accuracy_list)
 
 
 def test():
@@ -207,9 +218,13 @@ def test():
     predictor_model.eval()
     correct = 0
     total = 0
+    win = 0
+    loss = 0
     with torch.no_grad():
         for i in test_fights:
             outcome = torch.tensor(float(i[2]), dtype=torch.float32)
+            win = (win + 1) if int(i[2]) == 1 else win
+            loss = (loss + 1) if int(i[2]) == 0 else loss
             fighter_a, fighter_b, fighter_a_input, fighter_b_input = find_input_sequences(i[0], i[3])
             #generate the profiles for fighter a and b (will judge outcome based on fighter A)
             if isinstance(fighter_a_input, list):
@@ -228,6 +243,7 @@ def test():
             correct += (predicted == outcome).sum().item()
             total += 1
     accuracy = correct / total
+    print(f"Losses: {loss} Wins: {win}")
     print(f"Test Accuracy: {accuracy * 100:.2f}%")
 
 
