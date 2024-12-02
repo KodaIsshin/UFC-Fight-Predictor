@@ -33,7 +33,7 @@ class FighterProfileLSTM(nn.Module):
         TEST:
         There is no test feature for this, it will adjust it self based on more data.  
     """
-    def __init__(self, input_size, hidden_size, num_layers=1, dropout=0.4):
+    def __init__(self, input_size, hidden_size, num_layers=3, dropout=0.6):
         super(FighterProfileLSTM, self).__init__()
         self.hidden_size = hidden_size
         self.num_layers = num_layers
