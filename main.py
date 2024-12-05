@@ -226,7 +226,7 @@ def test():
             
             prediction = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
             predicted = (prediction > 0.5).float() #converts the probability to a binary prediction
-
+            
             correct += (predicted == outcome).sum().item()
             total += 1
     accuracy = correct / total
