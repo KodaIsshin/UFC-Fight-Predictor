@@ -129,67 +129,67 @@ class UFCDataset(Dataset):
             return self.__getitem__(fighter_name)
         else:
             raise KeyError(f"Fighter {fighter_name} not found in dataset")
-        
-dataset = UFCDataset(df)
+dataset = UFCDataset(df)        
 
-def display_data_by_fighter():
-    while True:
-        print("1. Read Tensor of Fighter\n2. Quit")
-        menu_option = check_input.get_int_range("", 1, 2)
-        match menu_option:
-             case 1:   
-                try:
-                    fighter_input = str(input("Input Fighter Name: "))
-                    name, inputdata = dataset.fighter_by_name(fighter_input)
-                    print(f"Data for {fighter_input[1]}:")
-                    print(f"Name: {name}")
-                    print(f"Input data:", inputdata)
-                except KeyError as e:
-                    print(e)
-             case 2:
-                  print("Goodbye.")
-                  break
+# def display_data_by_fighter():
+#     while True:
+#         print("1. Read Tensor of Fighter\n2. Quit")
+#         menu_option = check_input.get_int_range("", 1, 2)
+#         match menu_option:
+#              case 1:   
+#                 try:
+#                     fighter_input = str(input("Input Fighter Name: "))
+#                     name, inputdata = dataset.fighter_by_name(fighter_input)
+#                     print(f"Data for {fighter_input[1]}:")
+#                     print(f"Name: {name}")
+#                     print(f"Input data:", inputdata)
+#                 except KeyError as e:
+#                     print(e)
+#              case 2:
+#                   print("Goodbye.")
+#                   break
 
-def find_input_sequences(fighter_name, fight_indice):
-    fight_history = outcomes_dict[fighter_name]
-    fighter_a_input = dataset.fighter_name_index[fighter_name][:fight_indice-1]
-    fighter_b = fight_history[fight_indice-1][1]
-    opponent_history = outcomes_dict[fighter_b]
-    for i in opponent_history:
-        if i[1] == fighter_name:
-            if (dataset.fighter_name_index[fighter_b][i[3]-1][6:11] == dataset.fighter_name_index[fighter_name][fight_indice-1][11:16]).all():
-                print("Found input sequence")
-                fighter_b_input = dataset.fighter_name_index[fighter_b][:i[2]-1]
-                break
-            else:
-                print("Can't find input sequence, base sequence")
-                fighter_b_input = [dataset.fighter_name_index[fighter_b][0]]
-                break
-    fighter_a_input = [torch.tensor(i, dtype=torch.float32) for i in fighter_a_input] if len(fighter_a_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_name][0], dtype=torch.float32)
-    fighter_b_input = [torch.tensor(j,dtype=torch.float32) for j in fighter_b_input] if len(fighter_b_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_b][0], dtype=torch.float32)
-    return fighter_name, fighter_b,fighter_a_input, fighter_b_input
+# def find_input_sequences(fighter_name, fight_indice):
+#     fight_history = outcomes_dict[fighter_name]
+#     fighter_a_input = dataset.fighter_name_index[fighter_name][:fight_indice-1]
+#     fighter_b = fight_history[fight_indice-1][1]
+#     opponent_history = outcomes_dict[fighter_b]
+#     for i in opponent_history:
+#         if i[1] == fighter_name:
+#             if (dataset.fighter_name_index[fighter_b][i[3]-1][6:11] == dataset.fighter_name_index[fighter_name][fight_indice-1][11:16]).all():
+#                 print("Found input sequence")
+#                 fighter_b_input = dataset.fighter_name_index[fighter_b][:i[2]-1]
+#                 break
+#             else:
+#                 print("Can't find input sequence, base sequence")
+#                 fighter_b_input = [dataset.fighter_name_index[fighter_b][0]]
+#                 break
+#     fighter_a_input = [torch.tensor(i, dtype=torch.float32) for i in fighter_a_input] if len(fighter_a_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_name][0], dtype=torch.float32)
+#     fighter_b_input = [torch.tensor(j,dtype=torch.float32) for j in fighter_b_input] if len(fighter_b_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_b][0], dtype=torch.float32)
+#     return fighter_name, fighter_b,fighter_a_input, fighter_b_input
 
 
-def display_outcomes_by_fighter():
-    while True:
-         print("1. Get Fighter Outcomes\n2. Quit")
-         menu_option = check_input.get_int_range("", 1, 2)
-         match menu_option:
-            case 1:
-                fighter_name = str(input("Input Fighter Name: "))
-                fighter_rows = outcomes_dict[fighter_name]
-                print(fighter_rows)
-                while True:
-                    print(f"Find Input Sequences (2-{len(fighter_rows)}).\nPress 1 to exit")
-                    menu_option = check_input.get_int_range("", 1, len(fighter_rows))
-                    if menu_option == 1:
-                        break
-                    else:
-                        find_input_sequences(fighter_name, menu_option)
+# def display_outcomes_by_fighter():
+#     while True:
+#          print("1. Get Fighter Outcomes\n2. Quit")
+#          menu_option = check_input.get_int_range("", 1, 2)
+#          match menu_option:
+#             case 1:
+#                 fighter_name = str(input("Input Fighter Name: "))
+#                 fighter_rows = outcomes_dict[fighter_name]
+#                 print(fighter_rows)
+#                 while True:
+#                     print(f"Find Input Sequences (2-{len(fighter_rows)}).\nPress 1 to exit")
+#                     menu_option = check_input.get_int_range("", 1, len(fighter_rows))
+#                     if menu_option == 1:
+#                         break
+#                     else:
+#                         fighter_name, fighter_b, fighter_a_input, fighter_b_input = find_input_sequences(fighter_name, menu_option)
+#                         print(fighter_a_input)
 
-            case 2:
-                 break
+#             case 2:
+#                  break
              
 
-        
+
 
