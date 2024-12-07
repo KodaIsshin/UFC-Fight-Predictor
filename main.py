@@ -232,14 +232,20 @@ def test():
     accuracy = correct / total
     print(f"Losses: {loss} Wins: {win}")
     print(f"Test Accuracy: {accuracy * 100:.2f}%")
-
+    return accuracy * 100
 
 train()
-test()
-torch.save(lstm_model.state_dict(), "lstm_model.pth")
-torch.save(predictor_model.state_dict(), "predictor_model.pth")
+new_accuracy = test()
+with open("Current Accuracy.txt", "r") as read_list:
+    accuracy = float(read_list.read().strip())
 
-def make_prediction():
-    pass
+# Compare and overwrite if the new accuracy is better
+if new_accuracy >= accuracy:
+    with open("Current Accuracy.txt", "w") as write_list:
+        write_list.write(f"{new_accuracy:.2f}")
+        torch.save(lstm_model.state_dict(), 'lstm_model.pth')
+        torch.save(predictor_model.state_dict(), 'predictor_model.pth')
+
+ 
     
         
