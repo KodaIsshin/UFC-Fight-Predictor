@@ -15,8 +15,6 @@ outcomes_dict = of.groupby('Fighter Name').apply(lambda x: x.values.tolist(), in
 train_test_fighters = open("Train_Test Fighters.txt")
 train_list = train_test_fighters.readlines()
 
-
-
 def find_input_sequences(fighter_name, fight_indice):
     fight_history = outcomes_dict[fighter_name]
     fighter_a_input = dataset.fighter_name_index[fighter_name][:fight_indice-1]
@@ -36,7 +34,6 @@ def find_input_sequences(fighter_name, fight_indice):
     return fighter_name, fighter_b,fighter_a_input, fighter_b_input
 
 
-
 def test_train_dataloader(fighter_name, fighter_data):
     data_transfig = fighter_data[1:]
     total_fights = len(data_transfig)
@@ -50,9 +47,7 @@ def test_train_dataloader(fighter_name, fighter_data):
         index_split = (int(total_fights * .8))
         train_fights = (data_transfig[:index_split])
         test_fights = (data_transfig[index_split:])
-
     return train_fights, test_fights
-
 
 INPUT_SIZE = 17 #input size of the LSTM model
 HIDDEN_SIZE = 17 #hidden size of the LSTM model
@@ -64,7 +59,6 @@ for i in train_list:
     train_data, test_data = test_train_dataloader(fighter_name, outcomes_dict[fighter_name])
     train_fights.extend(train_data)
     test_fights.extend(test_data)
-
 
 lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
 predictor_model = FightPredictor(HIDDEN_SIZE)
@@ -98,10 +92,8 @@ def train():
             print(f"Processing {fighter_a} vs {fighter_b}")
             #Predict outcome
             prediction = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
-
             #Compute the loss (how far from actual 'prediction')
             loss = criterion(prediction, outcome)
-
             #back propogation
             loss.backward()
             optimizer.step()
@@ -155,6 +147,3 @@ if new_accuracy >= accuracy:
         torch.save(lstm_model.state_dict(), 'lstm_model.pth')
         torch.save(predictor_model.state_dict(), 'predictor_model.pth')
 
- 
-    
-        

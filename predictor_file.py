@@ -17,28 +17,29 @@ def get_fighter_input():
         else:
             print(f"{fighter_a} is not in UFC dataset, try again.")
             continue
-        fighter_b = str(input("Enter Fighter 2: "))
-        if fighter_b == fighter_a:
-            print(f"Fighter cannot fight themself, try again")
+        while True:
             fighter_b = str(input("Enter Fighter 2: "))
-        if fighter_b in dataset.fighter_name_index:
-            b_list = dataset.fighter_name_index[fighter_b]
-            b_input = [torch.tensor(i, dtype=torch.float32) for i in b_list]
+            if fighter_b == fighter_a:
+                print(f"Fighter cannot fight themself, try again")
+                continue
+            if fighter_b in dataset.fighter_name_index:
+                b_list = dataset.fighter_name_index[fighter_b]
+                b_input = [torch.tensor(i, dtype=torch.float32) for i in b_list]
+                break
+            else:
+                print(f"{fighter_b} is not in UFC dataset, try again.")
+                continue
         return fighter_a, fighter_b, a_input, b_input
 
 
 def main():
     INPUT_SIZE = 17
     HIDDEN_SIZE = 17
-
     lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
     predictor_model = FightPredictor(HIDDEN_SIZE)
-
     #Loading lstm model paths and predictor model paths
     lstm_model.load_state_dict(torch.load("lstm_model.pth", weights_only=True))
     predictor_model.load_state_dict(torch.load("predictor_model.pth", weights_only=False))
-
-
     #models to eval mode
     lstm_model.eval()
     predictor_model.eval()

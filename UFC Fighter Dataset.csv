@@ -1,4 +1,4 @@
-Fighter Name,Height,Reach,Wins,Losses,Age,Weight,Fight_ID,Result,Sig_Strikes,Takedowns,Knockdowns,Control_Time,Sub_Attempts,Opp_Sig_Strikes,Opp_Takedowns,Opp_Knockdowns,Opp_Control_Time,Opp_Sub_Attempts,Round
+Fighter Name,Height,Reach,Wins,Losses,Age,Weight,Fight_ID,Result,Sig_Strikes,Takedowns,Knockdowns,Control_Time,Sub_Attempts,Opp_Sig_Strikes,Opp_Takedowns,Opp_Knockdowns,Opp_Control_Time,Opp_Sub_Attempts,Round,Fighter_Link
 Ian Machado Garry,75,74,15,0,26,170,1,1,116,1,1,0:46,0,90,1,0,2:17,0,3
 Ian Machado Garry,75,74,15,0,26,170,2,1,127,0,1,0:05,0,55,2,1,0:44,0,3
 Ian Machado Garry,75,74,15,0,26,170,3,1,23,0,1,0:10,0,7,0,0,0:00,0,1
@@ -3475,3 +3475,13 @@ Dooho Choi,70,70,15,4,33,145,3,0,77,1,0,0:53,0,111,2,0,2:30,0,3
 Dooho Choi,70,70,15,4,33,145,4,0,44,0,0,0:04,0,49,0,1,0:11,0,2
 Dooho Choi,70,70,15,4,33,145,5,0,42,0,1,1:08,0,64,0,2,0:21,0,2
 Dooho Choi,70,70,15,4,33,145,6,1,21,2,0,1:33,3,17,2,0,3:09,0,2
+Felipe Lima,66,68,13,1,26,145,1,1,37,1,0,1:06,1,30,1,0,2:36,0,3
+Navajo Stirling,76,79,5,0,27,205,1,1,52,0,1,0:56,0,25,0,0,0:00,0,2
+Phillip Latu,75,76,6,2,33,205,1,0,25,0,0,0:00,0,52,0,1,0:56,0,2
+Tuco Tokkos,76,76,10,4,34,205,1,0,22,1,0,0:42,0,35,0,1,0:37,0,1
+Tuco Tokkos,76,76,10,4,34,205,2,0,3,0,0,0:00,0,0,2,0,3:30,1,1
+Oumar Sy,76,83,11,0,29,205,1,1,0,2,0,3:30,1,3,0,0,0:00,0,1
+Oumar Sy,76,83,11,0,29,205,2,1,90,2,0,3:02,0,29,0,0,0:09,0,3
+Zhang Mingyang,74,75,18,6,26,205,1,1,35,0,1,0:37,0,22,1,0,0:42,0,1
+Zhang Mingyang,74,75,18,6,26,205,2,1,17,0,1,0:02,0,14,0,0,0:00,0,1
+Zhang Mingyang,74,75,18,6,26,205,3,1,17,0,1,0:05,0,9,0,0,0:00,0,1

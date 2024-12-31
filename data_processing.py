@@ -28,20 +28,20 @@ FEATURE_RANGES = {
     'Reach': (50, 100),   # Example: 150 cm to 220 cm
     'Wins': (0, 50),      # Example: Number of wins
     'Losses': (0, 50),    # Example: Number of losses
-    'Age': (18, 50),       
+    'Age': (18, 50), 
+    'Fight_ID': (0,7)      
 }
-
-
 def process_fighter_group(group):
     # Keep only the first instance of the general stats
     general_stats = group.iloc[0][columns_to_drop]
 
     # Keep all fight history, including the opponent's name
-    fight_history = group[['Weight', 'Fight_ID', 'Result', 'Sig_Strikes', 'Takedowns', 'Knockdowns', 'Control_Time', 'Sub_Attempts', 'Opp_Sig_Strikes', 'Opp_Takedowns', 'Opp_Knockdowns', 'Opp_Control_Time', 'Opp_Sub_Attempts' , 'Round']]
+    fight_history = group[['Weight', 'Fight_ID', 'Result', 'Sig_Strikes', 'Takedowns', 'Knockdowns', 'Control_Time', 'Sub_Attempts', 'Opp_Sig_Strikes', 'Opp_Takedowns', 'Opp_Knockdowns', 'Opp_Control_Time', 'Opp_Sub_Attempts','Round']]
 
     # Return both general stats and fight history as a tuple
     return general_stats, fight_history
  
+
 def time_to_seconds(time_str):
         time_list = time_str.split(":")
         return (float(time_list[0]) * 60) + float(time_list[1])
