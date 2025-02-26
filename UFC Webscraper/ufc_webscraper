@@ -4,64 +4,110 @@ from datetime import datetime
 import check_input
 import pandas as pd
 import csv
+import time
+import gc
 
+df = pd.read_csv("UFC Fighter Dataset.csv")
+of = pd.read_csv("UFC Outcomes.csv")
 
 def fighter_history(links, fighter_name, fight_outcomes, height, reach):
-    full_links = []
-    opp_names = []
-    opp_links = []
-    overwrite = False
-    nc_draw_indices = []
-    df = pd.read_csv("UFC Fighter Dataset.csv")
-    fighter_rows = df[
-    (df['Fighter Name'] == fighter_name) & 
-    (df['Height'].astype(str) == str(height)) & 
-    (df['Reach'].astype(str) == str(reach))]
-    for i in links:
-        if "fight-details" in i:
-            full_links.append(i)
-    for idx, i in enumerate(fight_outcomes):
-        fight_stats = i.find_all("p", class_="b-fight-details__table-text")
-        fight_num = [i.get_text(strip=True) for i in fight_stats if i.get_text(strip=True).isdigit()]
-        outcome = i.find("i", class_="b-flag__text").get_text(strip=True)
-        fighter_links = [j for j in i.find_all("a", class_="b-link b-link_style_black") if "fighter-details" in j.get("href")]
-        if outcome in ["nc", "draw"]:
-            nc_draw_indices.append(idx)
-        else:
-            opp_links.extend([i.get("href") for i in fighter_links if i.get_text(strip=True) != fighter_name])
-            opp_names.extend([i.get_text(strip=True) for i in fighter_links if i.get_text(strip=True) != fighter_name])
-    fight_outcomes = [link for idx, link in enumerate(fight_outcomes) if idx not in nc_draw_indices]
-    fight_stats = [i.find_all("p", class_="b-fight-details__table-text") for i in fight_outcomes][0]
-    fight_num = [i.get_text(strip=True) for i in fight_stats if i.get_text(strip=True).isdigit()]
-    dataset_fight = fighter_rows.iloc[-1]
-    fighter_recent = [str(fight_num[0]), str(fight_num[1]), str(fight_num[2]), str(fight_num[3]), str(fight_num[4]), str(fight_num[5]), str(fight_num[6]), str(fight_num[7])]
-    dataset_recent = [str(dataset_fight['Knockdowns']), str(dataset_fight['Opp_Knockdowns']), str(dataset_fight['Sig_Strikes']), str(dataset_fight['Opp_Sig_Strikes']), str(dataset_fight['Takedowns']), str(dataset_fight['Opp_Takedowns']), str(dataset_fight['Sub_Attempts']), str(dataset_fight['Opp_Sub_Attempts'])]
-    if fighter_recent == dataset_recent or dataset_fight['Fighter_Link'] == 'NaN':
-        print(f"{fighter_name} has no new fights/Fighter_Link unavailable")
+    def extract_links_and_indices(fight_outcomes, fighter_name):
+        """Extract opponent links, names, and indices for 'nc' or 'draw' outcomes."""
+        opp_links, opp_names, nc_draw_indices = [], [], []
+        for idx, outcome in enumerate(fight_outcomes):
+            result = outcome.find("i", class_="b-flag__text").get_text(strip=True)
+            fighter_links = [
+                link for link in outcome.find_all("a", class_="b-link b-link_style_black")
+                if "fighter-details" in link.get("href")
+            ]
+            if result in ["nc", "draw"]:
+                nc_draw_indices.append(idx)
+            else:
+                opp_links.extend(
+                    [link.get("href") for link in fighter_links if link.get_text(strip=True) != fighter_name]
+                )
+                opp_names.extend(
+                    [link.get_text(strip=True) for link in fighter_links if link.get_text(strip=True) != fighter_name]
+                )
+        return opp_links, opp_names, nc_draw_indices
+
+    def filter_links_and_outcomes(links, fight_outcomes, exclude_indices):
+        """Filter links and fight outcomes by excluding specific indices."""
+        filtered_links = [link for idx, link in enumerate(links) if idx not in exclude_indices]
+        filtered_outcomes = [outcome for idx, outcome in enumerate(fight_outcomes) if idx not in exclude_indices]
+        return filtered_links, filtered_outcomes
+
+    def get_recent_stats(dataset_fight, fight_numbers):
+        """Prepare recent stats for comparison."""
+        dataset_recent = (
+            [
+                str(dataset_fight[col])
+                for col in [
+                    'Knockdowns', 'Opp_Knockdowns', 'Sig_Strikes', 'Opp_Sig_Strikes',
+                    'Takedowns', 'Opp_Takedowns', 'Sub_Attempts', 'Opp_Sub_Attempts'
+                ]
+            ] if not dataset_fight.empty else []
+        )
+        fighter_recent = fight_numbers[:8]
+        return dataset_recent, fighter_recent
+
+    # Extract full fight links
+    full_links = [link for link in links if "fight-details" in link]
+
+    # Retrieve fighter rows and outcome rows
+    fighter_rows = df.query("`Fighter Name` == @fighter_name and Height == @height and Reach == @reach")
+    outcome_rows = of.query("Fighter_Name == @fighter_name")
+
+    # Extract opponent links, names, and 'nc/draw' indices
+    opp_links, opp_names, nc_draw_indices = extract_links_and_indices(fight_outcomes, fighter_name)
+
+    # Filter fight outcomes and links
+    full_links, fight_outcomes = filter_links_and_outcomes(full_links, fight_outcomes, nc_draw_indices)
+
+    # Extract fight numbers
+    if fight_outcomes:
+        fight_stats = fight_outcomes[0].find_all("p", class_="b-fight-details__table-text")
+        fight_numbers = [stat.get_text(strip=True) for stat in fight_stats if stat.get_text(strip=True).isdigit()]
     else:
-        print(f"{fighter_name} has new fights")
-        overwrite = True
-    response = requests.get(full_links[0])
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
-        fight_content = soup.find("div", class_="b-fight-details__content")
-        if fight_content:
-            full_links = [link for idx, link in enumerate(full_links) if idx not in nc_draw_indices]
-            if len(full_links) > 6:
+        fight_numbers = []
+
+    # Get the most recent dataset fight if available
+    dataset_fight = fighter_rows.iloc[-1] if not fighter_rows.empty else pd.DataFrame()
+
+    # Prepare recent stats for comparison
+    dataset_recent, fighter_recent = get_recent_stats(dataset_fight, fight_numbers)
+
+    # Check if dataset needs updating
+    if fighter_rows.empty or str(fighter_rows['Fighter_Link'].iloc[0]) == "nan" or dataset_recent != fighter_recent:
+        df.drop(fighter_rows.index, inplace=True)
+        of.drop(outcome_rows.index, inplace=True)
+        df.to_csv("UFC Fighter Dataset.csv", index=False)
+        of.to_csv("UFC Outcomes.csv", index=False)
+        del fighter_rows, outcome_rows
+        gc.collect()
+    else:
+        return None, None, None
+
+    # Process fight details from the first link
+    if full_links:
+        response = requests.get(full_links[0])
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, "html.parser")
+            fight_content = soup.find("div", class_="b-fight-details__content")
+            if fight_content:
                 full_links = full_links[:6]
                 fight_outcomes = fight_outcomes[:6]
-        else:
-            nc_draw_indices = [i+2 for i in nc_draw_indices]
-            event_title = soup.find("a", href=lambda x: x and "event-details" in x).get_text(strip=True)
-            full_links = [link for idx, link in enumerate(full_links) if idx not in nc_draw_indices]
-            print(f"{fighter_name} has an upcoming fight at {event_title}")
-            if len(full_links[2:]) > 6:
-                full_links = full_links[2:8]
             else:
-                full_links = full_links[2:]
+                nc_draw_indices = [i + 2 for i in nc_draw_indices]
+                event_title = soup.find("a", href=lambda x: x and "event-details" in x).get_text(strip=True)
+                print(f"{fighter_name} has an upcoming fight at {event_title}")
+                full_links = full_links[2:8] if len(full_links) > 8 else full_links[2:]
+
+    # Reverse the links to maintain chronological order
     full_links.reverse()
+
     return full_links, opp_links[:6], opp_names[:6]
-                
+
             
 
 def fighter_base_stats(soup, month_dict):
@@ -181,7 +227,8 @@ def fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, 
                 fighter_a = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
                 fight_result = 1 if fighter_name in fighter_a else 0
                 fighter_b = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_gray").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
-                fight_performance.append([(fighter_name), (fighter_name), (fighter_b if fight_result == 1 else fighter_a), fight_result, fight_id])
+                fight_performance.append([(fighter_name), (fighter_name), (fighter_b if fight_result == 1 else fighter_a), fight_result, fight_id, link])
+                time.sleep(1)
             else:
                 print(f"Failed to fetch fight details for: {url}")
 
@@ -214,62 +261,69 @@ def update_csv(fighter_links, month_abbr):
     fighters = []
     opp_links = []
     opps = []
+
+    # Load existing data into memory once
+    fighter_df = pd.read_csv("UFC Fighter Dataset.csv")
+    outcome_df = pd.read_csv("UFC Outcomes.csv")
+
     for i in fighter_links:
-        # Send a GET request to the URL
+        # Fetch data from the URL
         response = requests.get(i)
-        # Check if the request was successful
         if response.status_code == 200:
-            # Parse the HTML content with BeautifulSoup
             soup = BeautifulSoup(response.content, "html.parser")
             links = [a.get('href') for a in soup.find_all('a', href=True)]
-            fight_outcomes = soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")[:10] if len(soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")) > 6 else soup.find_all("tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click")
-            # Extract general fighter information
+            fight_outcomes = soup.find_all(
+                "tr", class_="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click"
+            )[:10]
+
+            # Extract fighter info
             fighter_name, height, weight, reach, wins, losses, age = fighter_base_stats(soup, month_abbr)
             fighters.append(fighter_name)
-            fight_links, links, opp_names = fighter_history(links, fighter_name, fight_outcomes, height, reach)
-            opp_links.extend(links)
+
+            # Check if the fighter exists in the dataset
+            if fighter_name in fighter_df["Fighter Name"].values:
+                print(f"{fighter_name} is up to date in the database.")
+                del soup, links, fight_outcomes
+                continue
+
+            # Process fight history
+            fight_links, opponent_links, opp_names = fighter_history(links, fighter_name, fight_outcomes, height, reach)
+            if fight_links is None:
+                print(f"{fighter_name} is up to date in the database.")
+                del soup, links, fight_outcomes, fighter_name, height, weight, reach, wins, losses, fight_links, opponent_links, opp_names
+                gc.collect()
+                continue
+
+            # Append opponent data
+            opp_links.extend(opponent_links)
             opps.extend(opp_names)
-            fighter_exists = False
-            with open('UFC Fighter Dataset.csv', 'rt') as f:
-                reader = csv.reader(f, delimiter=',')
-                for row in reader:
-                    if fighter_name == row[0]: # if the username shall be on column 3 (-> index 2)
-                        fighter_exists = True
-                        break
-                    else:
-                        fighter_exists = False
-            if not fighter_exists:
-                fighter_performance = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, False, i)
-                with open('UFC Fighter Dataset.csv', 'a') as file:
-                    writer = csv.writer(file)
-                    for i in fighter_performance:
-                        writer.writerow(i)
-            else:
-                print(f"{fighter_name} is already in database")
-            with open('UFC Outcomes.csv', 'rt') as f:
-                reader = csv.reader(f, delimiter=',')
-                for row in reader:
-                    if fighter_name == row[0]: # if the username shall be on column 3 (-> index 2)
-                        fighter_exists = True
-                        break
-                    else:
-                        fighter_exists = False
-        
-            if not fighter_exists:
-                fighter_performance = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, True) 
-                with open('UFC Outcomes.csv', 'a') as file:
-                    writer = csv.writer(file)
-                    for i in fighter_performance:
-                        writer.writerow(i)
-            else:
-                print(f"{fighter_name} outcome is already in database")
+
+            # Process fight performance
+            fighter_performance = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, False, i)
+            fighter_df = pd.concat(
+                [fighter_df, pd.DataFrame(fighter_performance)],
+                ignore_index=True
+            )
+
+            # Process fight outcomes
+            fighter_outcome = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, True, i)
+            outcome_df = pd.concat(
+                [outcome_df, pd.DataFrame(fighter_outcome)],
+                ignore_index=True
+            )
+
+            # Cleanup
+            del soup, links, fight_outcomes, fighter_name, height, weight, reach, wins, losses, fight_links, opponent_links, opp_names
+            gc.collect()
         else:
             print(f"Failed to fetch the webpage. Status code: {response.status_code}")
-    df = pd.read_csv("UFC Fighter Dataset.csv")
-    unique_count = df["Fighter Name"].nunique()
-    last_fighter = df.iloc[-1]["Fighter Name"]
-    print(f"# OF FIGHTERS CURRENTLY ADDED:\n{unique_count}")
-    print(f"LAST FIGHTER ADDED:\n{last_fighter}")
+
+    # Save updated dataframes to CSV
+    fighter_df.to_csv("UFC Fighter Dataset.csv", index=False)
+    outcome_df.to_csv("UFC Outcomes.csv", index=False)
+
+    print(f"# OF FIGHTERS CURRENTLY ADDED: {fighter_df['Fighter Name'].nunique()}")
+    print(f"LAST FIGHTER ADDED: {fighter_df.iloc[-1]['Fighter Name']}")
     return fighters, opp_links, opps
 
 
@@ -312,18 +366,21 @@ def main():
                     }
     while True:
     # URL of the UFC stats website
-        print("1. Add Fighter Data\n2. Add Fighter To CSV\n3. Check For Fighter\n4. Check Fighter Opps\n5. Quit")
+        print("1. Add Fighter Data\n2. Add Fighter To CSV\n3. Check For Fighter\n4. Check Fighter Opps\n5. Get Current Data\n6. Quit")
         menu_input = check_input.get_int_range("Enter Input: ", 1, 5)
         match menu_input:
             case 1:
                 link = str(input("Enter Fighter URL: "))
-                fighter_urls = link.split(",")
+                fighter_urls.extend(link.split(","))
                 for i in fighter_urls:
                     if len(i) != 56 and "http://www.ufcstats.com/fighter-details/" not in i:
                         fighter_urls.remove(i)
                 print(fighter_urls)
             case 2:
                 fighter_name, opp_links, opps = update_csv(fighter_urls, month_abbr)
+                fighter_urls = []
+                opp_urls.extend(opp_links)
+                opp_names.extend(opps)
                 train_list = open("Train_Test Fighters.txt", "a")
                 read_list = open("Train_Test Fighters.txt", "r")
                 for i in fighter_name:
@@ -336,7 +393,6 @@ def main():
                     else:
                         print("Fighter already in Train List")
                 train_list.close()
-
             case 3:
                 fit_for_training()
             case 4:
@@ -344,6 +400,9 @@ def main():
                 opp_urls = []
                 opp_names = []
             case 5:
+                print("Enter Name of Fighter to Check\n")
+
+            case 6:
                 print("Have you gotten the opponent info from these fighters?")
                 print(opp_names)
                 menu_option = check_input.get_int_range("1. Yes\n2. No\n",1, 2)
