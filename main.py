@@ -3,13 +3,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import pandas as pd
-from data_processing import UFCDataset
+from data_processing import dataset
 from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 from models import FighterProfileLSTM, FightPredictor
 
 df = pd.read_csv("UFC Fighter Dataset.csv")
-dataset = UFCDataset(df)
 of = pd.read_csv("UFC Outcomes.csv")
 outcomes_dict = of.groupby('Fighter Name').apply(lambda x: x.values.tolist(), include_groups=False).to_dict()
 train_test_fighters = open("Train_Test Fighters.txt")
@@ -63,7 +62,7 @@ for i in train_list:
 lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
 predictor_model = FightPredictor(HIDDEN_SIZE)
 optimizer = torch.optim.Adam(
-    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=0.001)
+    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=0.0005)
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
 criterion = nn.BCELoss() #Binary Cross Entropy Loss
@@ -140,8 +139,8 @@ new_accuracy = test()
 with open("Current Accuracy.txt", "r") as read_list:
     accuracy = float(read_list.read().strip())
 
-# Compare and overwrite if the new accuracy is better
-if new_accuracy >= accuracy:
+# Compare and overwrite if the new accuracy if it reaches a certain accuracy threshold
+if new_accuracy >= 73.5:
     with open("Current Accuracy.txt", "w") as write_list:
         write_list.write(f"{new_accuracy:.2f}")
         torch.save(lstm_model.state_dict(), 'lstm_model.pth')

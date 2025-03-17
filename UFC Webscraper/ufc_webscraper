@@ -7,11 +7,73 @@ import csv
 import time
 import gc
 
-df = pd.read_csv("UFC Fighter Dataset.csv")
-of = pd.read_csv("UFC Outcomes.csv")
 
 def fighter_history(links, fighter_name, fight_outcomes, height, reach):
-    def extract_links_and_indices(fight_outcomes, fighter_name):
+    df = pd.read_csv("UFC Fighter Dataset.csv")
+    of = pd.read_csv("UFC Outcomes.csv")
+
+    # Extract full fight links
+    full_links = [link for link in links if "fight-details" in link]
+
+    # Retrieve fighter rows and outcome rows
+    fighter_rows = df.query("`Fighter Name` == @fighter_name and Height == @height and Reach == @reach")
+    outcome_rows = of.query("`Fighter Name` == @fighter_name")
+    # Extract opponent links, names, and 'nc/draw' indices
+    opp_links, opp_names, nc_draw_indices = extract_links_and_indices(fight_outcomes, fighter_name)
+
+    # Filter fight outcomes and links
+    full_links, fight_outcomes = filter_links_and_outcomes(full_links, fight_outcomes, nc_draw_indices)
+    # Extract fight numbers
+    if fight_outcomes:
+        fight_stats = fight_outcomes[0].find_all("p", class_="b-fight-details__table-text")
+        fight_numbers = [stat.get_text(strip=True) for stat in fight_stats if stat.get_text(strip=True).isdigit()]
+    if not fighter_rows.empty :
+        # Get the most recent dataset fight if available
+        dataset_fight = fighter_rows.iloc[-1] if not fighter_rows.empty else pd.DataFrame()
+
+        # Prepare recent stats for comparison
+        dataset_recent, fighter_recent = get_recent_stats(dataset_fight, fight_numbers)
+
+        # Check if dataset needs updating
+        if dataset_recent != fighter_recent:
+            df.drop(fighter_rows.index, inplace=True)
+            of.drop(outcome_rows.index, inplace=True)
+            df.to_csv("UFC Fighter Dataset.csv", index=False)
+            of.to_csv("UFC Outcomes.csv", index=False)
+            del fighter_rows, outcome_rows
+            gc.collect()
+        else:
+            del fighter_rows, outcome_rows, df, of, full_links, opp_links, opp_names, nc_draw_indices, fight_outcomes, dataset_fight, fight_numbers, dataset_recent
+            gc.collect()
+            return None, None, None
+
+
+    # Process fight details from the first link
+    if full_links:
+        for _ in range(5):
+            try:
+                response = requests.get(full_links[0])
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.content, "html.parser")
+                    fight_content = soup.find("div", class_="b-fight-details__content")
+                    if fight_content:
+                        full_links = full_links[:6]
+                        fight_outcomes = fight_outcomes[:6]
+                    else:
+                        nc_draw_indices = [i + 2 for i in nc_draw_indices]
+                        event_title = soup.find("a", href=lambda x: x and "event-details" in x).get_text(strip=True)
+                        print(f"{fighter_name} has an upcoming fight at {event_title}")
+                        full_links = full_links[2:8] if len(full_links) > 8 else full_links[2:]
+            except requests.exceptions.RequestException as e:
+                time.sleep(5)
+    del df, of, nc_draw_indices, fight_outcomes
+    gc.collect()
+    full_links.reverse()
+    return full_links, opp_links[:6], opp_names[:6]
+
+
+
+def extract_links_and_indices(fight_outcomes, fighter_name):
         """Extract opponent links, names, and indices for 'nc' or 'draw' outcomes."""
         opp_links, opp_names, nc_draw_indices = [], [], []
         for idx, outcome in enumerate(fight_outcomes):
@@ -29,84 +91,30 @@ def fighter_history(links, fighter_name, fight_outcomes, height, reach):
                 opp_names.extend(
                     [link.get_text(strip=True) for link in fighter_links if link.get_text(strip=True) != fighter_name]
                 )
+        del result, fighter_links
+        gc.collect()
         return opp_links, opp_names, nc_draw_indices
 
-    def filter_links_and_outcomes(links, fight_outcomes, exclude_indices):
-        """Filter links and fight outcomes by excluding specific indices."""
-        filtered_links = [link for idx, link in enumerate(links) if idx not in exclude_indices]
-        filtered_outcomes = [outcome for idx, outcome in enumerate(fight_outcomes) if idx not in exclude_indices]
-        return filtered_links, filtered_outcomes
+def filter_links_and_outcomes(links, fight_outcomes, exclude_indices):
+    """Filter links and fight outcomes by excluding specific indices."""
+    filtered_links = [link for idx, link in enumerate(links) if idx not in exclude_indices]
+    filtered_outcomes = [outcome for idx, outcome in enumerate(fight_outcomes) if idx not in exclude_indices]
+    return filtered_links, filtered_outcomes
 
-    def get_recent_stats(dataset_fight, fight_numbers):
-        """Prepare recent stats for comparison."""
-        dataset_recent = (
-            [
-                str(dataset_fight[col])
-                for col in [
-                    'Knockdowns', 'Opp_Knockdowns', 'Sig_Strikes', 'Opp_Sig_Strikes',
-                    'Takedowns', 'Opp_Takedowns', 'Sub_Attempts', 'Opp_Sub_Attempts'
-                ]
-            ] if not dataset_fight.empty else []
-        )
-        fighter_recent = fight_numbers[:8]
-        return dataset_recent, fighter_recent
 
-    # Extract full fight links
-    full_links = [link for link in links if "fight-details" in link]
-
-    # Retrieve fighter rows and outcome rows
-    fighter_rows = df.query("`Fighter Name` == @fighter_name and Height == @height and Reach == @reach")
-    outcome_rows = of.query("Fighter_Name == @fighter_name")
-
-    # Extract opponent links, names, and 'nc/draw' indices
-    opp_links, opp_names, nc_draw_indices = extract_links_and_indices(fight_outcomes, fighter_name)
-
-    # Filter fight outcomes and links
-    full_links, fight_outcomes = filter_links_and_outcomes(full_links, fight_outcomes, nc_draw_indices)
-
-    # Extract fight numbers
-    if fight_outcomes:
-        fight_stats = fight_outcomes[0].find_all("p", class_="b-fight-details__table-text")
-        fight_numbers = [stat.get_text(strip=True) for stat in fight_stats if stat.get_text(strip=True).isdigit()]
-    else:
-        fight_numbers = []
-
-    # Get the most recent dataset fight if available
-    dataset_fight = fighter_rows.iloc[-1] if not fighter_rows.empty else pd.DataFrame()
-
-    # Prepare recent stats for comparison
-    dataset_recent, fighter_recent = get_recent_stats(dataset_fight, fight_numbers)
-
-    # Check if dataset needs updating
-    if fighter_rows.empty or str(fighter_rows['Fighter_Link'].iloc[0]) == "nan" or dataset_recent != fighter_recent:
-        df.drop(fighter_rows.index, inplace=True)
-        of.drop(outcome_rows.index, inplace=True)
-        df.to_csv("UFC Fighter Dataset.csv", index=False)
-        of.to_csv("UFC Outcomes.csv", index=False)
-        del fighter_rows, outcome_rows
-        gc.collect()
-    else:
-        return None, None, None
-
-    # Process fight details from the first link
-    if full_links:
-        response = requests.get(full_links[0])
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.content, "html.parser")
-            fight_content = soup.find("div", class_="b-fight-details__content")
-            if fight_content:
-                full_links = full_links[:6]
-                fight_outcomes = fight_outcomes[:6]
-            else:
-                nc_draw_indices = [i + 2 for i in nc_draw_indices]
-                event_title = soup.find("a", href=lambda x: x and "event-details" in x).get_text(strip=True)
-                print(f"{fighter_name} has an upcoming fight at {event_title}")
-                full_links = full_links[2:8] if len(full_links) > 8 else full_links[2:]
-
-    # Reverse the links to maintain chronological order
-    full_links.reverse()
-
-    return full_links, opp_links[:6], opp_names[:6]
+def get_recent_stats(dataset_fight, fight_numbers):
+    """Prepare recent stats for comparison."""
+    dataset_recent = (
+        [
+            str(dataset_fight[col])
+            for col in [
+                'Knockdowns', 'Opp_Knockdowns', 'Sig_Strikes', 'Opp_Sig_Strikes',
+                'Takedowns', 'Opp_Takedowns', 'Sub_Attempts', 'Opp_Sub_Attempts'
+            ]
+        ] if not dataset_fight.empty else []
+    )
+    fighter_recent = fight_numbers[:8]
+    return dataset_recent, fighter_recent
 
             
 
@@ -155,84 +163,91 @@ def fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, 
         fight_id = 0
         for i in fight_links:
             url = i
-            response = requests.get(url)
+            for _ in range(3):
+                try:
+                    response = requests.get(url)
+                    if response.status_code == 200:
+                        break
+                except requests.exceptions.RequestException as e:
+                    time.sleep(5)
+
             fight_id += 1
             fighter_idx = 0
             opp_idx = 1
-            if response.status_code == 200:
-                round = 0
-                soup = BeautifulSoup(response.content, "html.parser")
-                fight_event = soup.find('h2', class_="b-content__title").find("a", class_="b-link")["href"] if soup.find('h2', class_="b-content__title") else "N/A"
-                fight_content = soup.find("div", class_="b-fight-details__content")
-                if fight_content:
-                    fight_details = fight_content.find_all("i", class_="b-fight-details__label")
-                else:
-                    print(f"Could not find fight details content for: {url}")
-                    fight_details = []
-                    break
-                fight_winner = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div")
-                fight_result = 1 if fighter_name in fight_winner.find("a", class_="b-link b-fight-details__person-link").get_text(strip=True) else 0
-                for j in fight_details:
-                    if "Round:" in j.get_text(strip=True):
-                        round = int(j.next_sibling.get_text(strip=True))
-                        break
-                fighter_weight = weight_class(fight_event, i, weight)
-                # Locate the fight stats table
-                fight_table = soup.find("tbody", class_="b-fight-details__table-body")
-                # Check if the table was found
-                if fight_table:
-                    rows = fight_table.find_all("td")  # Skip the header row
-                    
-                    fight_data = []
-                    for row in rows:
-                        # Extract all text from table cells
-                        columns = [col.text.strip() for col in row.find_all("p", class_="b-fight-details__table-text")]
-                        if columns:
-                            fight_data.append(columns)
-                    if fight_data[0][1] == fighter_name:
-                        fighter_idx = 1
-                        opp_idx = 0
-                    else:
-                        fighter_idx = 0
-                        opp_idx = 1
-                    opp_sig, fighter_sig = int(fight_data[2][opp_idx].split()[0]), int(fight_data[2][fighter_idx].split()[0])
-                    opp_td, fighter_td = int(fight_data[5][opp_idx].split()[0]), int(fight_data[5][fighter_idx].split()[0])
-                    opp_kd, fighter_kd = int(fight_data[1][opp_idx]), int(fight_data[1][fighter_idx])
-                    opp_ct, fighter_ct = fight_data[9][opp_idx], fight_data[9][fighter_idx]
-                    opp_subatt, fighter_subatt = int(fight_data[7][opp_idx]), int(fight_data[7][fighter_idx])
-                    #displays the information nearly exactly like my csv
-                    fight_performance.append([fighter_name, height, reach, wins, losses, age, fighter_weight, fight_id, fight_result, fighter_sig, fighter_td, fighter_kd, fighter_ct, fighter_subatt,  opp_sig, opp_td, opp_kd, opp_ct, opp_subatt, round, link])
-                    print(f"{fighter_name} Fight {fight_id} successfully in database")
-                else:
-                    print(f"No fight stats table found for: {url}")
+            round = 0
+            soup = BeautifulSoup(response.content, "html.parser")
+            fight_event = soup.find('h2', class_="b-content__title").find("a", class_="b-link")["href"] if soup.find('h2', class_="b-content__title") else "N/A"
+            fight_content = soup.find("div", class_="b-fight-details__content")
+            if fight_content:
+                fight_details = fight_content.find_all("i", class_="b-fight-details__label")
             else:
-                print(f"Failed to fetch fight details for: {url}")
+                print(f"Could not find fight details content for: {url}")
+                fight_details = []
+                break
+            fight_winner = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div")
+            fight_result = 1 if fighter_name in fight_winner.find("a", class_="b-link b-fight-details__person-link").get_text(strip=True) else 0
+            for j in fight_details:
+                if "Round:" in j.get_text(strip=True):
+                    round = int(j.next_sibling.get_text(strip=True))
+                    break
+            fighter_weight = weight_class(fight_event, i, weight)
+            fight_table = soup.find("tbody", class_="b-fight-details__table-body")
+            if fight_table:
+                rows = fight_table.find_all("td")
+                fight_data = []
+                for row in rows:
+                    columns = [col.text.strip() for col in row.find_all("p", class_="b-fight-details__table-text")]
+                    if columns:
+                        fight_data.append(columns)
+                if fight_data[0][1] == fighter_name:
+                    fighter_idx = 1
+                    opp_idx = 0
+                else:
+                    fighter_idx = 0
+                    opp_idx = 1
+                opp_sig, fighter_sig = int(fight_data[2][opp_idx].split()[0]), int(fight_data[2][fighter_idx].split()[0])
+                opp_td, fighter_td = int(fight_data[5][opp_idx].split()[0]), int(fight_data[5][fighter_idx].split()[0])
+                opp_kd, fighter_kd = int(fight_data[1][opp_idx]), int(fight_data[1][fighter_idx])
+                opp_ct, fighter_ct = fight_data[9][opp_idx], fight_data[9][fighter_idx]
+                opp_subatt, fighter_subatt = int(fight_data[7][opp_idx]), int(fight_data[7][fighter_idx])
+                fight_performance.append([fighter_name, height, reach, wins, losses, age, fighter_weight, fight_id, fight_result, fighter_sig, fighter_td, fighter_kd, fighter_ct, fighter_subatt,  opp_sig, opp_td, opp_kd, opp_ct, opp_subatt, round, link])
+                print(f"{fighter_name} Fight {fight_id} successfully in database")
+            else:
+                print(f"No fight stats table found for: {url}")
+            del response, soup
+            gc.collect()
     else:
         fight_id = 0
         for i in fight_links:
             fight_id += 1
             url = i
-            response = requests.get(url)
-            if response.status_code == 200:
-                round = 0
-                soup = BeautifulSoup(response.content, "html.parser")
-                fight_content = soup.find("div", class_="b-fight-details__content")
-                if fight_content:
-                    fight_details = fight_content.find_all("i", class_="b-fight-details__label")
-                else:
-                    print(f"Could not find fight details content for: {url}")
-                    fight_details = []
-                    break
-                print(f"{fighter_name} Outcome {fight_id} in database")
-                fighter_a = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
-                fight_result = 1 if fighter_name in fighter_a else 0
-                fighter_b = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_gray").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
-                fight_performance.append([(fighter_name), (fighter_name), (fighter_b if fight_result == 1 else fighter_a), fight_result, fight_id, link])
-                time.sleep(1)
-            else:
-                print(f"Failed to fetch fight details for: {url}")
+            for _ in range(5):
+                try:
+                    response = requests.get(url)
+                    if response.status_code == 200:
+                        break
+                except requests.exceptions.RequestException as e:
+                    time.sleep(5)
+            
 
+            round = 0
+            soup = BeautifulSoup(response.content, "html.parser")
+            fight_content = soup.find("div", class_="b-fight-details__content")
+            if fight_content:
+                fight_details = fight_content.find_all("i", class_="b-fight-details__label")
+            else:
+                print(f"Could not find fight details content for: {url}")
+                fight_details = []
+                break
+            print(f"{fighter_name} Outcome {fight_id} in database")
+            fighter_a = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_green").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
+            fight_result = 1 if fighter_name in fighter_a else 0
+            fighter_b = soup.find("i", class_="b-fight-details__person-status b-fight-details__person-status_style_gray").find_next("div").find("a", class_="b-link b-fight-details__person-link").get_text(strip=True)
+            fight_performance.append([fighter_name, fighter_name, fighter_b if fight_result == 1 else fighter_a, fight_result, fight_id, link])
+            del response, soup
+            gc.collect()
     return fight_performance
+
 
 def weight_class(event_link, fight_link, weight):
     weight_class_dict = {"Flyweight" : 125,
@@ -243,33 +258,43 @@ def weight_class(event_link, fight_link, weight):
     "Middleweight": 185,
     "Light Heavyweight": 205,
     "Heavyweight":265}
-    response = requests.get(event_link)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
-        event_fights = soup.find("tbody", class_="b-fight-details__table-body").find_all("tr")
-        fight_event = []
-        for i in event_fights:
-            if i.get("data-link") == fight_link:
-                fight_event = i.find_all("p", class_="b-fight-details__table-text")
-                break
-        for i in fight_event:
-            if "weight" in i.get_text(strip=True) or "Weight" in i.get_text(strip=True):
-                return (weight_class_dict[i.get_text(strip=True)] if i.get_text(strip=True) in weight_class_dict else weight)
-                
+    for _ in range(5):
+        try:
+            response = requests.get(event_link)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, "lxml")
+                event_fights = soup.find("tbody", class_="b-fight-details__table-body").find_all("tr")
+                fight_event = []
+                for i in event_fights:
+                    if i.get("data-link") == fight_link:
+                        fight_event = i.find_all("p", class_="b-fight-details__table-text")
+                        break
+                for i in fight_event:
+                    if "weight" in i.get_text(strip=True).lower():
+                        return (weight_class_dict[i.get_text(strip=True)] if i.get_text(strip=True) in weight_class_dict else weight)
+        except requests.exceptions.RequestException as e:
+            time.sleep(5)
 
 def update_csv(fighter_links, month_abbr):
     fighters = []
     opp_links = []
     opps = []
+    
+    # Process fighters in batches to reduce memory usage
+    batch_size = 4
+    for batch_start in range(0, len(fighter_links), batch_size):
+        batch_links = fighter_links[batch_start:batch_start + batch_size]
+        
+        for i in batch_links:
+            # Fetch data from the URL with retry mechanism
+            for _ in range(5):
+                try:
+                    response = requests.get(i)
+                    if response.status_code == 200:
+                        break
+                except requests.exceptions.RequestException as e:
+                    time.sleep(5)
 
-    # Load existing data into memory once
-    fighter_df = pd.read_csv("UFC Fighter Dataset.csv")
-    outcome_df = pd.read_csv("UFC Outcomes.csv")
-
-    for i in fighter_links:
-        # Fetch data from the URL
-        response = requests.get(i)
-        if response.status_code == 200:
             soup = BeautifulSoup(response.content, "html.parser")
             links = [a.get('href') for a in soup.find_all('a', href=True)]
             fight_outcomes = soup.find_all(
@@ -281,11 +306,6 @@ def update_csv(fighter_links, month_abbr):
             fighters.append(fighter_name)
 
             # Check if the fighter exists in the dataset
-            if fighter_name in fighter_df["Fighter Name"].values:
-                print(f"{fighter_name} is up to date in the database.")
-                del soup, links, fight_outcomes
-                continue
-
             # Process fight history
             fight_links, opponent_links, opp_names = fighter_history(links, fighter_name, fight_outcomes, height, reach)
             if fight_links is None:
@@ -300,30 +320,29 @@ def update_csv(fighter_links, month_abbr):
 
             # Process fight performance
             fighter_performance = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, False, i)
-            fighter_df = pd.concat(
-                [fighter_df, pd.DataFrame(fighter_performance)],
-                ignore_index=True
-            )
+            with open('UFC Fighter Dataset.csv', 'a', newline='') as file:
+                writer = csv.writer(file)
+                for row in fighter_performance:
+                    writer.writerow(row)
 
             # Process fight outcomes
             fighter_outcome = fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, age, True, i)
-            outcome_df = pd.concat(
-                [outcome_df, pd.DataFrame(fighter_outcome)],
-                ignore_index=True
-            )
+            with open('UFC Outcomes.csv', 'a', newline='') as file:
+                writer = csv.writer(file)
+                for row in fighter_outcome:
+                    writer.writerow(row)
 
             # Cleanup
             del soup, links, fight_outcomes, fighter_name, height, weight, reach, wins, losses, fight_links, opponent_links, opp_names
             gc.collect()
-        else:
-            print(f"Failed to fetch the webpage. Status code: {response.status_code}")
 
+        # Force garbage collection after each batch
+        gc.collect()
+
+    df = pd.read_csv("UFC Fighter Dataset.csv")
     # Save updated dataframes to CSV
-    fighter_df.to_csv("UFC Fighter Dataset.csv", index=False)
-    outcome_df.to_csv("UFC Outcomes.csv", index=False)
-
-    print(f"# OF FIGHTERS CURRENTLY ADDED: {fighter_df['Fighter Name'].nunique()}")
-    print(f"LAST FIGHTER ADDED: {fighter_df.iloc[-1]['Fighter Name']}")
+    print(f"# OF FIGHTERS CURRENTLY ADDED: {df['Fighter Name'].nunique()}")
+    print(f"LAST FIGHTER ADDED: {df.iloc[-1]['Fighter Name']}")
     return fighters, opp_links, opps
 
 
@@ -373,7 +392,7 @@ def main():
                 link = str(input("Enter Fighter URL: "))
                 fighter_urls.extend(link.split(","))
                 for i in fighter_urls:
-                    if len(i) != 56 and "http://www.ufcstats.com/fighter-details/" not in i:
+                    if "http://www.ufcstats.com/fighter-details/" not in i:
                         fighter_urls.remove(i)
                 print(fighter_urls)
             case 2:
@@ -400,7 +419,18 @@ def main():
                 opp_urls = []
                 opp_names = []
             case 5:
-                print("Enter Name of Fighter to Check\n")
+                df = pd.read_csv("UFC Fighter Dataset.csv")
+                while True:
+                    print("Enter Name of Fighter to Check")
+                    fighter_name = str(input("Enter Fighter Name: "))
+                    fighter_rows = df.query("`Fighter Name` == @fighter_name")
+                    if fighter_name == "exit":
+                        break
+                    if fighter_rows.empty:
+                        print(f"{fighter_name} is not in the database.")
+                    else:
+                        link = fighter_rows['Fighter_Link'].iloc[-1]
+                        update_csv([link], month_abbr)
 
             case 6:
                 print("Have you gotten the opponent info from these fighters?")
@@ -417,4 +447,5 @@ def main():
                         pass
     print("Dope, See ya.")
 
+    
 main()

@@ -130,7 +130,7 @@ class UFCDataset(Dataset):
         else:
             raise KeyError(f"Fighter {fighter_name} not found in dataset")
         
-# dataset = UFCDataset(df)        
+dataset = UFCDataset(df)        
 
 # def display_data_by_fighter():
 #     while True:
