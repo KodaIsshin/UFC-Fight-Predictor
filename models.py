@@ -81,8 +81,8 @@ class FightPredictor(nn.Module):
         self.fc1 = nn.Linear(3 * input_size, hidden_size) #profile a, profile b, and diff between profiles
         self.fc2 = nn.Linear(hidden_size, hidden_size // 2)
         self.fc3 = nn.Linear(hidden_size // 2, output_size)
+        self.dropout = nn.Dropout(0.2)
         self.activation = nn.ReLU()
-        self.sigmoid = nn.Sigmoid()
 
     def forward(self, profile_a, profile_b):
         #compute difference between profiles"
@@ -92,8 +92,11 @@ class FightPredictor(nn.Module):
         combined = torch.cat([profile_a, profile_b, diff], dim=-1)
 
         #pass it through the layers
+        #NOTE: Finally adding dropout to the layers to prevent overfitting
         x = self.activation(self.fc1(combined))
+        x = self.dropout(x)
         x = self.activation(self.fc2(x))
-        x = self.sigmoid(self.fc3(x))
-        return x
+        x = self.dropout(x)
+        logits = self.fc3(x)
+        return logits
 

@@ -59,6 +59,7 @@ def normalize(data, min_val, max_val):
     return (data - min_val) / (max_val - min_val)  # Add epsilon to avoid division by zero
 
 
+
 class UFCDataset(Dataset):
     def __init__(self, data_frame) -> None:
         # Group all statistics by fighter name

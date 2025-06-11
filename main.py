@@ -52,7 +52,7 @@ INPUT_SIZE = 17 #input size of the LSTM model
 HIDDEN_SIZE = 17 #hidden size of the LSTM model
 train_fights = [] #list of fights to train models
 test_fights = [] #list of fights to test model
-num_epochs = 50
+num_epochs = 100 #number of epochs to train the model
 for i in train_list:
     fighter_name = i.strip()
     train_data, test_data = test_train_dataloader(fighter_name, outcomes_dict[fighter_name])
@@ -62,11 +62,11 @@ for i in train_list:
 lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
 predictor_model = FightPredictor(HIDDEN_SIZE)
 optimizer = torch.optim.Adam(
-    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=0.0005)
+    list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=5e-4)
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
-criterion = nn.BCELoss() #Binary Cross Entropy Loss
-
+criterion = nn.BCEWithLogitsLoss() #Binary Cross Entropy Loss
+#scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.8) #Learning rate scheduler to reduce learning rate every 10 epochs
 def train():
     for epoch in range(num_epochs):
         lstm_model.train()
@@ -76,7 +76,7 @@ def train():
             #clear gradients (Biases from any past fights it analyzed)
             optimizer.zero_grad()
             #grab the outcome for model to train on
-            outcome = torch.tensor(float(i[2]), dtype=torch.float32)
+            outcome = torch.tensor([float(i[2])], dtype=torch.float32)
             #get the input sequence for the fighters fighting
             fighter_a, fighter_b, fighter_a_input, fighter_b_input = find_input_sequences(i[0], i[3])
             #generate the profiles for fighter a and b (will judge outcome based on fighter A)
@@ -88,10 +88,9 @@ def train():
             lengths_b = torch.tensor([len(fighter_b_input)])
             fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
             fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
-            print(f"Processing {fighter_a} vs {fighter_b}")
+            #print(f"Processing {fighter_a} vs {fighter_b}")
             #Predict outcome
-            prediction = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
-            #Compute the loss (how far from actual 'prediction')
+            prediction = predictor_model(fighter_a_profile, fighter_b_profile).view(1)
             loss = criterion(prediction, outcome)
             #back propogation
             loss.backward()
@@ -125,8 +124,9 @@ def test():
             fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
             print(f"Predicting {fighter_a} vs {fighter_b}")
             
-            prediction = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
-            predicted = (prediction > 0.5).float() #converts the probability to a binary prediction
+            prediction = predictor_model(fighter_a_profile, fighter_b_profile).view(1)
+            prob = torch.sigmoid(prediction)  # Convert logits to probabilities
+            predicted = (prob > 0.5).float() #converts the probability to a binary prediction
             correct += (predicted == outcome).sum().item()
             total += 1
     accuracy = correct / total

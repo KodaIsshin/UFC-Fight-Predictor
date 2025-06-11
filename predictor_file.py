@@ -53,16 +53,28 @@ def main():
                     fighter_b_input = torch.stack(b_input, dim=0)
                     lengths_a = torch.tensor([len(fighter_a_input)])
                     lengths_b = torch.tensor([len(fighter_b_input)])
+
                     fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
                     fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
+
                     print(f"Predicting {fighter_a} vs {fighter_b}")
 
-                    prediction_a = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
-                    prediction_b = predictor_model(fighter_b_profile, fighter_a_profile).squeeze()
-                    if prediction_a.item() >= prediction_b.item():
-                        print(f"{fighter_a} is projected to win with odds of {prediction_a.item() * 100:.2f}% chance of winning\nOdds of {fighter_a} winning: {prediction_a.item()* 100:.2f}%\nOdds of {fighter_b} winning: {prediction_b.item()*100:.2f}%")
+                    # Get raw logits
+                    logit_ab = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
+                    logit_ba = predictor_model(fighter_b_profile, fighter_a_profile).squeeze()
+
+                    # Convert to probabilities
+                    prob_ab = torch.sigmoid(logit_ab).item()
+                    prob_ba = torch.sigmoid(logit_ba).item()
+
+                    if prob_ab >= prob_ba:
+                        winner = fighter_a
+                        print(f"{winner} is projected to win with {prob_ab:.2%} confidence.")
                     else:
-                        print(f"{fighter_b} is projected to win with odds of {prediction_b.item() * 100:.2f}% chance of winning\nOdds of {fighter_a} winning: {prediction_a.item() * 100:.2f}%\nOdds of {fighter_b} winning: {prediction_b.item()*100:.2f}%")
+                        winner = fighter_b
+                        print(f"{winner} is projected to win with {prob_ba:.2%} confidence.")
+
+                    print(f"Odds:\n  {fighter_a}: {prob_ab:.2%}\n  {fighter_b}: {prob_ba:.2%}")
             case 2:
                 break
                 
