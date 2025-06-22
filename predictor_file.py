@@ -59,22 +59,14 @@ def main():
 
                     print(f"Predicting {fighter_a} vs {fighter_b}")
 
-                    # Get raw logits
-                    logit_ab = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
-                    logit_ba = predictor_model(fighter_b_profile, fighter_a_profile).squeeze()
-
-                    # Convert to probabilities
-                    prob_ab = torch.sigmoid(logit_ab).item()
-                    prob_ba = torch.sigmoid(logit_ba).item()
-
-                    if prob_ab >= prob_ba:
-                        winner = fighter_a
-                        print(f"{winner} is projected to win with {prob_ab:.2%} confidence.")
+                    prediction_a = predictor_model(fighter_a_profile, fighter_b_profile).squeeze()
+                    prediction_b = predictor_model(fighter_b_profile, fighter_a_profile).squeeze()
+                    prob_a = torch.sigmoid(prediction_a)
+                    prob_b = torch.sigmoid(prediction_b)
+                    if prob_a.item() >= prob_b.item():
+                        print(f"{fighter_a} is projected to win with odds of {prob_a.item() * 100:.2f}% chance of winning\nOdds of {fighter_a} winning: {prob_a.item()* 100:.2f}%\nOdds of {fighter_b} winning: {prob_b.item()*100:.2f}%")
                     else:
-                        winner = fighter_b
-                        print(f"{winner} is projected to win with {prob_ba:.2%} confidence.")
-
-                    print(f"Odds:\n  {fighter_a}: {prob_ab:.2%}\n  {fighter_b}: {prob_ba:.2%}")
+                        print(f"{fighter_b} is projected to win with odds of {prob_b.item() * 100:.2f}% chance of winning\nOdds of {fighter_a} winning: {prob_a.item()* 100:.2f}%\nOdds of {fighter_b} winning: {prob_b.item()*100:.2f}%")
             case 2:
                 break
                 

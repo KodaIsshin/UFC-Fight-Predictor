@@ -81,7 +81,7 @@ class FightPredictor(nn.Module):
         self.fc1 = nn.Linear(3 * input_size, hidden_size) #profile a, profile b, and diff between profiles
         self.fc2 = nn.Linear(hidden_size, hidden_size // 2)
         self.fc3 = nn.Linear(hidden_size // 2, output_size)
-        self.dropout = nn.Dropout(0.2)
+        self.dropout = nn.Dropout(0.3)
         self.activation = nn.ReLU()
 
     def forward(self, profile_a, profile_b):

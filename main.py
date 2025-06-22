@@ -66,7 +66,8 @@ optimizer = torch.optim.Adam(
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
 criterion = nn.BCEWithLogitsLoss() #Binary Cross Entropy Loss
-#scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.8) #Learning rate scheduler to reduce learning rate every 10 epochs
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=33, gamma=0.95) #Learning rate scheduler to reduce learning rate every 10 epochs
+
 def train():
     for epoch in range(num_epochs):
         lstm_model.train()
@@ -95,9 +96,11 @@ def train():
             #back propogation
             loss.backward()
             optimizer.step()
-
             total_loss += loss.item()
+
+        scheduler.step()  # Update learning rate
         print(f"Epoch {epoch + 1}/{num_epochs}, Loss {total_loss:.4f}")
+    
 
 
 def test():
@@ -112,6 +115,8 @@ def test():
             outcome = torch.tensor(float(i[2]), dtype=torch.float32)
             win = (win + 1) if int(i[2]) == 1 else win
             loss = (loss + 1) if int(i[2]) == 0 else loss
+
+
             fighter_a, fighter_b, fighter_a_input, fighter_b_input = find_input_sequences(i[0], i[3])
             #generate the profiles for fighter a and b (will judge outcome based on fighter A)
             if isinstance(fighter_a_input, list):
@@ -122,8 +127,7 @@ def test():
             lengths_b = torch.tensor([len(fighter_b_input)])
             fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
             fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
-            print(f"Predicting {fighter_a} vs {fighter_b}")
-            
+            print(f"Predicting {fighter_a} vs {fighter_b} = {outcome.item()}")
             prediction = predictor_model(fighter_a_profile, fighter_b_profile).view(1)
             prob = torch.sigmoid(prediction)  # Convert logits to probabilities
             predicted = (prob > 0.5).float() #converts the probability to a binary prediction
@@ -140,7 +144,7 @@ with open("Current Accuracy.txt", "r") as read_list:
     accuracy = float(read_list.read().strip())
 
 # Compare and overwrite if the new accuracy if it reaches a certain accuracy threshold
-if new_accuracy >= 73.5:
+if new_accuracy >= 75.0:
     with open("Current Accuracy.txt", "w") as write_list:
         write_list.write(f"{new_accuracy:.2f}")
         torch.save(lstm_model.state_dict(), 'lstm_model.pth')
