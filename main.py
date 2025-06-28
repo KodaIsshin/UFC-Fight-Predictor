@@ -43,7 +43,7 @@ def test_train_dataloader(fighter_name, fighter_data):
         train_fights = (data_transfig[:1])
         test_fights = (data_transfig[1:])
     else:
-        index_split = (int(total_fights * .8))
+        index_split = (int(total_fights * .66))
         train_fights = (data_transfig[:index_split])
         test_fights = (data_transfig[index_split:])
     return train_fights, test_fights
@@ -66,7 +66,7 @@ optimizer = torch.optim.Adam(
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
 criterion = nn.BCEWithLogitsLoss() #Binary Cross Entropy Loss
-scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=33, gamma=0.95) #Learning rate scheduler to reduce learning rate every 10 epochs
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=25, gamma=0.95) #Learning rate scheduler to reduce learning rate every 10 epochs
 
 def train():
     for epoch in range(num_epochs):
