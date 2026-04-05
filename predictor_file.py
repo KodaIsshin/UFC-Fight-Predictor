@@ -7,13 +7,19 @@ from data_processing import dataset
 from models import FighterProfileLSTM, FightPredictor
 import check_input
 
+if torch.backends.mps.is_available():
+    torch.set_default_device("mps")
+    mps_device = torch.device("mps")
+
+INPUT_SIZE = 17
+HIDDEN_SIZE = 17
 
 def get_fighter_input():
     while True:
         fighter_a = str(input("Enter Fighter 1: "))
         if fighter_a in dataset.fighter_name_index:
             a_list = dataset.fighter_name_index[fighter_a]
-            a_input = [torch.tensor(i, dtype = torch.float32) for i in a_list]
+            a_input = [torch.tensor(i, dtype = torch.float32, device="mps") for i in a_list]
         else:
             print(f"{fighter_a} is not in UFC dataset, try again.")
             continue
@@ -24,7 +30,7 @@ def get_fighter_input():
                 continue
             if fighter_b in dataset.fighter_name_index:
                 b_list = dataset.fighter_name_index[fighter_b]
-                b_input = [torch.tensor(i, dtype=torch.float32) for i in b_list]
+                b_input = [torch.tensor(i, dtype=torch.float32, device="mps") for i in b_list]
                 break
             else:
                 print(f"{fighter_b} is not in UFC dataset, try again.")
@@ -32,17 +38,16 @@ def get_fighter_input():
         return fighter_a, fighter_b, a_input, b_input
 
 
+lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE).to(mps_device)
+predictor_model = FightPredictor(HIDDEN_SIZE).to(mps_device)
+lstm_model.load_state_dict(torch.load("lstm_model.pth", weights_only=True))
+predictor_model.load_state_dict(torch.load("predictor_model.pth", weights_only=False))
+lstm_model.eval()
+predictor_model.eval()
+
 def main():
-    INPUT_SIZE = 17
-    HIDDEN_SIZE = 17
-    lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
-    predictor_model = FightPredictor(HIDDEN_SIZE)
     #Loading lstm model paths and predictor model paths
-    lstm_model.load_state_dict(torch.load("lstm_model.pth", weights_only=True))
-    predictor_model.load_state_dict(torch.load("predictor_model.pth", weights_only=False))
     #models to eval mode
-    lstm_model.eval()
-    predictor_model.eval()
     while True:
         menu_option = check_input.get_int_range("1. Predict a Fight\n2. Quit\n", 1, 2)
         match menu_option:
@@ -51,11 +56,11 @@ def main():
                 with torch.no_grad():
                     fighter_a_input = torch.stack(a_input, dim=0)
                     fighter_b_input = torch.stack(b_input, dim=0)
-                    lengths_a = torch.tensor([len(fighter_a_input)])
-                    lengths_b = torch.tensor([len(fighter_b_input)])
+                    lengths_a = torch.tensor([len(fighter_a_input)], device="cpu")
+                    lengths_b = torch.tensor([len(fighter_b_input)], device="cpu")
 
-                    fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
-                    fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
+                    fighter_a_profile = lstm_model(fighter_a_input, lengths_a)
+                    fighter_b_profile = lstm_model(fighter_b_input, lengths_b)
 
                     print(f"Predicting {fighter_a} vs {fighter_b}")
 

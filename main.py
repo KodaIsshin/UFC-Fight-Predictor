@@ -8,29 +8,40 @@ from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 from models import FighterProfileLSTM, FightPredictor
 
+
 df = pd.read_csv("UFC Fighter Dataset.csv")
 of = pd.read_csv("UFC Outcomes.csv")
 outcomes_dict = of.groupby('Fighter Name').apply(lambda x: x.values.tolist(), include_groups=False).to_dict()
 train_test_fighters = open("Train_Test Fighters.txt")
 train_list = train_test_fighters.readlines()
+if torch.backends.mps.is_available():
+    torch.set_default_device("mps")
+    mps_device = torch.device("mps")
+
 
 def find_input_sequences(fighter_name, fight_indice):
     fight_history = outcomes_dict[fighter_name]
-    fighter_a_input = dataset.fighter_name_index[fighter_name][:fight_indice-1]
+    fighter_a_input_raw = dataset.fighter_name_index[fighter_name][:fight_indice-1]
     fighter_b = fight_history[fight_indice-1][1]
     opponent_history = outcomes_dict[fighter_b]
-    fighter_b_input = None
+    fighter_b_input_raw = None
     for i in opponent_history:
         if i[1] == fighter_name:
             if (dataset.fighter_name_index[fighter_b][i[3]-1][6:11] == dataset.fighter_name_index[fighter_name][fight_indice-1][11:16]).all():
-                fighter_b_input = dataset.fighter_name_index[fighter_b][:i[3]-1]
+                fighter_b_input_raw = dataset.fighter_name_index[fighter_b][:i[3]-1]
                 break
     
-    if fighter_b_input is None:
-        fighter_b_input = [dataset.fighter_name_index[fighter_b][0]]
-    fighter_a_input = [torch.tensor(i, dtype=torch.float32) for i in fighter_a_input] if len(fighter_a_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_name][0], dtype=torch.float32)
-    fighter_b_input = [torch.tensor(j,dtype=torch.float32) for j in fighter_b_input] if len(fighter_b_input) > 1 else torch.tensor(dataset.fighter_name_index[fighter_b][0], dtype=torch.float32)
-    return fighter_name, fighter_b,fighter_a_input, fighter_b_input
+    if len(fighter_a_input_raw) == 0:
+        fighter_a_input_raw = [dataset.fighter_name_index[fighter_name][0]]
+    if fighter_b_input_raw is None or len(fighter_b_input_raw) == 0:
+        fighter_b_input_raw = [dataset.fighter_name_index[fighter_b][0]]
+    
+    fighter_a_np = np.array(fighter_a_input_raw)
+    fighter_b_np = np.array(fighter_b_input_raw)
+    fighter_a_input = torch.tensor(fighter_a_np, dtype=torch.float32, device=mps_device)
+    fighter_b_input = torch.tensor(fighter_b_np, dtype=torch.float32, device=mps_device)
+
+    return fighter_name, fighter_b, fighter_a_input, fighter_b_input
 
 
 def test_train_dataloader(fighter_name, fighter_data):
@@ -43,7 +54,7 @@ def test_train_dataloader(fighter_name, fighter_data):
         train_fights = (data_transfig[:1])
         test_fights = (data_transfig[1:])
     else:
-        index_split = (int(total_fights * .66))
+        index_split = (int(total_fights * .8))
         train_fights = (data_transfig[:index_split])
         test_fights = (data_transfig[index_split:])
     return train_fights, test_fights
@@ -59,16 +70,18 @@ for i in train_list:
     train_fights.extend(train_data)
     test_fights.extend(test_data)
 
-lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE)
-predictor_model = FightPredictor(HIDDEN_SIZE)
+lstm_model = FighterProfileLSTM(INPUT_SIZE, HIDDEN_SIZE).to(mps_device)
+predictor_model = FightPredictor(HIDDEN_SIZE).to(mps_device)
 optimizer = torch.optim.Adam(
     list(lstm_model.parameters()) + list(predictor_model.parameters()), lr=5e-4)
 #optimizer that holds the parameters of the lstm model and predictor model, this gets changed as the program continues running
 
 criterion = nn.BCEWithLogitsLoss() #Binary Cross Entropy Loss
-scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=25, gamma=0.95) #Learning rate scheduler to reduce learning rate every 10 epochs
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=33, gamma=0.95) #Learning rate scheduler to reduce learning rate every 10 epochs
 
 def train():
+    win = 0
+    losses = 0
     for epoch in range(num_epochs):
         lstm_model.train()
         predictor_model.train()
@@ -77,7 +90,7 @@ def train():
             #clear gradients (Biases from any past fights it analyzed)
             optimizer.zero_grad()
             #grab the outcome for model to train on
-            outcome = torch.tensor([float(i[2])], dtype=torch.float32)
+            outcome = torch.tensor([float(i[2])], dtype=torch.float32, device=mps_device)
             #get the input sequence for the fighters fighting
             fighter_a, fighter_b, fighter_a_input, fighter_b_input = find_input_sequences(i[0], i[3])
             #generate the profiles for fighter a and b (will judge outcome based on fighter A)
@@ -85,11 +98,15 @@ def train():
                 fighter_a_input = torch.stack(fighter_a_input, dim=0)
             if isinstance(fighter_b_input, list):
                 fighter_b_input = torch.stack(fighter_b_input, dim=0)
-            lengths_a = torch.tensor([len(fighter_a_input)])
-            lengths_b = torch.tensor([len(fighter_b_input)])
-            fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
-            fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
-            #print(f"Processing {fighter_a} vs {fighter_b}")
+            lengths_a = torch.tensor([len(fighter_a_input)], device="cpu")
+            lengths_b = torch.tensor([len(fighter_b_input)], device="cpu")
+            fighter_a_profile = lstm_model(fighter_a_input, lengths_a)
+            fighter_b_profile = lstm_model(fighter_b_input, lengths_b)
+            print(f"Processing {fighter_a} vs {fighter_b}")
+            if(i[2] == 1):
+                win += 1
+            else:
+                losses += 1
             #Predict outcome
             prediction = predictor_model(fighter_a_profile, fighter_b_profile).view(1)
             loss = criterion(prediction, outcome)
@@ -100,6 +117,9 @@ def train():
 
         scheduler.step()  # Update learning rate
         print(f"Epoch {epoch + 1}/{num_epochs}, Loss {total_loss:.4f}")
+        print(f"Distribution of outcomes in training data: Wins: {win} Losses: {losses}")
+        win = 0
+        losses = 0
     
 
 
@@ -112,7 +132,7 @@ def test():
     loss = 0
     with torch.no_grad():
         for i in test_fights:
-            outcome = torch.tensor(float(i[2]), dtype=torch.float32)
+            outcome = torch.tensor(float(i[2]), dtype=torch.float32, device=mps_device)
             win = (win + 1) if int(i[2]) == 1 else win
             loss = (loss + 1) if int(i[2]) == 0 else loss
 
@@ -123,10 +143,10 @@ def test():
                 fighter_a_input = torch.stack(fighter_a_input, dim=0)
             if isinstance(fighter_b_input, list):
                 fighter_b_input = torch.stack(fighter_b_input, dim=0)
-            lengths_a = torch.tensor([len(fighter_a_input)])
-            lengths_b = torch.tensor([len(fighter_b_input)])
-            fighter_a_profile = lstm_model(fighter_a_input.unsqueeze(0), lengths_a)
-            fighter_b_profile = lstm_model(fighter_b_input.unsqueeze(0), lengths_b)
+            lengths_a = torch.tensor([len(fighter_a_input)], device="cpu")
+            lengths_b = torch.tensor([len(fighter_b_input)], device="cpu")
+            fighter_a_profile = lstm_model(fighter_a_input, lengths_a)
+            fighter_b_profile = lstm_model(fighter_b_input, lengths_b)
             print(f"Predicting {fighter_a} vs {fighter_b} = {outcome.item()}")
             prediction = predictor_model(fighter_a_profile, fighter_b_profile).view(1)
             prob = torch.sigmoid(prediction)  # Convert logits to probabilities
@@ -147,6 +167,6 @@ with open("Current Accuracy.txt", "r") as read_list:
 if new_accuracy >= 75.0:
     with open("Current Accuracy.txt", "w") as write_list:
         write_list.write(f"{new_accuracy:.2f}")
-        torch.save(lstm_model.state_dict(), 'lstm_model.pth')
-        torch.save(predictor_model.state_dict(), 'predictor_model.pth')
+        torch.save(lstm_model.state_dict(), 'checkpoints/lstm_model.pth')
+        torch.save(predictor_model.state_dict(), 'checkpoints/predictor_model.pth')
 

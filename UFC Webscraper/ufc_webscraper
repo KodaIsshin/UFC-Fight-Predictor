@@ -13,8 +13,6 @@ def fighter_history(links, fighter_name, fight_outcomes, height, reach, overwrit
     df = pd.read_csv("UFC Fighter Dataset.csv")
     of = pd.read_csv("UFC Outcomes.csv")
 
-    # Extract full fight links  
-
     # Retrieve fighter rows and outcome rows
     fighter_rows = df.query("`Fighter Name` == @fighter_name and Height == @height and Reach == @reach")
     outcome_rows = of.query("`Fighter Name` == @fighter_name")
@@ -31,17 +29,16 @@ def fighter_history(links, fighter_name, fight_outcomes, height, reach, overwrit
 
         # Prepare recent stats for comparison
         is_recent = get_recent_stats(dataset_fight, fight_numbers)
-
         # Check if dataset needs updating
-        if is_recent or overwrite:
+        if not is_recent or overwrite:
             df.drop(fighter_rows.index, inplace=True)
             of.drop(outcome_rows.index, inplace=True)
             df.to_csv("UFC Fighter Dataset.csv", index=False)
             of.to_csv("UFC Outcomes.csv", index=False)
             del fighter_rows, outcome_rows
             gc.collect()
-        else:
-            del fighter_rows, outcome_rows, df, of, full_links, opp_links, opp_names, fight_outcomes, dataset_fight, fight_numbers, dataset_recent
+        elif(is_recent):
+            del fighter_rows, outcome_rows, df, of, opp_links, opp_names, fight_outcomes, dataset_fight, fight_numbers
             gc.collect()
             return None, None, None
 
@@ -110,7 +107,7 @@ def get_recent_stats(dataset_fight, fight_numbers):
     else:
         return True
 
-            
+
 
 def fighter_base_stats(soup, month_dict):
     base_stats_html = soup.find_all("i", class_="b-list__box-item-title b-list__box-item-title_type_width")
@@ -168,7 +165,6 @@ def fight_stats(fight_links, fighter_name, height, weight, reach, wins, losses, 
                         break
                 except requests.exceptions.RequestException as e:
                     time.sleep(5)
-
             fight_id += 1
             fighter_idx = 0
             opp_idx = 1
@@ -315,7 +311,7 @@ def update_csv(fighter_links, month_abbr):
 
             # Check if the fighter exists in the dataset
             # Process fight history
-            fight_links, opponent_links, opp_names = fighter_history(links, fighter_name, fight_outcomes, height, reach, overwrite=True)
+            fight_links, opponent_links, opp_names = fighter_history(links, fighter_name, fight_outcomes, height, reach)
             if fight_links is None:
                 print(f"{fighter_name} is up to date in the database.")
                 del soup, links, fight_outcomes, fighter_name, height, weight, reach, wins, losses, fight_links, opponent_links, opp_names
@@ -355,6 +351,7 @@ def update_csv(fighter_links, month_abbr):
 
 
 def fit_for_training(check = False, fighter_input = None):
+    fighters_to_add = []
     if check:
         fighters = fighter_input
     else:
@@ -386,7 +383,11 @@ def fit_for_training(check = False, fighter_input = None):
                     train_txt = open("Train_Test Fighters.txt", "a")
                     train_txt.write(fighter_name + "\n")
             else:
-                print(f"{fighter_name} is not fit for training\nError Type: Opponent Fight History not in database.\nMissing Fighters:\n{fighter_dupe}")      
+                print(f"{fighter_name} is not fit for training\nError Type: Opponent Fight History not in database.\nMissing Fighters:\n{fighter_dupe}") 
+                for i in fighter_dupe:
+                    if i not in fighters_to_add:
+                        fighters_to_add.append(i)    
+    return fighters_to_add
 
 
 def main():
@@ -456,7 +457,10 @@ def main():
             case 6:
                 train_test_fighters = open("Train_Test Fighters.txt")
                 train_list = train_test_fighters.readlines()
-                fit_for_training(check=True, fighter_input=train_list)
+                fighters_to_add = fit_for_training(check=True, fighter_input=train_list)
+                print("Fighters to add to database for training:")
+                for fighter in fighters_to_add:
+                    print(fighter)
             case 7:
                 fighters = df.drop_duplicates(subset=['Fighter Name'], keep='last')
                 fighter_links = fighters['Fighter_Link'].tolist()
@@ -476,13 +480,13 @@ def main():
                 match menu_option:
                     case 1:
                         if len(opp_names) > 0:
-                            print("No you haven't lol")
+                            print("No you haven't")
                             pass
                         else:
                             break
                     case 2:
                         pass
-    print("Dope, See ya.")
+    print("cool. bye.")
 
     
 main()

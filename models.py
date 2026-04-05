@@ -43,6 +43,7 @@ class FighterProfileLSTM(nn.Module):
 
         #Packing sequences for new fighters (1-5 fights instead of the six)
         #This is also for training, using history to train lstm to create fighter profiles for fighters that are prominent
+        x = x.unsqueeze(0)
         packed_input = nn.utils.rnn.pack_padded_sequence(x, lengths, batch_first=True, enforce_sorted=True)
         #LSTM OUTPUT
         #OUTPUT OF TENSOR, (We only need the hidden state to find the LSTM interp of fighter)
